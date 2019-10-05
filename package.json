@@ -15,8 +15,8 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@commitlint/prompt-cli": "^8.2.0",
-    "@fredrikkadolfsson/eslint-config-p11k": "^0.0.1",
-    "@fredrikkadolfsson/prettier-config-p11k": "^0.0.1",
+    "@fredrikkadolfsson/eslint-config-p11k": "^0.10.0",
+    "@fredrikkadolfsson/prettier-config-p11k": "^0.10.0",
     "husky": "^3.0.8",
     "lerna": "^3.16.4",
     "lint-staged": "^9.4.1"

@@ -1229,19 +1229,7 @@
     "@emotion/utils" "0.11.2"
     "@emotion/weak-memoize" "0.2.4"
 
-"@emotion/core@^10.0.14", "@emotion/core@^10.0.9":
-  version "10.0.20"
-  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.20.tgz#d8bc64d8f7d88e3dc470ea233476c683c3965cf0"
-  integrity sha512-Vwzx/fcIHoaUzZSzYs75T1qaMrhpkvZwKfbRKBExu296t0CDUJ4RX3UMSiUB+nbHEF1cftz6bop0DXv1NXQt4Q==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    "@emotion/cache" "^10.0.17"
-    "@emotion/css" "^10.0.14"
-    "@emotion/serialize" "^0.11.10"
-    "@emotion/sheet" "0.9.3"
-    "@emotion/utils" "0.11.2"
-
-"@emotion/core@^10.0.21":
+"@emotion/core@^10.0.14", "@emotion/core@^10.0.21", "@emotion/core@^10.0.9":
   version "10.0.21"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.21.tgz#2e8398d2b92fd90d4ed6ac4d0b66214971de3458"
   integrity sha512-U9zbc7ovZ2ceIwbLXYZPJy6wPgnOdTNT4jENZ31ee6v2lojetV5bTbCVk6ciT8G3wQRyVaTTfUCH9WCrMzpRIw==
@@ -1305,7 +1293,7 @@
     "@emotion/serialize" "^0.11.11"
     "@emotion/utils" "0.11.2"
 
-"@emotion/styled@^10.0.14", "@emotion/styled@^10.0.17":
+"@emotion/styled@^10.0.14", "@emotion/styled@^10.10.07":
   version "10.0.17"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.17.tgz#0cd38b8b36259541f2c6717fc22607a120623654"
   integrity sha512-zHMgWjHDMNjD+ux64POtDnjLAObniu3znxFBLSdV/RiEhSLjHIowfvSbbd/C33/3uwtI6Uzs2KXnRZtka/PpAQ==
@@ -3695,23 +3683,7 @@ babel-plugin-dynamic-import-node@2.3.0, babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.17:
-  version "10.0.20"
-  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-10.0.20.tgz#635766d390b7923bb0c01bfbb87529e0ff35478b"
-  integrity sha512-Lmyc1wk+zdvz9LY0IZub51fwTxsptxdvBR7aGGmPit9PX7suYUtndFcge945TNqcz7MZxbMxlo52RaRxH+3wiw==
-  dependencies:
-    "@babel/helper-module-imports" "^7.0.0"
-    "@emotion/hash" "0.7.3"
-    "@emotion/memoize" "0.7.3"
-    "@emotion/serialize" "^0.11.11"
-    babel-plugin-macros "^2.0.0"
-    babel-plugin-syntax-jsx "^6.18.0"
-    convert-source-map "^1.5.0"
-    escape-string-regexp "^1.0.5"
-    find-root "^1.1.0"
-    source-map "^0.5.7"
-
-babel-plugin-emotion@^10.0.21:
+babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.17, babel-plugin-emotion@^10.0.21:
   version "10.0.21"
   resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-10.0.21.tgz#9ebeb12edeea3e60a5476b0e07c9868605e65968"
   integrity sha512-03o+T6sfVAJhNDcSdLapgv4IeewcFPzxlvBUVdSf7o5PI57ZSxoDvmy+ZulVWSu+rOWAWkEejNcsb29TuzJHbg==
@@ -12600,9 +12572,9 @@ terser@4.0.0:
     source-map-support "~0.5.10"
 
 terser@^4.1.2:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.3.7.tgz#9dafb4a6730868608c9c7af96d44182f4107b29f"
-  integrity sha512-rJFxzWIzJdgiOwYIPJHu6L3hDegEYJj2cHuKcngMraUfhMXGDEbok9Tqjw7yxzrU4IagvG74uTEKdiqeG6T7bg==
+  version "4.3.8"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.3.8.tgz#707f05f3f4c1c70c840e626addfdb1c158a17136"
+  integrity sha512-otmIRlRVmLChAWsnSFNO0Bfk6YySuBp6G9qrHiJwlLDd4mxe2ta4sjI7TzIR+W1nBMjilzrMcPOz9pSusgx3hQ==
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"
