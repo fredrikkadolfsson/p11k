@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/tsconfig-config-p11k",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "tsconfig to be used for all packages in the monorepo.",
   "main": "tsconfig.json",
   "repository": {

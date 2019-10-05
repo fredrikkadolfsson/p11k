@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.1...@fredrikkadolfsson/ui@0.10.2) (2019-10-05)
+
+
+### Bug Fixes
+
+* add global emotion style ([750f715](https://github.com/fredrikkadolfsson/p11k/commit/750f715))
+
+
+
+
+
 ## [0.10.1](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.0.1...@fredrikkadolfsson/ui@0.10.1) (2019-10-05)
 
 
