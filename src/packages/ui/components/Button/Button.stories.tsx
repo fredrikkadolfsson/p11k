@@ -5,4 +5,4 @@ export default {
   title: 'Button',
 };
 
-export const ButtonStory = (): ReactElement => <Button variant="outlined">Hej!</Button>;
+export const Outlined = (): ReactElement => <Button variant="outlined">Hej!</Button>;
