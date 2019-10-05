@@ -1395,16 +1395,6 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@fredrikkadolfsson/eslint-config-p11k@^0.0.5":
-  version "0.0.5"
-  resolved "https://npm.pkg.github.com/download/@fredrikkadolfsson/eslint-config-p11k/0.0.5/921ef183fab2519b3798e675f719edb6f141c5fbab328f620e0e4ed3cc8f48cb#87a125fd21a9406812b6492498510757c1e4dbb6"
-  integrity sha1-h6El/SGpQGgStkkkmFEHV8Hk27Y=
-
-"@fredrikkadolfsson/prettier-config-p11k@^0.0.4":
-  version "0.0.4"
-  resolved "https://npm.pkg.github.com/download/@fredrikkadolfsson/prettier-config-p11k/0.0.4/9a8de2c03fc1e592717da0a5c2fdcf62ee00da0a165cc129683782a8cded9918#44a3128b945ddaeee11067349d809a0104525c74"
-  integrity sha1-RKMSi5Rd2u7hEGc0nYCaAQRSXHQ=
-
 "@icons/material@^0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
