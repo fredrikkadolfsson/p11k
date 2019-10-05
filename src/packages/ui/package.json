@@ -13,7 +13,8 @@
     "build:storybook": "build-storybook"
   },
   "dependencies": {
-    "@material-ui/core": "^4.5.0"
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/styles": "^4.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
