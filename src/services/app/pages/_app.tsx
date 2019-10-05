@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import App from 'next/app';
 import Head from 'next/head';
+import { GlobalCss } from '@fredrikkadolfsson/ui';
 
 export default class MyApp extends App {
   componentDidMount(): void {
@@ -14,12 +15,13 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <React.Fragment>
+      <React.StrictMode>
         <Head>
           <title>My page</title>
         </Head>
+        <GlobalCss />
         <Component {...pageProps} />
-      </React.Fragment>
+      </React.StrictMode>
     );
   }
 }

@@ -33,6 +33,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
