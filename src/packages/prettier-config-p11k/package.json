@@ -1,0 +1,13 @@
+{
+  "name": "@fredrikkadolfsson/prettier-config-p11k",
+  "version": "0.0.0",
+  "description": "Prettier configs to be used for all packages in the monorepo.",
+  "main": ".prettierrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fredrikkadolfsson/p11k.git"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "../../../node_modules/@fredrikkadolfsson/tsconfig-config-p11k/tsconfig",
+  "compilerOptions": {
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

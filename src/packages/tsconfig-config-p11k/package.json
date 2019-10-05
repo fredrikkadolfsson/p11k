@@ -1,0 +1,13 @@
+{
+  "name": "@fredrikkadolfsson/tsconfig-config-p11k",
+  "version": "0.0.0",
+  "description": "tsconfig to be used for all packages in the monorepo.",
+  "main": "tsconfig.json",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fredrikkadolfsson/p11k.git"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}

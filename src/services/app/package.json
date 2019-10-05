@@ -1,0 +1,23 @@
+{
+  "name": "@fredrikkadolfsson/app",
+  "version": "0.0.0",
+  "description": "p11k's frontend application.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.0.7",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "@fredrikkadolfsson/tsconfig-config-p11k": "^0.0.0",
+    "@fredrikkadolfsson/ui": "^0.0.0",
+    "@types/node": "^12.7.11",
+    "@types/react": "^16.9.5"
+  }
+}

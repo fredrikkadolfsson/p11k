@@ -1,0 +1,13 @@
+{
+  "packages": ["src/packages/*", "src/services/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": ["*.md"],
+      "message": "chore(release): publish [ci skip]"
+    }
+  }
+}

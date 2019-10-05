@@ -1,0 +1,43 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "src/packages/*",
+    "src/services/*"
+  ],
+  "scripts": {
+    "commit": "commit",
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:publish": "lerna publish --registry https://npm.pkg.github.com/",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/prompt-cli": "^8.2.0",
+    "@fredrikkadolfsson/eslint-config-p11k": "^0.0.0",
+    "@fredrikkadolfsson/prettier-config-p11k": "^0.0.0",
+    "husky": "^3.0.8",
+    "lerna": "^3.16.4",
+    "lint-staged": "^9.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "post-checkout": "yarn",
+      "post-merge": "yarn",
+      "post-rewrite": "yarn",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,tx,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,json,gql,md,yaml,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

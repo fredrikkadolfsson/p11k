@@ -1,0 +1,96 @@
+version: 2
+
+references:
+  node_container: &node_container
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:latest
+
+  restore_build: &restore_build
+    restore_cache:
+      name: Restore everything
+      keys:
+        - source-v3-{{ .Branch }}-{{ .Revision }}
+        - source-v3-{{ .Branch }}-
+        - source-v3-
+
+  restore_yarn: &restore_yarn
+    restore_cache:
+      name: Restore node modules
+      keys:
+        - v3-dependencies-{{ checksum "package.json" }}
+        - v3-dependencies-
+
+  cache_build: &cache_build
+    save_cache:
+      name: Cache everything
+      key: source-v3-{{ .Branch }}-{{ .Revision }}
+      paths:
+        - '.'
+
+  cache_yarn: &cache_yarn
+    save_cache:
+      name: Cache node modules
+      paths:
+        - node_modules
+      key: v3-dependencies-{{ checksum "package.json" }}
+
+  allowe_github: &allowe_github
+    run:
+      name: Avoid hosts unknown for github
+      command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
+jobs:
+  build:
+    <<: *node_container
+    steps:
+      - *restore_build
+      - checkout
+      - *restore_yarn
+      - run:
+          name: Add .npmrc
+          command: cp .npmrc.sample .npmrc
+      - run:
+          name: Installing packages
+          command: yarn install  --frozen-lockfile
+      - *cache_yarn
+      - *cache_build
+
+  lint:
+    <<: *node_container
+    steps:
+      - *restore_build
+      - run:
+          name: Run linting
+          command: yarn lint
+  test:
+    <<: *node_container
+    steps:
+      - *restore_build
+      - run:
+          name: Run unit tests
+          command: yarn test
+
+  semantic_release:
+    <<: *node_container
+    steps:
+      - *restore_build
+      - *allowe_github
+      - run:
+          name: Conventional Commit and push to registry
+          command: yarn lerna:publish --yes
+
+workflows:
+  version: 2
+  pipe:
+    jobs:
+      - build
+      - lint:
+          requires:
+            - build
+      # - test:
+      #     requires:
+      #       - build
+      - semantic_release:
+          requires:
+            - lint
