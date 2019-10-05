@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/prettier-config-p11k",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Prettier configs to be used for all packages in the monorepo.",
   "main": ".prettierrc.js",
   "repository": {
