@@ -3,6 +3,7 @@ import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 import { GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
+import Header from '../components/Header/Header';
 
 export default class MyApp extends App {
   componentDidMount(): void {
@@ -22,7 +23,10 @@ export default class MyApp extends App {
         </Head>
         <ThemeProvider>
           <GlobalCss />
-          <Component {...pageProps} />
+          <Header />
+          <main>
+            <Component {...pageProps} />
+          </main>
         </ThemeProvider>
       </React.StrictMode>
     );
