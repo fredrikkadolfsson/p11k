@@ -2,7 +2,7 @@
   "name": "@fredrikkadolfsson/ui",
   "version": "0.10.1",
   "description": "Component library",
-  "main": "build/lib",
+  "main": "build",
   "repository": {
     "type": "git",
     "url": "git@github.com:fredrikkadolfsson/p11k.git"

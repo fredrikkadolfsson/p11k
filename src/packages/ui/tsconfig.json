@@ -6,7 +6,7 @@
     "jsx": "react",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "module": "commonjs",
-    "outDir": "build/lib",
+    "outDir": "build",
     "rootDirs": ["components"],
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true
