@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/eslint-config-p11k",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "Elint configs to be used for all packages in the monorepo.",
   "main": ".eslintrc.js",
   "repository": {

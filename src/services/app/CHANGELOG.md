@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.4](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.3...@fredrikkadolfsson/app@0.10.4) (2019-10-06)
+
+
+### Bug Fixes
+
+* fall back to button default ([b802503](https://github.com/fredrikkadolfsson/p11k/commit/b802503))
+
+
+
+
+
 ## [0.10.3](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.2...@fredrikkadolfsson/app@0.10.3) (2019-10-06)
 
 
