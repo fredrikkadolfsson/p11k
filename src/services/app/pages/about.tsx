@@ -2,7 +2,7 @@ import { Button } from '@fredrikkadolfsson/ui';
 
 const Index = (): JSX.Element => (
   <>
-    <p>Index</p>
+    <p>About</p>
     <Button>Hej</Button>
   </>
 );
