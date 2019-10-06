@@ -5,6 +5,7 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
+    'react/self-closing-comp': 'error',
   },
   globals: {
     React: 'writable',
