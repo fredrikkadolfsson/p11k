@@ -19,7 +19,7 @@ export default class MyApp extends App {
     return (
       <React.StrictMode>
         <Head>
-          <title>My page</title>
+          <title>Perfect Stack</title>
         </Head>
         <ThemeProvider>
           <GlobalCss />
