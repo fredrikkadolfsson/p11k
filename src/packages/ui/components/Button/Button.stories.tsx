@@ -7,9 +7,6 @@ export default {
 
 export const Contained = (): JSX.Element => (
   <>
-    <Button color="default" variant="contained">
-      Contained
-    </Button>
     <Button color="primary" variant="contained">
       Contained
     </Button>
@@ -20,9 +17,6 @@ export const Contained = (): JSX.Element => (
 );
 export const Outlined = (): JSX.Element => (
   <>
-    <Button color="default" variant="outlined">
-      Outlined
-    </Button>
     <Button color="primary" variant="outlined">
       Outlined
     </Button>
@@ -33,9 +27,6 @@ export const Outlined = (): JSX.Element => (
 );
 export const Text = (): JSX.Element => (
   <>
-    <Button color="default" variant="text">
-      Text
-    </Button>
     <Button color="primary" variant="text">
       Text
     </Button>

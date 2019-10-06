@@ -1,6 +1,6 @@
 import React from 'react';
-import { default as MuiButton, ButtonProps } from '@material-ui/core/Button';
 import styled from '@emotion/styled';
+import { default as MuiButton, ButtonProps } from '@material-ui/core/Button';
 
 const StyledButton = styled(MuiButton)`
   margin: 10px; /* Temporary */
