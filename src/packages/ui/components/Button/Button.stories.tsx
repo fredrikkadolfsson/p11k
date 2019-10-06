@@ -1,37 +1,60 @@
 import React from 'react';
-import Button from './Button';
+import ButtonComponent from './Button';
 
 export default {
   title: 'Button',
 };
 
-export const Contained = (): JSX.Element => (
+export const Button = (): JSX.Element => (
   <>
-    <Button color="primary" variant="contained">
-      Contained
-    </Button>
-    <Button color="secondary" variant="contained">
-      Contained
-    </Button>
+    <div>
+      <ButtonComponent color="primary" variant="contained">
+        Button
+      </ButtonComponent>
+      <ButtonComponent color="primary" variant="outlined">
+        Button
+      </ButtonComponent>
+      <ButtonComponent color="primary" variant="text">
+        Button
+      </ButtonComponent>
+    </div>
+    <div>
+      <ButtonComponent color="secondary" variant="contained">
+        Button
+      </ButtonComponent>
+      <ButtonComponent color="secondary" variant="outlined">
+        Button
+      </ButtonComponent>
+      <ButtonComponent color="secondary" variant="text">
+        Button
+      </ButtonComponent>
+    </div>
   </>
 );
-export const Outlined = (): JSX.Element => (
+
+export const Link = (): JSX.Element => (
   <>
-    <Button color="primary" variant="outlined">
-      Outlined
-    </Button>
-    <Button color="secondary" variant="outlined">
-      Outlined
-    </Button>
-  </>
-);
-export const Text = (): JSX.Element => (
-  <>
-    <Button color="primary" variant="text">
-      Text
-    </Button>
-    <Button color="secondary" variant="text">
-      Text
-    </Button>
+    <div>
+      <ButtonComponent color="primary" variant="contained" href="/">
+        Link
+      </ButtonComponent>
+      <ButtonComponent color="primary" variant="outlined" href="/">
+        Link
+      </ButtonComponent>
+      <ButtonComponent color="primary" variant="text" href="/">
+        Link
+      </ButtonComponent>
+    </div>
+    <div>
+      <ButtonComponent color="secondary" variant="contained" href="/">
+        Link
+      </ButtonComponent>
+      <ButtonComponent color="secondary" variant="outlined" href="/">
+        Link
+      </ButtonComponent>
+      <ButtonComponent color="secondary" variant="text" href="/">
+        Link
+      </ButtonComponent>
+    </div>
   </>
 );
