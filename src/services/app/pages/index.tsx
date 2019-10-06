@@ -1,9 +1,9 @@
-import { Link } from '@fredrikkadolfsson/ui';
+import { Button } from '@fredrikkadolfsson/ui';
 
 const Index = (): JSX.Element => (
   <>
     <p>Index</p>
-    <Link href="/about">To About</Link>
+    <Button href="/about">To About</Button>
   </>
 );
 
