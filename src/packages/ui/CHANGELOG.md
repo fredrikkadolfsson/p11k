@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.2...@fredrikkadolfsson/ui@0.10.3) (2019-10-06)
+
+
+### Bug Fixes
+
+* add ThemeProvider and smaller fixes ([caa929f](https://github.com/fredrikkadolfsson/p11k/commit/caa929f))
+* injection order of mui ([e530aa9](https://github.com/fredrikkadolfsson/p11k/commit/e530aa9))
+
+
+
+
+
 ## [0.10.2](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.1...@fredrikkadolfsson/ui@0.10.2) (2019-10-05)
 
 

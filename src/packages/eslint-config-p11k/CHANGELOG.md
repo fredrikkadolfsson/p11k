@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.2...@fredrikkadolfsson/eslint-config-p11k@0.10.3) (2019-10-06)
+
+**Note:** Version bump only for package @fredrikkadolfsson/eslint-config-p11k
+
+
+
+
+
 ## [0.10.2](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.1...@fredrikkadolfsson/eslint-config-p11k@0.10.2) (2019-10-05)
 
 **Note:** Version bump only for package @fredrikkadolfsson/eslint-config-p11k
