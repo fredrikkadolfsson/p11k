@@ -3,16 +3,21 @@ import { Global, css } from '@emotion/core';
 import { CssBaseline } from '@material-ui/core';
 
 const GlobalStyle = css`
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
   html,
-  body,
-  #__next {
+  body {
     height: 100%;
   }
 
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  #__next {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 `;
 
