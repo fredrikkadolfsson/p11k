@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider as MuiThemeProvider } from '@material-ui/styles';
+import { ThemeProvider as MuiThemeProvider, StylesProvider } from '@material-ui/styles';
 
 const theme = {
   palette: {
@@ -22,9 +22,11 @@ const muiTheme = createMuiTheme({
 
 const ThemeProvider = ({ children }: PropsWithChildren<{}>): JSX.Element => {
   return (
-    <EmotionThemeProvider theme={theme}>
-      <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
-    </EmotionThemeProvider>
+    <StylesProvider injectFirst>
+      <EmotionThemeProvider theme={theme}>
+        <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
+      </EmotionThemeProvider>
+    </StylesProvider>
   );
 };
 

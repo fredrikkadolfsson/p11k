@@ -1,7 +1,8 @@
+import '@emotion/core';
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import { GlobalCss } from '@fredrikkadolfsson/ui';
+import { GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
 
 export default class MyApp extends App {
   componentDidMount(): void {
@@ -19,8 +20,10 @@ export default class MyApp extends App {
         <Head>
           <title>My page</title>
         </Head>
-        <GlobalCss />
-        <Component {...pageProps} />
+        <ThemeProvider>
+          <GlobalCss />
+          <Component {...pageProps} />
+        </ThemeProvider>
       </React.StrictMode>
     );
   }

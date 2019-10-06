@@ -1,6 +1,4 @@
 import React from 'react';
-import '@emotion/core';
-import '@material-ui/core';
 import { Global, css } from '@emotion/core';
 import { CssBaseline } from '@material-ui/core';
 

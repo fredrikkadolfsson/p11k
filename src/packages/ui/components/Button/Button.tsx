@@ -6,6 +6,6 @@ const StyledButton = styled(MuiButton)`
   margin: 10px; /* Temporary */
 `;
 
-const Button = (props: ButtonProps): JSX.Element => <StyledButton {...props} />;
+const Button = (props: ButtonProps): JSX.Element => <StyledButton color="primary" variant="contained" {...props} />;
 
 export default Button;
