@@ -1,11 +1,12 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import '@emotion/core';
+import '@material-ui/core';
 import { Global, css } from '@emotion/core';
 import { CssBaseline } from '@material-ui/core';
 
 const GlobalStyle = css``;
 
-const GlobalCss = (): ReactElement => {
+const GlobalCss = (): JSX.Element => {
   return (
     <>
       <CssBaseline />

@@ -1,7 +1,6 @@
-import { ReactElement } from 'react';
 import { Button } from '@fredrikkadolfsson/ui';
 
-const Index = (): ReactElement => (
+const Index = (): JSX.Element => (
   <div>
     <p>Hello World!</p>
     <Button>Hej</Button>

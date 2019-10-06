@@ -1,6 +1,11 @@
-import React, { ReactElement } from 'react';
-import { default as MiButton, ButtonProps } from '@material-ui/core/Button';
+import React from 'react';
+import { default as MuiButton, ButtonProps } from '@material-ui/core/Button';
+import styled from '@emotion/styled';
 
-const Button = (props: ButtonProps): ReactElement => <MiButton {...props} />;
+const StyledButton = styled(MuiButton)`
+  margin: 10px; /* Temporary */
+`;
+
+const Button = (props: ButtonProps): JSX.Element => <StyledButton {...props} />;
 
 export default Button;

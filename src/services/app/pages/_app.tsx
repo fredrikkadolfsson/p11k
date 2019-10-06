@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 import { GlobalCss } from '@fredrikkadolfsson/ui';
@@ -11,7 +11,7 @@ export default class MyApp extends App {
     }
   }
 
-  render(): ReactElement {
+  render(): JSX.Element {
     const { Component, pageProps } = this.props;
 
     return (

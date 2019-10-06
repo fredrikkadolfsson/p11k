@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import Document, { Head, Main, NextScript, DocumentContext } from 'next/document';
 import { RenderPageResult, DocumentInitialProps } from 'next/dist/next-server/lib/utils';
 import { ServerStyleSheets } from '@material-ui/styles';
@@ -27,7 +27,7 @@ class MyDocument extends Document {
     };
   }
 
-  render(): ReactElement {
+  render(): JSX.Element {
     return (
       <html lang="en">
         <Head>
