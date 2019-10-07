@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.4...@fredrikkadolfsson/app@0.10.5) (2019-10-06)
+
+
+### Bug Fixes
+
+* add about demo page ([6c545b8](https://github.com/fredrikkadolfsson/p11k/commit/6c545b8))
+* add header ([1b62bc3](https://github.com/fredrikkadolfsson/p11k/commit/1b62bc3))
+* title ([54ffb9b](https://github.com/fredrikkadolfsson/p11k/commit/54ffb9b))
+* use new buttonLink ([a13152e](https://github.com/fredrikkadolfsson/p11k/commit/a13152e))
+* use ui link ([1be43b2](https://github.com/fredrikkadolfsson/p11k/commit/1be43b2))
+
+
+
+
+
 ## [0.10.4](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.3...@fredrikkadolfsson/app@0.10.4) (2019-10-06)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.4...@fredrikkadolfsson/eslint-config-p11k@0.10.5) (2019-10-06)
+
+
+### Bug Fixes
+
+* add self cloding linting ([26417c1](https://github.com/fredrikkadolfsson/p11k/commit/26417c1))
+
+
+
+
+
 ## [0.10.4](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.3...@fredrikkadolfsson/eslint-config-p11k@0.10.4) (2019-10-06)
 
 **Note:** Version bump only for package @fredrikkadolfsson/eslint-config-p11k
