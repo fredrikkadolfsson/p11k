@@ -2,9 +2,9 @@ import '@emotion/core';
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import styled, { GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
-import Footer from '../components/Footer/Footer';
+import styled, { Container, GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const StyledMain = styled.main`
   flex-grow: 1;
@@ -30,7 +30,9 @@ export default class MyApp extends App {
           <GlobalCss />
           <Header />
           <StyledMain>
-            <Component {...pageProps} />
+            <Container>
+              <Component {...pageProps} />
+            </Container>
           </StyledMain>
           <Footer />
         </ThemeProvider>
