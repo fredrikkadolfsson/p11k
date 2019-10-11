@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.5...@fredrikkadolfsson/eslint-config-p11k@0.10.6) (2019-10-11)
+
+
+### Bug Fixes
+
+* disable prop-types ([7363b60](https://github.com/fredrikkadolfsson/p11k/commit/7363b6080785c9f7df2eedb1f096e3124b5a5317))
+
+
+
+
+
 ## [0.10.5](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.4...@fredrikkadolfsson/eslint-config-p11k@0.10.5) (2019-10-06)
 
 
