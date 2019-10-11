@@ -1,14 +1,17 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
+    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    'prettier/@typescript-eslint',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:import/typescript',
+    'prettier/@typescript-eslint',
   ],
   plugins: ['prettier'],
   rules: {
+    'import/order': ['error', { 'newlines-between': 'never' }],
     'no-restricted-imports': [
       'error',
       {
