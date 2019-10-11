@@ -1,16 +1,16 @@
 {
   "extends": "../../../node_modules/@fredrikkadolfsson/tsconfig-config-p11k/tsconfig",
   "compilerOptions": {
-    "baseUrl": "components",
+    "baseUrl": "src",
     "declaration": true,
     "jsx": "react",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "module": "commonjs",
     "outDir": "build",
-    "rootDirs": ["components"],
+    "rootDirs": ["src"],
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true
   },
-  "include": ["components/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["**/*.stories.*", "build", "node_modules", "scripts"]
 }

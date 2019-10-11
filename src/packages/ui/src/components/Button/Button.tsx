@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styled from '@emotion/styled';
+import styled from '../../lib';
 import { default as MuiButton, ButtonProps } from '@material-ui/core/Button';
 
 const StyledButton = styled(MuiButton)`

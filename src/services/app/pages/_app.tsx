@@ -2,8 +2,7 @@ import '@emotion/core';
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import styled from '@emotion/styled';
-import { GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
+import styled, { GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
