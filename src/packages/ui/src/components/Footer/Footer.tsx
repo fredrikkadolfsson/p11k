@@ -1,7 +1,8 @@
 import React from 'react';
-import { Toolbar, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import styled from '../../lib';
 import Link from '../Link/Link';
+import Container from '../Container/Container';
 
 type FooterProps = {
   siteName: string;
@@ -16,10 +17,10 @@ type FooterProps = {
 
 const StyledFooter = styled.footer`
   background-color: ${(props): string => props.theme.palette.primary};
-  color: ${(props): string => props.theme.palette.secondary};
+  color: white;
 `;
 
-const StyledToolbar = styled(Toolbar)`
+const StyledContainer = styled(Container)`
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,7 @@ const Footer = ({ siteName, linkSections }: FooterProps): JSX.Element => {
 
   return (
     <StyledFooter>
-      <StyledToolbar>
+      <StyledContainer>
         <Column>
           <Typography variant="h5">{siteName}</Typography>
           <span>Copyright &copy; {currentYear}. All Rights Reserved</span>
@@ -51,7 +52,7 @@ const Footer = ({ siteName, linkSections }: FooterProps): JSX.Element => {
             ))}
           </Column>
         ))}
-      </StyledToolbar>
+      </StyledContainer>
     </StyledFooter>
   );
 };
