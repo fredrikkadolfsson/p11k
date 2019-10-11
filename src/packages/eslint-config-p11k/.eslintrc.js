@@ -1,6 +1,12 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'prettier/@typescript-eslint'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+  ],
   plugins: ['prettier'],
   rules: {
     'no-restricted-imports': [
