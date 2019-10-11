@@ -4,6 +4,7 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': 'error',
+    'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': 'error',
   },
