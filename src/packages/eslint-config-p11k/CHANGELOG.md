@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.7](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.6...@fredrikkadolfsson/eslint-config-p11k@0.10.7) (2019-10-11)
+
+
+### Bug Fixes
+
+* add eslint-plugin-import ([edb360c](https://github.com/fredrikkadolfsson/p11k/commit/edb360c014eb1c4e0683561c3ed36ea57197b86b))
+* add rule for custome styled ([34a978f](https://github.com/fredrikkadolfsson/p11k/commit/34a978fb01d271b5bb7fc22731ed5951e6f0d96f))
+
+
+
+
+
 ## [0.10.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.5...@fredrikkadolfsson/eslint-config-p11k@0.10.6) (2019-10-11)
 
 

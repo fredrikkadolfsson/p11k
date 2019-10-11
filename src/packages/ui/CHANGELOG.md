@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.7](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.6...@fredrikkadolfsson/ui@0.10.7) (2019-10-11)
+
+
+### Bug Fixes
+
+* footer and typing ([005acba](https://github.com/fredrikkadolfsson/p11k/commit/005acbabac4174c74651a53e6ea602ed32eddb36))
+
+
+
+
+
 ## [0.10.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.5...@fredrikkadolfsson/ui@0.10.6) (2019-10-11)
 
 
