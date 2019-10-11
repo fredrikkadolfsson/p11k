@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.8...@fredrikkadolfsson/app@0.10.9) (2019-10-11)
+
+
+### Bug Fixes
+
+* add container to main ([49740f2](https://github.com/fredrikkadolfsson/p11k/commit/49740f2ca78750d7b240fdc1971752e2631b9a0d))
+
+
+
+
+
 ## [0.10.8](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.7...@fredrikkadolfsson/app@0.10.8) (2019-10-11)
 
 **Note:** Version bump only for package @fredrikkadolfsson/app

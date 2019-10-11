@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.8...@fredrikkadolfsson/ui@0.10.9) (2019-10-11)
+
+
+### Bug Fixes
+
+* add container to footer and header ([2dd1b3e](https://github.com/fredrikkadolfsson/p11k/commit/2dd1b3eb1c28955439e332a22135a30eb29843d9))
+
+
+
+
+
 ## [0.10.8](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.7...@fredrikkadolfsson/ui@0.10.8) (2019-10-11)
 
 **Note:** Version bump only for package @fredrikkadolfsson/ui

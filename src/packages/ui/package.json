@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/ui",
-  "version": "0.10.8",
+  "version": "0.10.9",
   "description": "Component library",
   "main": "build",
   "repository": {
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
-    "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.8",
+    "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.9",
     "@storybook/addon-actions": "^5.2.1",
     "@storybook/addon-centered": "^5.2.1",
     "@storybook/addon-info": "^5.2.1",
