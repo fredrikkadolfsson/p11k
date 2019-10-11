@@ -28,6 +28,13 @@ module.exports = {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': 'error',
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
+    'sort-keys': ['error', 'asc', { natural: true }],
   },
   globals: {
     React: 'writable',
