@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.5...@fredrikkadolfsson/app@0.10.6) (2019-10-11)
+
+
+### Bug Fixes
+
+* footer and default layout of page ([26e222b](https://github.com/fredrikkadolfsson/p11k/commit/26e222bdef84e6d3cae2bb373bc9bc14d3e2b341))
+
+
+
+
+
 ## [0.10.5](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/app@0.10.4...@fredrikkadolfsson/app@0.10.5) (2019-10-06)
 
 
