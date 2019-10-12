@@ -11,6 +11,7 @@ module.exports = {
   ],
   plugins: ['prettier'],
   rules: {
+    'arrow-body-style': 'error',
     'import/order': ['error', { 'newlines-between': 'never' }],
     'no-restricted-imports': [
       'error',
@@ -43,5 +44,9 @@ module.exports = {
     react: {
       version: 'detect',
     },
+  },
+  env: {
+    browser: true,
+    node: true,
   },
 };
