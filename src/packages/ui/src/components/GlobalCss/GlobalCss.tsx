@@ -21,13 +21,11 @@ const GlobalStyle = css`
   }
 `;
 
-const GlobalCss = (): JSX.Element => {
-  return (
-    <>
-      <CssBaseline />
-      <Global styles={GlobalStyle} />
-    </>
-  );
-};
+const GlobalCss = (): JSX.Element => (
+  <>
+    <CssBaseline />
+    <Global styles={GlobalStyle} />
+  </>
+);
 
 export default GlobalCss;

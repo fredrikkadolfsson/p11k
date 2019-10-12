@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import { ButtonProps, default as MuiButton } from '@material-ui/core/Button';
 import styled from '../../lib';
-import { default as MuiButton, ButtonProps } from '@material-ui/core/Button';
 
 const StyledButton = styled(MuiButton)`
   margin: 10px; /* Temporary */

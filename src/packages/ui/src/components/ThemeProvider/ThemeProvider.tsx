@@ -11,14 +11,12 @@ const muiTheme = createMuiTheme({
   },
 });
 
-const ThemeProvider = ({ children }: PropsWithChildren<{}>): JSX.Element => {
-  return (
-    <StylesProvider injectFirst>
-      <EmotionThemeProvider theme={defaultTheme}>
-        <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
-      </EmotionThemeProvider>
-    </StylesProvider>
-  );
-};
+const ThemeProvider = ({ children }: PropsWithChildren<{}>): JSX.Element => (
+  <StylesProvider injectFirst>
+    <EmotionThemeProvider theme={defaultTheme}>
+      <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
+    </EmotionThemeProvider>
+  </StylesProvider>
+);
 
 export default ThemeProvider;

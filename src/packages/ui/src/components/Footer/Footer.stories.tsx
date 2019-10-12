@@ -4,8 +4,8 @@ import styled from '../../lib';
 import Footer from './Footer';
 
 const linkSections = [
-  { title: 'Något', links: [{ text: 'Start', url: '/' }, { text: 'Om oss', url: '/about' }] },
-  { title: 'Något2', links: [{ text: 'hej4', url: '/' }, { text: 'hej3', url: '/' }] },
+  { links: [{ text: 'Start', url: '/' }, { text: 'Om oss', url: '/about' }], title: 'Något' },
+  { links: [{ text: 'hej4', url: '/' }, { text: 'hej3', url: '/' }], title: 'Något2' },
 ];
 
 export default {
