@@ -3,14 +3,18 @@
   "version": "0.10.9",
   "description": "Component library",
   "main": "build",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git@github.com:fredrikkadolfsson/p11k.git"
   },
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
-    "dev": "start-storybook -p 6006",
     "build": "rimraf build && tsc",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "dev": "start-storybook -p 6006"
   },
   "dependencies": {
     "@emotion/core": "^10.0.21",
