@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.10](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.9...@fredrikkadolfsson/eslint-config-p11k@0.10.10) (2019-10-12)
+
+
+### Bug Fixes
+
+* add browser and node env + arrow-body-style ([b5dabfb](https://github.com/fredrikkadolfsson/p11k/commit/b5dabfbd92bbc6248ea85021862d5c18a39e3d60))
+
+
+
+
+
 ## [0.10.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.8...@fredrikkadolfsson/eslint-config-p11k@0.10.9) (2019-10-11)
 
 
