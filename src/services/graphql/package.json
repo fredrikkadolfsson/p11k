@@ -1,0 +1,20 @@
+{
+  "name": "@fredrikkadolfsson/graphql",
+  "version": "0.0.0",
+  "description": "p11k's graphql server providing data for all clients.",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.6",
+    "graphql": "^14.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3",
+    "ts-node": "^6.2.0",
+    "typescript": "^2.9.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "../../../node_modules/@fredrikkadolfsson/tsconfig-config-p11k/tsconfig",
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true
+  }
+}
