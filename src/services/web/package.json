@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/web",
-  "version": "0.10.10",
+  "version": "0.10.11",
   "description": "p11k's frontend web application.",
   "main": "index.js",
   "private": true,

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.2](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.1...@fredrikkadolfsson/graphql@0.0.2) (2019-10-12)
+
+
+### Performance Improvements
+
+* added config file ([13385aa](https://github.com/fredrikkadolfsson/p11k/commit/13385aa058e7e02ba101ca0a72e8e70bb859d25e))
+
+
+
+
+
 ## 0.0.1 (2019-10-12)
 
 
