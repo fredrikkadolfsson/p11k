@@ -1,23 +1,11 @@
-import { ApolloServer, gql } from 'apollo-server';
+import { ApolloServer } from 'apollo-server';
 import config from './config';
-
-const typeDefs = gql`
-  type Query {
-    hello(name: String): String
-  }
-`;
-
-const resolvers = {
-  Query: {
-    hello: (_: void, { name }: { name: string }): string => `Hello ${name || 'World!'}`,
-  },
-};
+import schema from './schema';
 
 const server = new ApolloServer({
   playground: config.ENABLE_PLAYGROUND,
-  resolvers,
+  schema,
   tracing: config.ENABLE_TRACING,
-  typeDefs,
 });
 
 server.listen().then(({ url }) => {
