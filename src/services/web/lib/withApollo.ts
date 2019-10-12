@@ -8,4 +8,7 @@ export default withApollo(
       cache: new InMemoryCache().restore(initialState || {}),
       uri: config.GRAPHQL_URL,
     }),
+  {
+    getDataFromTree: 'ssr',
+  },
 );
