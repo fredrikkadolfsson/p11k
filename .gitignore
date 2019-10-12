@@ -1,9 +1,12 @@
 .DS_Store
-.env
+.env*
+.idea
 .next
 .npmrc
+.vscode
+*.log
 build
-lerna-debug.log
+dist
 node_modules
+package-lock.json
 storybook-static
-yarn-error.log
