@@ -8,7 +8,7 @@ references:
 
   restore_build: &restore_build
     restore_cache:
-      name: Restore everything
+      name: Restore build
       keys:
         - source-v3-{{ .Branch }}-{{ .Revision }}
         - source-v3-{{ .Branch }}-
@@ -16,28 +16,28 @@ references:
 
   restore_yarn: &restore_yarn
     restore_cache:
-      name: Restore node modules
+      name: Restore node_modules
       keys:
         - v3-dependencies-{{ checksum "package.json" }}
         - v3-dependencies-
 
   cache_build: &cache_build
     save_cache:
-      name: Cache everything
+      name: Cache build
       key: source-v3-{{ .Branch }}-{{ .Revision }}
       paths:
         - '.'
 
   cache_yarn: &cache_yarn
     save_cache:
-      name: Cache node modules
+      name: Cache node_modules
       paths:
         - node_modules
       key: v3-dependencies-{{ checksum "package.json" }}
 
   allowe_github: &allowe_github
     run:
-      name: Avoid hosts unknown for github
+      name: Configure github access
       command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
 jobs:
@@ -48,11 +48,14 @@ jobs:
       - checkout
       - *restore_yarn
       - run:
-          name: Add .npmrc
+          name: Configure registries
           command: cp .npmrc.sample .npmrc
       - run:
-          name: Installing packages
-          command: yarn install  --frozen-lockfile
+          name: Install dependencies
+          command: yarn install --frozen-lockfile
+      - run:
+          name: Build packages
+          command: yarn lerna:build
       - *cache_yarn
       - *cache_build
 
@@ -77,7 +80,7 @@ jobs:
       - *restore_build
       - *allowe_github
       - run:
-          name: Conventional Commit and push to registry
+          name: Conventional commit and push to registry
           command: yarn lerna:publish --yes
 
 workflows:
