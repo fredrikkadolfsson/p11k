@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "p11k's graphql server providing data for all clients.",
   "main": "index.ts",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "nodemon",

@@ -3,6 +3,7 @@
   "version": "0.10.9",
   "description": "tsconfig to be used for all packages in the monorepo.",
   "main": "tsconfig.json",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git@github.com:fredrikkadolfsson/p11k.git"

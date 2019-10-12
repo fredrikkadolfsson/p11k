@@ -3,6 +3,7 @@
   "version": "0.10.9",
   "description": "Prettier configs to be used for all packages in the monorepo.",
   "main": ".prettierrc.js",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git@github.com:fredrikkadolfsson/p11k.git"

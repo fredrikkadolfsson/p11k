@@ -8,6 +8,7 @@
   "scripts": {
     "commit": "commit",
     "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build": "lerna run --parallel --no-private build",
     "lerna:publish": "lerna publish --registry https://npm.pkg.github.com/",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
