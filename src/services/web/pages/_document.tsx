@@ -1,6 +1,6 @@
 import React from 'react';
-import Document, { Head, Main, NextScript, DocumentContext } from 'next/document';
-import { RenderPageResult, DocumentInitialProps } from 'next/dist/next-server/lib/utils';
+import Document, { DocumentContext, Head, Main, NextScript } from 'next/document';
+import { DocumentInitialProps, RenderPageResult } from 'next/dist/next-server/lib/utils';
 import { ServerStyleSheets } from '@material-ui/styles';
 import { StylesProviderProps } from '@material-ui/styles/StylesProvider';
 

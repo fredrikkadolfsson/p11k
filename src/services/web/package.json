@@ -1,7 +1,7 @@
 {
-  "name": "@fredrikkadolfsson/app",
+  "name": "@fredrikkadolfsson/web",
   "version": "0.10.9",
-  "description": "p11k's frontend application.",
+  "description": "p11k's frontend web application.",
   "main": "index.js",
   "private": true,
   "scripts": {
