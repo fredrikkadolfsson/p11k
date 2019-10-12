@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "apollo:schema": "apollo client:download-schema",
+    "apollo:types": "apollo client:codegen --target=typescript types",
     "build": "next build",
     "dev": "next",
     "start": "next start"
