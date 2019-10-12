@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "apollo:schema": "apollo client:download-schema",
     "build": "next build",
     "dev": "next",
     "start": "next start"
@@ -22,6 +23,8 @@
     "@types/next": "^8.0.6",
     "@types/node": "^12.7.11",
     "@types/react": "^16.9.5",
-    "babel-plugin-emotion": "^10.0.21"
+    "apollo": "^2.19.1",
+    "babel-plugin-emotion": "^10.0.21",
+    "eslint-plugin-graphql": "^3.1.0"
   }
 }
