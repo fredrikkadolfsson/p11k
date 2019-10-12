@@ -9,7 +9,7 @@
     "commit": "commit",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:publish": "lerna publish --registry https://npm.pkg.github.com/",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
