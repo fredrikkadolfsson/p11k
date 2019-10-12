@@ -1,4 +1,5 @@
 import { ApolloServer, gql } from 'apollo-server';
+import config from './config';
 
 const typeDefs = gql`
   type Query {
@@ -13,9 +14,9 @@ const resolvers = {
 };
 
 const server = new ApolloServer({
-  playground: true,
+  playground: config.ENABLE_PLAYGROUND,
   resolvers,
-  tracing: true,
+  tracing: config.ENABLE_TRACING,
   typeDefs,
 });
 
