@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.10](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.9...@fredrikkadolfsson/ui@0.10.10) (2019-10-12)
+
+
+### Bug Fixes
+
+* build and add licence ([3d09995](https://github.com/fredrikkadolfsson/p11k/commit/3d099958634e58b26316b0c79bf407b0157e169b))
+
+
+
+
+
 ## [0.10.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.8...@fredrikkadolfsson/ui@0.10.9) (2019-10-11)
 
 

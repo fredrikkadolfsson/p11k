@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.11...@fredrikkadolfsson/web@0.10.12) (2019-10-12)
+
+
+### Bug Fixes
+
+* connection with graphql ([5cb6273](https://github.com/fredrikkadolfsson/p11k/commit/5cb62737fc0f0178232505172cde435c5c021b47))
+
+
+
+
+
 ## [0.10.11](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.10...@fredrikkadolfsson/web@0.10.11) (2019-10-12)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
