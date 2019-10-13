@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.5](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.4...@fredrikkadolfsson/graphql@0.0.5) (2019-10-13)
+
+
+### Bug Fixes
+
+* authentication cookie functions ([52fe20a](https://github.com/fredrikkadolfsson/p11k/commit/52fe20a146c09c470a3823e700f2588ee9e0b50d))
+
+
+
+
+
 ## [0.0.4](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.3...@fredrikkadolfsson/graphql@0.0.4) (2019-10-13)
 
 
