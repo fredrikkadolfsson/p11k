@@ -3,16 +3,16 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: getUser
+// GraphQL query operation: GetUser
 // ====================================================
 
-export interface getUser_user {
+export interface GetUser_user {
   __typename: "User";
   id: string;
   firstName: string;
   lastName: string;
 }
 
-export interface getUser {
-  user: getUser_user;
+export interface GetUser {
+  user: GetUser_user;
 }
