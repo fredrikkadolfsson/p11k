@@ -49,7 +49,7 @@ jobs:
       - *restore_yarn
       - run:
           name: Configure registries
-          command: cp .npmrc.sample .npmrc
+          command: cp sample.npmrc .npmrc
       - run:
           name: Install dependencies
           command: yarn install --frozen-lockfile
