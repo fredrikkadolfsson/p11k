@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.17](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.16...@fredrikkadolfsson/web@0.10.17) (2019-10-13)
+
+
+### Bug Fixes
+
+* add typings for authentication mutation ([3059a1c](https://github.com/fredrikkadolfsson/p11k/commit/3059a1c481375ea604c6ebcbb268fdae3931a9c1))
+* cleanup in pages ([15f751b](https://github.com/fredrikkadolfsson/p11k/commit/15f751b483cc66e8ccc4d813465c1f93d46e718b))
+* generation of schema ([c020bf8](https://github.com/fredrikkadolfsson/p11k/commit/c020bf8e9a76d03bf8abb1ded26eb5d15bf61d80))
+* login form with formik ([3a25be8](https://github.com/fredrikkadolfsson/p11k/commit/3a25be8825daffcd2ccf5aca91a6021231c4b0bc))
+* styled login form ([09f112a](https://github.com/fredrikkadolfsson/p11k/commit/09f112a0b580d59fa7ef1ee221c0ad594fdf7f80))
+* updated links in footer ([5e1052f](https://github.com/fredrikkadolfsson/p11k/commit/5e1052f836ddffe2c5997dab5c0fe06911d9cef7))
+
+
+
+
+
 ## [0.10.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.15...@fredrikkadolfsson/web@0.10.16) (2019-10-13)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web

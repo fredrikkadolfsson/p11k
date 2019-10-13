@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.11...@fredrikkadolfsson/ui@0.10.12) (2019-10-13)
+
+
+### Bug Fixes
+
+* textField and formik bindings ([337954e](https://github.com/fredrikkadolfsson/p11k/commit/337954e6533632ab6c639239e523f3928d4588a5))
+
+
+
+
+
 ## [0.10.11](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.10...@fredrikkadolfsson/ui@0.10.11) (2019-10-13)
 
 **Note:** Version bump only for package @fredrikkadolfsson/ui
