@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.5...@fredrikkadolfsson/graphql@0.0.6) (2019-10-13)
+
+
+### Bug Fixes
+
+* signOut and better autentication ([693b1b4](https://github.com/fredrikkadolfsson/p11k/commit/693b1b487e7e7f7ec899e8a02e35c867b92193d7))
+
+
+
+
+
 ## [0.0.5](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.4...@fredrikkadolfsson/graphql@0.0.5) (2019-10-13)
 
 
