@@ -1,5 +1,7 @@
 import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
-import { setAuthenticationCookie } from '../../lib/authentication';
+import { ApolloError, AuthenticationError } from 'apollo-server-core';
+import { setAuthenticationCookie, unsetAuthenticationCookie } from '../../lib/authentication';
+import { getJwtToken } from '../../apis/account';
 
 const Mutation = {
   Mutation: {
@@ -8,8 +10,24 @@ const Mutation = {
       { email, password }: { email: string; password: string },
       ctx: ExpressContext,
     ): boolean => {
-      setAuthenticationCookie('authenticated', ctx);
-      return email === 'john@doe.com' && password === 'test1234';
+      try {
+        const token = getJwtToken(email, password);
+        setAuthenticationCookie(token, ctx);
+        return true;
+      } catch (error) {
+        console.error('Authentication failed', error);
+        throw new AuthenticationError('Faild to authenticate user');
+      }
+    },
+
+    signOut: (_: unknown, __: unknown, ctx: ExpressContext): boolean => {
+      try {
+        unsetAuthenticationCookie(ctx);
+        return true;
+      } catch (error) {
+        console.error('Sign out failed', error);
+        throw new ApolloError('Faild to authenticate user');
+      }
     },
   },
 };
