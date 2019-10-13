@@ -1,4 +1,4 @@
-import { Field, Form, Formik, FormikProps } from 'formik';
+import { Form, Formik, FormikProps } from 'formik';
 import styled, { Button, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
@@ -30,10 +30,35 @@ const LoginForm = (): JSX.Element => {
         setSubmitting(false);
       }}
     >
-      {({ isSubmitting }: FormikProps<{}>): JSX.Element => (
+      {({
+        values,
+        touched,
+        errors,
+        isSubmitting,
+        handleChange,
+        handleBlur,
+      }: FormikProps<{ email: string; password: string }>): JSX.Element => (
         <StyledForm>
-          <Field name="email" type="email" label="Email" component={TextField} />
-          <Field name="password" type="password" label="Password" component={TextField} />
+          <TextField
+            id="email"
+            type="email"
+            label="Email"
+            value={values.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            helperText={touched.email ? errors.email : ''}
+            error={touched.email && Boolean(errors.email)}
+          />
+          <TextField
+            id="password"
+            type="password"
+            label="Password"
+            value={values.password}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            helperText={touched.password ? errors.password : ''}
+            error={touched.password && Boolean(errors.password)}
+          />
           <Button type="submit" disabled={isSubmitting}>
             Submit
           </Button>

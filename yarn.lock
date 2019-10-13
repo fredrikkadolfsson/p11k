@@ -7765,11 +7765,6 @@ format@^0.2.2:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
-formik-material-ui@^0.0.22:
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/formik-material-ui/-/formik-material-ui-0.0.22.tgz#52b0fa6eed5f11e1fecf2bd6f2bcb41eb627ce7c"
-  integrity sha512-ETfGBGJp1yA5C6QKTMibMtsBEomKRqZ45yAFCN8dYoTdD/toE4ETdCL1DJZZvJj5ZWQfqDaTJY+qhXP7OUM/gw==
-
 formik@^1.5.8:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/formik/-/formik-1.5.8.tgz#eee8cd345effe46839bc748c7f920486f12f14b0"

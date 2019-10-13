@@ -1,10 +1,6 @@
 import React from 'react';
-import { TextField as MuiTextField, TextFieldProps } from 'formik-material-ui';
-import styled from '../../lib';
+import { default as MuiTextField, TextFieldProps } from '@material-ui/core/TextField';
 
-const StyledTextField = styled(MuiTextField)`
-  margin: 10px; /* Temporary */
-`;
+const TextField = (props: TextFieldProps): JSX.Element => <MuiTextField variant={'outlined' as any} {...props} />; // eslint-disable-line @typescript-eslint/no-explicit-any
 
-const TextField = (props: TextFieldProps): JSX.Element => <StyledTextField variant="outlined" {...props} />;
 export default TextField;
