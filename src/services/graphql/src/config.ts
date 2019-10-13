@@ -1,5 +1,6 @@
 export default {
   ENABLE_PLAYGROUND: true,
   ENABLE_TRACING: true,
+  JWT_COOKIE_NAME: 'AUTHENTICATION_TOKEN',
   PORT: 4000,
 };

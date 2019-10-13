@@ -1,17 +1,14 @@
 import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
+import { setAuthenticationCookie } from '../../lib/authentication';
 
 const Mutation = {
   Mutation: {
     authenticate: (
       _: unknown,
       { email, password }: { email: string; password: string },
-      { res, req }: ExpressContext,
+      ctx: ExpressContext,
     ): boolean => {
-      res.cookie('TEST', req.cookies.TEST !== '' ? '' : 'WORKS!!!', {
-        httpOnly: true,
-        maxAge: 1000 * 60 * 60 * 24 * 365,
-        secure: process.env.NODE_ENV !== 'development',
-      });
+      setAuthenticationCookie('authenticated', ctx);
       return email === 'john@doe.com' && password === 'test1234';
     },
   },
