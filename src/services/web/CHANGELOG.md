@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.15](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.14...@fredrikkadolfsson/web@0.10.15) (2019-10-13)
+
+
+### Bug Fixes
+
+* add login ([2352699](https://github.com/fredrikkadolfsson/p11k/commit/23526993e3b20aacc82778df211ad628c16bd4f0))
+* passing of credentials ([6799469](https://github.com/fredrikkadolfsson/p11k/commit/6799469c12eecfeb3e979945e2df8a00c883143b))
+
+
+
+
+
 ## [0.10.14](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.13...@fredrikkadolfsson/web@0.10.14) (2019-10-13)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
