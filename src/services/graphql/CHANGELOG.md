@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.3...@fredrikkadolfsson/graphql@0.0.4) (2019-10-13)
+
+
+### Bug Fixes
+
+* change to express ([903f8a2](https://github.com/fredrikkadolfsson/p11k/commit/903f8a2973074ffcc4a6d29acdf3d354e2af5b23))
+* mock athentication mutation ([417233f](https://github.com/fredrikkadolfsson/p11k/commit/417233f500ce1d70d9603013c80b14f7c1422723))
+
+
+
+
+
 ## [0.0.3](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.2...@fredrikkadolfsson/graphql@0.0.3) (2019-10-12)
 
 
