@@ -7,9 +7,11 @@ const Mutation = {
       { email, password }: { email: string; password: string },
       { res, req }: ExpressContext,
     ): boolean => {
-      console.log(req.cookies);
-
-      res.cookie('VARFÖR_FUNKAR_INTE_DETTA', 'false', { httpOnly: false, maxAge: 900000 });
+      res.cookie('TEST', req.cookies.TEST !== '' ? '' : 'WORKS!!!', {
+        httpOnly: true,
+        maxAge: 1000 * 60 * 60 * 24 * 365,
+        secure: process.env.NODE_ENV !== 'development',
+      });
       return email === 'john@doe.com' && password === 'test1234';
     },
   },
