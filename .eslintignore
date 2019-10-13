@@ -3,6 +3,7 @@
 .next
 .npmrc
 build
+commitlint.config.js
 lerna-debug.log
 node_modules
 storybook-static
