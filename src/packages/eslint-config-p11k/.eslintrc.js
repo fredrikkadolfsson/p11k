@@ -20,9 +20,10 @@ module.exports = {
           {
             name: '@emotion/styled',
             importNames: ['default'],
-            message: 'Please use default export styled from @fredrikkadolfsson/ui instead.',
+            message: 'Use default export styled from @fredrikkadolfsson/ui instead.',
           },
         ],
+        patterns: ['@emotion/styled'],
       },
     ],
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
