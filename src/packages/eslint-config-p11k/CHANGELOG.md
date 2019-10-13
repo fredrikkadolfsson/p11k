@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.12...@fredrikkadolfsson/eslint-config-p11k@0.10.13) (2019-10-13)
+
+
+### Bug Fixes
+
+* allow ignoring arguments ([c6c14d9](https://github.com/fredrikkadolfsson/p11k/commit/c6c14d9f19eba11445630b6038bb9f54f834a65d))
+
+
+
+
+
 ## [0.10.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.11...@fredrikkadolfsson/eslint-config-p11k@0.10.12) (2019-10-12)
 
 **Note:** Version bump only for package @fredrikkadolfsson/eslint-config-p11k
