@@ -12,7 +12,7 @@
     "build/**/*"
   ],
   "scripts": {
-    "build": "rimraf build && tsc",
+    "build": "rimraf build && tsc -p tsconfig.build.json",
     "build:storybook": "build-storybook",
     "dev": "start-storybook -p 6006"
   },
