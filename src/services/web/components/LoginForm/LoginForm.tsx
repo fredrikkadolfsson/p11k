@@ -2,15 +2,16 @@ import { Field, Form, Formik, FormikProps } from 'formik';
 import { Button, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
+import { Authenticate, AuthenticateVariables } from './types/authenticate';
 
 const AUTHENTICATE_USER = gql`
-  mutation authenticate($email: String!, $password: String!) {
+  mutation Authenticate($email: String!, $password: String!) {
     authenticate(email: $email, password: $password)
   }
 `;
 
 const LoginForm = (): JSX.Element => {
-  const [authenticate] = useMutation(AUTHENTICATE_USER);
+  const [authenticate] = useMutation<Authenticate, AuthenticateVariables>(AUTHENTICATE_USER);
 
   return (
     <>
