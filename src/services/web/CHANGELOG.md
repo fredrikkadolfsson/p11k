@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.18](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.17...@fredrikkadolfsson/web@0.10.18) (2019-10-13)
+
+
+### Bug Fixes
+
+* remove formik-material-ui and fix formik for mui ([df8e146](https://github.com/fredrikkadolfsson/p11k/commit/df8e1465e07aa6f3f7ab1307fab1f62c3b6e0905))
+
+
+
+
+
 ## [0.10.17](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.16...@fredrikkadolfsson/web@0.10.17) (2019-10-13)
 
 

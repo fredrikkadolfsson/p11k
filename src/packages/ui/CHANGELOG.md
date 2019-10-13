@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.12...@fredrikkadolfsson/ui@0.10.13) (2019-10-13)
+
+
+### Bug Fixes
+
+* remove formik-material-ui and fix formik for mui ([df8e146](https://github.com/fredrikkadolfsson/p11k/commit/df8e1465e07aa6f3f7ab1307fab1f62c3b6e0905))
+* styling on TextField ([a3a9bf1](https://github.com/fredrikkadolfsson/p11k/commit/a3a9bf1e3375bab9cbf1a3e4ab0ec974f3f336a6))
+
+
+
+
+
 ## [0.10.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.11...@fredrikkadolfsson/ui@0.10.12) (2019-10-13)
 
 
