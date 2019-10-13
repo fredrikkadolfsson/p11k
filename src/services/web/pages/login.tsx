@@ -1,11 +1,8 @@
-// import { Button, TextField } from '@fredrikkadolfsson/ui';
-// import { useMutation } from '@apollo/react-hooks';
-// import gql from 'graphql-tag';
 import LoginForm from '../components/LoginForm/LoginForm';
 
 const Index = (): JSX.Element => (
   <>
-    <p>Login</p>
+    <h1>Login</h1>
     <LoginForm />
   </>
 );
