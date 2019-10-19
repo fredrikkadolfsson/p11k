@@ -1,6 +1,17 @@
 import React from 'react';
-import { Header as UiHeader } from '@fredrikkadolfsson/ui';
+import styled, { Link, Header as UiHeader } from '@fredrikkadolfsson/ui';
+import LoginLogout from './LoginLogout/LoginLogout';
 
-const Header = (): JSX.Element => <UiHeader />;
+const FillSpace = styled.div`
+  flex-grow: 1;
+`;
+
+const Header = (): JSX.Element => (
+  <UiHeader>
+    <Link href="/">Perfect Stack</Link>
+    <FillSpace />
+    <LoginLogout />
+  </UiHeader>
+);
 
 export default Header;

@@ -3,14 +3,14 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL mutation operation: Authenticate
+// GraphQL query operation: GetUser
 // ====================================================
 
-export interface Authenticate {
-  authenticate: boolean | null;
+export interface GetUser_user {
+  __typename: "User";
+  id: string;
 }
 
-export interface AuthenticateVariables {
-  email: string;
-  password: string;
+export interface GetUser {
+  user: GetUser_user;
 }
