@@ -2,6 +2,8 @@ import { Form, Formik, FormikProps } from 'formik';
 import styled, { Button, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
+import { useRouter } from 'next/router';
+import { useCallback } from 'react';
 import config from '../../config';
 import { Authenticate, AuthenticateVariables } from '../../types/Authenticate';
 
@@ -20,25 +22,23 @@ const StyledForm = styled(Form)`
 
 const LoginForm = (): JSX.Element => {
   const client = useApolloClient();
+  const router = useRouter();
   const [authenticate] = useMutation<Authenticate, AuthenticateVariables>(AUTHENTICATE);
 
+  const onSubmit = useCallback(async (variables) => {
+    const { data } = await authenticate({
+      variables,
+    });
+    client.writeData({
+      data: {
+        [config.JWT_EXISTS_APOLLO_CACHE_NAME]: data && data.authenticate,
+      },
+    });
+    router.replace('/');
+  }, []);
+
   return (
-    <Formik
-      initialValues={{ email: '', password: '' }}
-      onSubmit={async (variables, { setSubmitting }): Promise<void> => {
-        const { data } = await authenticate({
-          variables: variables,
-        });
-
-        client.writeData({
-          data: {
-            [config.JWT_EXISTS_APOLLO_CACHE_NAME]: data && data.authenticate,
-          },
-        });
-
-        setSubmitting(false);
-      }}
-    >
+    <Formik initialValues={{ email: '', password: '' }} onSubmit={onSubmit}>
       {({
         values,
         touched,

@@ -19,13 +19,11 @@ const LoginLogout = (): JSX.Element => {
   const isUserAuthenticated = useIsUserAuthenticated();
   const onLogout = useCallback(async () => {
     const { data } = await unauthenticate();
-
     client.writeData({
       data: {
         [config.JWT_EXISTS_APOLLO_CACHE_NAME]: data && !data.unauthenticate,
       },
     });
-
     client.resetStore();
   }, []);
 

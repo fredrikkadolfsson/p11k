@@ -27,6 +27,7 @@ module.exports = {
       },
     ],
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    'object-shorthand': 'error',
     'prettier/prettier': 'error',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
