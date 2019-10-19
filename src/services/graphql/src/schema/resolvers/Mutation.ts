@@ -1,15 +1,11 @@
-import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
 import { ApolloError, AuthenticationError } from 'apollo-server-core';
 import { setAuthenticationCookie, unsetAuthenticationCookie } from '../../lib/authentication';
 import { getJwtToken } from '../../apis/account';
+import { Context } from '../../typings';
 
 const Mutation = {
   Mutation: {
-    authenticate: (
-      _: unknown,
-      { email, password }: { email: string; password: string },
-      ctx: ExpressContext,
-    ): boolean => {
+    authenticate: (_: unknown, { email, password }: { email: string; password: string }, ctx: Context): boolean => {
       try {
         const token = getJwtToken(email, password);
         setAuthenticationCookie(token, ctx);
@@ -20,7 +16,7 @@ const Mutation = {
       }
     },
 
-    signOut: (_: unknown, __: unknown, ctx: ExpressContext): boolean => {
+    unauthenticate: (_: unknown, __: unknown, ctx: Context): boolean => {
       try {
         unsetAuthenticationCookie(ctx);
         return true;

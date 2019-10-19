@@ -1,12 +1,16 @@
 import { ApolloServer } from 'apollo-server-express';
-import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import config from './config';
 import schema from './schema';
+import { Context } from './typings';
 
 const server = new ApolloServer({
-  context: (ctx): ExpressContext => ctx,
+  context: (ctx): Context => {
+    const jwt = ctx.req.cookies[config.JWT_COOKIE_NAME];
+
+    return { jwt, ...ctx };
+  },
   playground: config.ENABLE_PLAYGROUND,
   schema,
   tracing: config.ENABLE_TRACING,
