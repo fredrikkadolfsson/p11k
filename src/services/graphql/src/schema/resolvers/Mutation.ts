@@ -1,5 +1,5 @@
 import { ApolloError } from 'apollo-server-core';
-import { setAuthenticationCookie, unsetAuthenticationCookie } from '../../lib/authentication';
+import { assertAuthentication, setAuthenticationCookie, unsetAuthenticationCookie } from '../../lib/authentication';
 import { getJwtToken } from '../../apis/account';
 import { Context } from '../../typings';
 
@@ -17,6 +17,8 @@ const Mutation = {
     },
 
     unauthenticate: (_: unknown, __: unknown, ctx: Context): boolean => {
+      assertAuthentication(ctx.jwt);
+
       try {
         unsetAuthenticationCookie(ctx);
         return true;
