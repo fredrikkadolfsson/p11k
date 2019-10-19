@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git@github.com:fredrikkadolfsson/p11k.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "typescript": "3.6.4"
   }
 }
