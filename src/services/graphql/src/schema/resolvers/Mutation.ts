@@ -1,4 +1,4 @@
-import { ApolloError, AuthenticationError } from 'apollo-server-core';
+import { ApolloError } from 'apollo-server-core';
 import { setAuthenticationCookie, unsetAuthenticationCookie } from '../../lib/authentication';
 import { getJwtToken } from '../../apis/account';
 import { Context } from '../../typings';
@@ -12,7 +12,7 @@ const Mutation = {
         return true;
       } catch (error) {
         console.error('Authentication failed', error);
-        throw new AuthenticationError('Faild to authenticate user');
+        throw new ApolloError('Faild to authenticate user');
       }
     },
 
