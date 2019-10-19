@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.15](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.14...@fredrikkadolfsson/ui@0.10.15) (2019-10-19)
+
+
+### Bug Fixes
+
+* width of textField ([26dc978](https://github.com/fredrikkadolfsson/p11k/commit/26dc978b2a21e14f94bc45e2af4f7fb0d511f6f7))
+
+
+
+
+
 ## [0.10.14](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.13...@fredrikkadolfsson/ui@0.10.14) (2019-10-19)
 
 
