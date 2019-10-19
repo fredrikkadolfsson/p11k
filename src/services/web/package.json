@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/web",
-  "version": "0.10.18",
+  "version": "0.10.19",
   "description": "p11k's frontend web application.",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -21,8 +21,8 @@
     "react-dom": "16.10.2"
   },
   "devDependencies": {
-    "@fredrikkadolfsson/tsconfig-config-p11k": "0.10.10",
-    "@fredrikkadolfsson/ui": "0.10.13",
+    "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.11",
+    "@fredrikkadolfsson/ui": "^0.10.14",
     "@types/next": "8.0.6",
     "@types/node": "12.11.1",
     "@types/react": "16.9.9",
