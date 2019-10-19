@@ -1,23 +1,11 @@
-import React from 'react';
-import Link from 'next/link';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import styled from '../../lib';
+import React, { PropsWithChildren } from 'react';
+import { AppBar, Toolbar } from '@material-ui/core';
 import Container from '../Container/Container';
 
-const StyledLink = styled.a`
-  cursor: pointer;
-`;
-
-const Header = (): JSX.Element => (
+const Header = ({ children }: PropsWithChildren<{}>): JSX.Element => (
   <AppBar position="static">
     <Container>
-      <Toolbar disableGutters>
-        <Link href="/">
-          <StyledLink>
-            <Typography variant="h6">Perfect Stack</Typography>
-          </StyledLink>
-        </Link>
-      </Toolbar>
+      <Toolbar disableGutters>{children}</Toolbar>
     </Container>
   </AppBar>
 );
