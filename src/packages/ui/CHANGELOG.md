@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.15...@fredrikkadolfsson/ui@0.10.16) (2019-10-19)
+
+
+### Bug Fixes
+
+* simpify header ([46dbe0d](https://github.com/fredrikkadolfsson/p11k/commit/46dbe0d64e1acba269ed13c96069a009184e6855))
+
+
+
+
+
 ## [0.10.15](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.14...@fredrikkadolfsson/ui@0.10.15) (2019-10-19)
 
 

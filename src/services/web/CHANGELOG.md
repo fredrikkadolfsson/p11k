@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.21](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.20...@fredrikkadolfsson/web@0.10.21) (2019-10-19)
+
+
+### Bug Fixes
+
+* add object shorthand ([1df2eb4](https://github.com/fredrikkadolfsson/p11k/commit/1df2eb4045285fcd1db4685613fc79acedea489d))
+* login flow ([35ca750](https://github.com/fredrikkadolfsson/p11k/commit/35ca75056b898fdcb0e754ac14b8942892d85f96))
+
+
+
+
+
 ## [0.10.20](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.19...@fredrikkadolfsson/web@0.10.20) (2019-10-19)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.17](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.16...@fredrikkadolfsson/eslint-config-p11k@0.10.17) (2019-10-19)
+
+
+### Bug Fixes
+
+* add object shorthand ([1df2eb4](https://github.com/fredrikkadolfsson/p11k/commit/1df2eb4045285fcd1db4685613fc79acedea489d))
+
+
+
+
+
 ## [0.10.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.15...@fredrikkadolfsson/eslint-config-p11k@0.10.16) (2019-10-19)
 
 

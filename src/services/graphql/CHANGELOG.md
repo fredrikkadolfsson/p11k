@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.8...@fredrikkadolfsson/graphql@0.0.9) (2019-10-19)
+
+
+### Bug Fixes
+
+* add jwt to context and rename logout ([940b513](https://github.com/fredrikkadolfsson/p11k/commit/940b513fb8c9607bad4913125325c68c88f3540d))
+* type of error ([bb32ecd](https://github.com/fredrikkadolfsson/p11k/commit/bb32ecd1520606e7f0b8cc25dc8ec6e517c78fab))
+
+
+
+
+
 ## [0.0.8](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.7...@fredrikkadolfsson/graphql@0.0.8) (2019-10-19)
 
 

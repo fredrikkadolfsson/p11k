@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/web",
-  "version": "0.10.20",
+  "version": "0.10.21",
   "description": "p11k's frontend web application.",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.11",
-    "@fredrikkadolfsson/ui": "^0.10.15",
+    "@fredrikkadolfsson/ui": "^0.10.16",
     "@types/cookie": "^0.3.3",
     "@types/next": "8.0.6",
     "@types/node": "12.11.1",
