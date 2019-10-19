@@ -10,7 +10,7 @@ const TemproraryWrapper = styled.div`
 const TextField = (props: TextFieldProps): JSX.Element => (
   <TemproraryWrapper>
     {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-    <MuiTextField variant={'outlined' as any} {...props} />{' '}
+    <MuiTextField variant={'outlined' as any} fullWidth {...props} />
   </TemproraryWrapper>
 );
 
