@@ -10,15 +10,15 @@
     "start": "ts-node src/server.ts"
   },
   "dependencies": {
-    "apollo-server-express": "2.9.6",
+    "apollo-server-express": "2.9.7",
     "cookie-parser": "1.4.4",
     "graphql": "14.5.8",
-    "graphql-tools": "4.0.5",
+    "graphql-tools": "4.0.6",
     "ts-node": "8.4.1"
   },
   "devDependencies": {
     "@types/cookie-parser": "1.4.2",
-    "@types/node": "12.11.1",
+    "@types/node": "12.11.7",
     "dotnet": "1.1.4",
     "nodemon": "1.19.4"
   }
