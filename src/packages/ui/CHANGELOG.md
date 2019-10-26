@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.17](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.16...@fredrikkadolfsson/ui@0.10.17) (2019-10-26)
+
+
+### Bug Fixes
+
+* update dependencies ([ea19108](https://github.com/fredrikkadolfsson/p11k/commit/ea191087204c8a39f7d8d7c8270a9d6b7f8b0d1a))
+
+
+
+
+
 ## [0.10.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.15...@fredrikkadolfsson/ui@0.10.16) (2019-10-19)
 
 

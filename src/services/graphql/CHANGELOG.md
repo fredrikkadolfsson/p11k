@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.10](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.9...@fredrikkadolfsson/graphql@0.0.10) (2019-10-26)
+
+
+### Bug Fixes
+
+* assert authentication for some queries and mutations ([76cf47f](https://github.com/fredrikkadolfsson/p11k/commit/76cf47f81cbd8cd8eeccdd0efaaf4f089fd7ff4d))
+* update dependencies ([ea19108](https://github.com/fredrikkadolfsson/p11k/commit/ea191087204c8a39f7d8d7c8270a9d6b7f8b0d1a))
+
+
+
+
+
 ## [0.0.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.8...@fredrikkadolfsson/graphql@0.0.9) (2019-10-19)
 
 
