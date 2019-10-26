@@ -10,7 +10,6 @@ export type userType = {
 export const getUser = async (jwt: string): Promise<userType> => {
   const resp = await axios.get(`${config.ACCOUNT_URL}/user`, {
     headers: {
-      'Content-Type': 'application/json; charset=UTF-8',
       authorization: jwt,
     },
   });
@@ -18,4 +17,8 @@ export const getUser = async (jwt: string): Promise<userType> => {
   return resp.data;
 };
 
-export const getJwtToken = (email: string, password: string): string => email + password;
+export const getJwtToken = async (data: { email: string; password: string }): Promise<string> => {
+  const resp = await axios.post(`${config.ACCOUNT_URL}/user/authenticate`, data);
+
+  return resp.data;
+};

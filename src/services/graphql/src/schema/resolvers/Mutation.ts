@@ -5,9 +5,13 @@ import { Context } from '../../typings';
 
 const Mutation = {
   Mutation: {
-    authenticate: (_: unknown, { email, password }: { email: string; password: string }, ctx: Context): boolean => {
+    authenticate: async (
+      _: unknown,
+      { email, password }: { email: string; password: string },
+      ctx: Context,
+    ): Promise<boolean> => {
       try {
-        const token = getJwtToken(email, password);
+        const token = await getJwtToken({ email, password });
         setAuthenticationCookie(token, ctx);
         return true;
       } catch (error) {
