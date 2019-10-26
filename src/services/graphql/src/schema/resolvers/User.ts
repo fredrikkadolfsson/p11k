@@ -1,8 +1,10 @@
+import { userType } from '../../apis/account';
+
 const User = {
   User: {
-    firstName: (): string => 'John',
-    id: (): string => '1',
-    lastName: (): string => 'Doe',
+    firstName: (user: userType): string => user.firstName,
+    id: (user: userType): string => user.id,
+    lastName: (user: userType): string => user.lastName,
   },
 };
 
