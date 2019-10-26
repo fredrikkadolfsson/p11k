@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.11...@fredrikkadolfsson/graphql@0.0.12) (2019-10-26)
+
+
+### Bug Fixes
+
+* connect jwt creation to account ([82e0dde](https://github.com/fredrikkadolfsson/p11k/commit/82e0ddede7056ef4c58785b7945f5b18c133c0e4))
+
+
+
+
+
 ## [0.0.11](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.10...@fredrikkadolfsson/graphql@0.0.11) (2019-10-26)
 
 **Note:** Version bump only for package @fredrikkadolfsson/graphql
