@@ -38,7 +38,6 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
-    'sort-keys': ['error', 'asc', { natural: true }],
   },
   globals: {
     React: 'writable',
