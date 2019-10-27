@@ -7,7 +7,7 @@
 // ====================================================
 
 export interface Authenticate {
-  authenticate: boolean;
+  authenticate: string;
 }
 
 export interface AuthenticateVariables {

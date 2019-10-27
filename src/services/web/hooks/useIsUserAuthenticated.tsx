@@ -12,7 +12,7 @@ const IS_USER_AUTHENTICATED = gql`
 
 const useIsUserAuthenticated = (): boolean => {
   const { data } = useQuery(IS_USER_AUTHENTICATED, { fetchPolicy: 'cache-only' });
-  return data && data[config.JWT_EXISTS_APOLLO_CACHE_NAME];
+  return Boolean(data && data[config.JWT_EXISTS_APOLLO_CACHE_NAME]);
 };
 
 export default useIsUserAuthenticated;

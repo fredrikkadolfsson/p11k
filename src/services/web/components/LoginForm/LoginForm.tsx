@@ -31,7 +31,7 @@ const LoginForm = (): JSX.Element => {
     });
     client.writeData({
       data: {
-        [config.JWT_EXISTS_APOLLO_CACHE_NAME]: data && data.authenticate,
+        [config.JWT_EXISTS_APOLLO_CACHE_NAME]: Boolean(data && data.authenticate),
       },
     });
     router.replace('/');
