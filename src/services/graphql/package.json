@@ -20,7 +20,7 @@
   "devDependencies": {
     "@types/cookie-parser": "1.4.2",
     "@types/node": "12.11.7",
-    "dotnet": "1.1.4",
+    "dotenv": "8.2.0",
     "nodemon": "1.19.4"
   }
 }
