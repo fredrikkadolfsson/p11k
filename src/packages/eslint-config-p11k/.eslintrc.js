@@ -12,6 +12,7 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'arrow-body-style': 'error',
+    'brace-style': 'error',
     'import/order': ['error', { 'newlines-between': 'never' }],
     'no-restricted-imports': [
       'error',
