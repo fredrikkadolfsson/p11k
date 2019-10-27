@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.24](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.23...@fredrikkadolfsson/web@0.10.24) (2019-10-26)
+
+
+### Bug Fixes
+
+* add coalescing babel plugin temporary ([5f5ea1f](https://github.com/fredrikkadolfsson/p11k/commit/5f5ea1fc9d72e0257d54636a2f75154adeb5034e))
+
+
+
+
+
 ## [0.10.23](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.22...@fredrikkadolfsson/web@0.10.23) (2019-10-26)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
