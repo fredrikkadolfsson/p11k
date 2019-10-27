@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.19](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.18...@fredrikkadolfsson/eslint-config-p11k@0.10.19) (2019-10-27)
+
+
+### Bug Fixes
+
+* bump dependencies ([879f03b](https://github.com/fredrikkadolfsson/p11k/commit/879f03b9126b04779417479e7652befcbc0aed13))
+* enforce consistent brace style ([c759dc3](https://github.com/fredrikkadolfsson/p11k/commit/c759dc3552f15ab6535348fed07e440aedc393b3))
+* remove sort-keys of objects ([c83e810](https://github.com/fredrikkadolfsson/p11k/commit/c83e810808d0f951d45cddf62eae0506f54fd526))
+
+
+
+
+
 ## [0.10.18](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.17...@fredrikkadolfsson/eslint-config-p11k@0.10.18) (2019-10-26)
 
 

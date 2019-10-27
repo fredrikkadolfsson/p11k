@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.25](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.24...@fredrikkadolfsson/web@0.10.25) (2019-10-27)
+
+
+### Bug Fixes
+
+* login after mutation change ([34538b1](https://github.com/fredrikkadolfsson/p11k/commit/34538b193e51210e7111f4bffee8e443dead128c))
+
+
+
+
+
 ## [0.10.24](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.23...@fredrikkadolfsson/web@0.10.24) (2019-10-26)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.12...@fredrikkadolfsson/graphql@0.0.13) (2019-10-27)
+
+
+### Bug Fixes
+
+* dependencies ([d3fc568](https://github.com/fredrikkadolfsson/p11k/commit/d3fc56844399caddcf4cbc2132c1e4c1a002860c))
+* return token instead of true or false ([7f3dfae](https://github.com/fredrikkadolfsson/p11k/commit/7f3dfae03b6ba99b7d1046af981a1532de5bb461))
+
+
+
+
+
 ## [0.0.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.11...@fredrikkadolfsson/graphql@0.0.12) (2019-10-26)
 
 
