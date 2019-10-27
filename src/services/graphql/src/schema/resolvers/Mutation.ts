@@ -9,11 +9,11 @@ const Mutation = {
       _: unknown,
       { email, password }: { email: string; password: string },
       ctx: Context,
-    ): Promise<boolean> => {
+    ): Promise<string> => {
       try {
         const token = await getJwtToken({ email, password });
         setAuthenticationCookie(token, ctx);
-        return true;
+        return token;
       } catch (error) {
         console.error('Authentication failed', error);
         throw new ApolloError('Faild to authenticate user');

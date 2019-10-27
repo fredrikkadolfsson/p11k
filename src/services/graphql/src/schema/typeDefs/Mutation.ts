@@ -2,7 +2,7 @@ import { gql } from 'apollo-server-core';
 
 const Mutation = gql`
   type Mutation {
-    authenticate(email: String!, password: String!): Boolean!
+    authenticate(email: String!, password: String!): String!
     unauthenticate: Boolean!
   }
 `;
