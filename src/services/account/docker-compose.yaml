@@ -2,11 +2,11 @@ version: '3.7'
 
 services:
   postgres:
-    image: postgres
+    image: mongo:4.2
     restart: always
     environment:
-      POSTGRES_DB: accounts
-      POSTGRES_USER: developer
-      POSTGRES_PASSWORD: developer_password
+      MONGO_INITDB_DATABASE: accounts
+      MONGO_INITDB_ROOT_PASSWORD: developer_password
+      MONGO_INITDB_ROOT_USERNAME: developer
     ports:
-      - '5432:5432'
+      - 27017:27017

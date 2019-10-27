@@ -1,29 +1,23 @@
-import { BuildOptions, DataTypes, Model, Sequelize } from 'sequelize';
+import mongoose, { Document, Schema } from 'mongoose';
 
-interface Account extends Model {
-  readonly id: number;
-  readonly email: string;
-  readonly password: string;
-}
-
-type AccountStatic = typeof Model & {
-  new (values?: object, options?: BuildOptions): Account;
+type AccountType = Document & {
+  id: string;
+  email: string;
+  password: string;
 };
 
-const Account = (sequelize: Sequelize): AccountStatic =>
-  sequelize.define('Account', {
-    id: {
-      primaryKey: true,
-      type: DataTypes.INTEGER.UNSIGNED,
-    },
-    email: {
-      allowNull: false,
-      type: DataTypes.STRING(128),
-    },
-    password: {
-      allowNull: false,
-      type: DataTypes.STRING(128),
-    },
-  }) as AccountStatic;
+const AccountSchema: Schema<AccountType> = new Schema({
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+});
+
+const Account = mongoose.model<AccountType>('User', AccountSchema);
 
 export default Account;

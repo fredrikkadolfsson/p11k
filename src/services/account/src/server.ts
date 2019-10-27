@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import config from './config';
 import getUser from './endpoints/getUser';
 import authenticateUser from './endpoints/authenticateUser';
-import { validateDBConnection } from './utils/db/validateDBConnection';
+import connectDB from './utils/db/connect';
 
 (async (): Promise<void> => {
   const app = express();
@@ -12,7 +12,8 @@ import { validateDBConnection } from './utils/db/validateDBConnection';
   app.get('/user', getUser);
   app.post('/user/authenticate', authenticateUser);
 
-  await validateDBConnection();
+  await connectDB();
+
   app.listen({ port: config.PORT }, () => {
     console.log(`🚀 Server ready at http://localhost:${config.PORT}`);
   });
