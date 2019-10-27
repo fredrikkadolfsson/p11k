@@ -13,12 +13,15 @@
     "body-parser": "1.19.0",
     "express": "4.17.1",
     "jsonwebtoken": "8.5.1",
+    "pg": "7.12.1",
+    "pg-hstore": "2.3.3",
+    "sequelize": "6.0.0-beta.3",
     "ts-node": "8.4.1"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "8.3.5",
     "@types/node": "12.11.7",
-    "dotnet": "1.1.4",
+    "dotenv": "8.2.0",
     "nodemon": "1.19.4"
   }
 }
