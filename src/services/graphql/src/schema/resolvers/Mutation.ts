@@ -16,7 +16,7 @@ const Mutation = {
         return token;
       } catch (error) {
         console.error('Authentication failed', error);
-        throw new ApolloError('Faild to authenticate user');
+        throw new ApolloError('Faild to authenticate user', 'WRONG_OR_MISSING_CREDENTIALS');
       }
     },
 
@@ -28,7 +28,7 @@ const Mutation = {
         return true;
       } catch (error) {
         console.error('Sign out failed', error);
-        throw new ApolloError('Faild to authenticate user');
+        throw new ApolloError('Faild to unauthenticate user');
       }
     },
   },
