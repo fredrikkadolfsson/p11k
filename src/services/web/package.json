@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "apollo-boost": "0.4.4",
-    "cookie": "^0.4.0",
+    "cookie": "0.4.0",
     "formik": "2.0.1",
     "next": "9.1.1",
     "next-with-apollo": "4.3.0",
@@ -25,7 +25,7 @@
     "@babel/plugin-proposal-nullish-coalescing-operator": "7.4.4",
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.12",
     "@fredrikkadolfsson/ui": "^0.10.17",
-    "@types/cookie": "^0.3.3",
+    "@types/cookie": "0.3.3",
     "@types/next": "8.0.6",
     "@types/node": "12.11.7",
     "@types/react": "16.9.11",
