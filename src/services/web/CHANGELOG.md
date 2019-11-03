@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.30](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.29...@fredrikkadolfsson/web@0.10.30) (2019-11-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency formik to v2.0.3 ([cf2bb6b](https://github.com/fredrikkadolfsson/p11k/commit/cf2bb6bd2ec6049ad7aefb78bb7b80ec3a882581))
+
+
+
+
+
 ## [0.10.29](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.28...@fredrikkadolfsson/web@0.10.29) (2019-11-03)
 
 
