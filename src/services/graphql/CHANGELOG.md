@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.15](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.14...@fredrikkadolfsson/graphql@0.0.15) (2019-11-03)
+
+
+### Bug Fixes
+
+* error code and error message ([0ef2b90](https://github.com/fredrikkadolfsson/p11k/commit/0ef2b905dc3e1741372afa7c747a427e23a9fd4a))
+
+
+
+
+
 ## [0.0.14](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.13...@fredrikkadolfsson/graphql@0.0.14) (2019-11-03)
 
 **Note:** Version bump only for package @fredrikkadolfsson/graphql

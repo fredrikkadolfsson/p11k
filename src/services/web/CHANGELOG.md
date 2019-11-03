@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.31](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.30...@fredrikkadolfsson/web@0.10.31) (2019-11-03)
+
+
+### Bug Fixes
+
+* add yup validation to login form ([11a39c5](https://github.com/fredrikkadolfsson/p11k/commit/11a39c5d75341286c73e7d8210866808fc3e36a7))
+* turn on always hydration ([5c135c0](https://github.com/fredrikkadolfsson/p11k/commit/5c135c0fc163dc2e2196d396f62c0ed85c46b380))
+
+
+
+
+
 ## [0.10.30](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.29...@fredrikkadolfsson/web@0.10.30) (2019-11-03)
 
 

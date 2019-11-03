@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/graphql",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "p11k's graphql server providing data for all clients.",
   "main": "server.ts",
   "license": "UNLICENSED",
