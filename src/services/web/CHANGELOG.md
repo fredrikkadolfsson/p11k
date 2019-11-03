@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.29](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.28...@fredrikkadolfsson/web@0.10.29) (2019-11-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v9.1.2 ([3676ec5](https://github.com/fredrikkadolfsson/p11k/commit/3676ec5f58e2c429e93e998238d115fd6b480344))
+* **deps:** update emotion monorepo to v10.0.23 ([1bb6228](https://github.com/fredrikkadolfsson/p11k/commit/1bb62280dc9a0c9e814ee24c591e1904d7c5dc78))
+
+
+
+
+
 ## [0.10.28](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.27...@fredrikkadolfsson/web@0.10.28) (2019-11-03)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
