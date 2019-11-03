@@ -87,6 +87,6 @@ workflows:
       - semantic_release:
           requires:
             - lint
-          branches:
-            only:
-              - master
+          filters:
+            branches:
+              only: master
