@@ -29,7 +29,7 @@ class MyApp extends App<AppProps> {
     const { apollo, Component, pageProps } = this.props;
 
     return (
-      <React.StrictMode>
+      <>
         <Head>
           <title>Perfect Stack</title>
         </Head>
@@ -45,7 +45,7 @@ class MyApp extends App<AppProps> {
             <Footer />
           </ThemeProvider>
         </ApolloProvider>
-      </React.StrictMode>
+      </>
     );
   }
 }
