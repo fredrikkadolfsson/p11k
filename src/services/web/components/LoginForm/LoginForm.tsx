@@ -4,6 +4,7 @@ import gql from 'graphql-tag';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { useRouter } from 'next/router';
 import { useCallback } from 'react';
+import * as Yup from 'yup';
 import config from '../../config';
 import { Authenticate, AuthenticateVariables } from '../../types/Authenticate';
 
@@ -26,19 +27,34 @@ const LoginForm = (): JSX.Element => {
   const [authenticate] = useMutation<Authenticate, AuthenticateVariables>(AUTHENTICATE);
 
   const onSubmit = useCallback(async (variables) => {
-    const { data } = await authenticate({
-      variables,
-    });
-    client.writeData({
-      data: {
-        [config.JWT_EXISTS_APOLLO_CACHE_NAME]: Boolean(data && data.authenticate),
-      },
-    });
-    router.replace('/');
+    try {
+      const { data } = await authenticate({
+        variables,
+      });
+      client.writeData({
+        data: {
+          [config.JWT_EXISTS_APOLLO_CACHE_NAME]: Boolean(data && data.authenticate),
+        },
+      });
+      router.replace('/');
+    } catch (error) {
+      console.error(error);
+    }
   }, []);
 
   return (
-    <Formik initialValues={{ email: '', password: '' }} onSubmit={onSubmit}>
+    <Formik
+      initialValues={{ email: '', password: '' }}
+      validationSchema={Yup.object().shape({
+        email: Yup.string()
+          .email('Invalid email')
+          .required('Required'),
+        password: Yup.string()
+          .min(8, 'Password is too short - should be 8 chars minimum.')
+          .required('Required'),
+      })}
+      onSubmit={onSubmit}
+    >
       {({
         values,
         touched,
