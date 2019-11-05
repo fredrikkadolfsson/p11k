@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/tsconfig-config-p11k@0.10.12...@fredrikkadolfsson/tsconfig-config-p11k@0.10.13) (2019-11-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to v3.7.2 ([dca5ec2](https://github.com/fredrikkadolfsson/p11k/commit/dca5ec28bfa76120ddbb106811d2abf6588f4d81))
+
+
+
+
+
 ## [0.10.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/tsconfig-config-p11k@0.10.11...@fredrikkadolfsson/tsconfig-config-p11k@0.10.12) (2019-10-26)
 
 
