@@ -24,7 +24,7 @@
     "emotion-theming": "10.0.19"
   },
   "devDependencies": {
-    "@babel/core": "7.6.4",
+    "@babel/core": "7.7.0",
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.12",
     "@storybook/addon-actions": "5.2.5",
     "@storybook/addon-centered": "5.2.5",
