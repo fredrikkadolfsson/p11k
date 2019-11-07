@@ -5,4 +5,5 @@ export { default as GlobalCss } from './GlobalCss/GlobalCss';
 export { default as Header } from './Header/Header';
 export { default as Link } from './Link/Link';
 export { default as TextField } from './TextField/TextField';
-export { default as ThemeProvider } from './ThemeProvider/ThemeProvider';
+export { default as ThemeProvider } from './ThemeProvider';
+export * from './ThemeProvider';
