@@ -2,9 +2,10 @@ import '@emotion/core';
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import styled, { GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
+import styled, { GlobalCss, PageTransitionLoader, ThemeProvider } from '@fredrikkadolfsson/ui';
 import { ApolloProvider } from '@apollo/react-hooks';
 import { ApolloClient } from 'apollo-boost';
+import { Router } from 'next/router';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import withApollo from '../lib/withApollo';
@@ -36,6 +37,7 @@ class MyApp extends App<AppProps> {
         <ApolloProvider client={apollo}>
           <ThemeProvider>
             <GlobalCss />
+            <PageTransitionLoader Router={Router} />
             <Header />
             <StyledMain>
               <Component {...pageProps} />
