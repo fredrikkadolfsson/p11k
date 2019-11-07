@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.1...@fredrikkadolfsson/web@0.11.2) (2019-11-07)
+
+
+### Bug Fixes
+
+* reworked footer ([1520d52](https://github.com/fredrikkadolfsson/p11k/commit/1520d524c6dfb7d95d2019693a8e37b7c623206e))
+
+
+
+
+
 ## [0.11.1](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.0...@fredrikkadolfsson/web@0.11.1) (2019-11-07)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
