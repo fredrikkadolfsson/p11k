@@ -21,7 +21,8 @@
     "@emotion/styled": "10.0.23",
     "@material-ui/core": "4.6.0",
     "@material-ui/styles": "4.6.0",
-    "emotion-theming": "10.0.19"
+    "emotion-theming": "10.0.19",
+    "nprogress": "0.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.7.2",
@@ -33,6 +34,7 @@
     "@storybook/addons": "5.2.5",
     "@storybook/react": "5.2.5",
     "@storybook/theming": "5.2.5",
+    "@types/nprogress": "0.2.0",
     "@types/storybook__react": "4.0.2",
     "awesome-typescript-loader": "5.2.1",
     "babel-loader": "8.0.6",
