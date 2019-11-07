@@ -2,9 +2,18 @@ import axios from 'axios';
 import config from '../config';
 
 export type userType = {
-  firstName: string;
+  email: string;
   id: string;
-  lastName: string;
+};
+
+export const createUser = async (data: {
+  email: string;
+  password: string;
+  passwordConfirm: string;
+}): Promise<userType> => {
+  const resp = await axios.put(`${config.ACCOUNT_URL}/user`, data);
+
+  return resp.data;
 };
 
 export const getUser = async (jwt: string): Promise<userType> => {

@@ -2,9 +2,8 @@ import { gql } from 'apollo-server-core';
 
 const User = gql`
   type User {
+    email: String!
     id: ID!
-    firstName: String!
-    lastName: String!
   }
 `;
 
