@@ -8,7 +8,7 @@ const privateKey = fs.readFileSync('mock/SSL/private.key');
 
 const authenticateUser = async (req: Request, res: Response): Promise<void> => {
   try {
-    const { email, password } = req.body;
+    const { email, password }: { email: string; password: string } = req.body;
     const uid = await getUID(email, password);
     const token = jwt.sign(
       {
@@ -25,9 +25,11 @@ const authenticateUser = async (req: Request, res: Response): Promise<void> => {
     );
 
     res.send(token);
-  } catch (error) {
+    return;
+  } catch {
     res.status(401);
     res.send('Wrong or missing credentials');
+    return;
   }
 };
 
