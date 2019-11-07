@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.38](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.37...@fredrikkadolfsson/web@0.10.38) (2019-11-07)
+
+
+### Bug Fixes
+
+* add sign up and link to it from register ([3dc8acf](https://github.com/fredrikkadolfsson/p11k/commit/3dc8acf638991cb306856017d7ab0af648e4ac6a))
+
+
+
+
+
 ## [0.10.37](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.36...@fredrikkadolfsson/web@0.10.37) (2019-11-07)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
