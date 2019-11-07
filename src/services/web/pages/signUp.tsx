@@ -1,9 +1,16 @@
-import { Container } from '@fredrikkadolfsson/ui';
+import styled, { Container } from '@fredrikkadolfsson/ui';
+import SignUpForm from '../components/SignUpForm/SignUpForm';
 
+const StyledContainer = styled(Container)`
+  align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+`;
 const SignUp = (): JSX.Element => (
-  <Container>
-    <h1>Sign Up</h1>
-  </Container>
+  <StyledContainer>
+    <SignUpForm />
+  </StyledContainer>
 );
 
 export default SignUp;
