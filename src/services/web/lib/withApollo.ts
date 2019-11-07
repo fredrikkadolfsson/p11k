@@ -19,6 +19,6 @@ export default withApollo(
     return client;
   },
   {
-    getDataFromTree: 'always',
+    getDataFromTree: 'ssr',
   },
 );
