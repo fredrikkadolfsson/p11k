@@ -1,5 +1,5 @@
 import { Form, Formik, FormikProps } from 'formik';
-import styled, { Button, TextField } from '@fredrikkadolfsson/ui';
+import styled, { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { useRouter } from 'next/router';
@@ -19,6 +19,14 @@ const StyledForm = styled(Form)`
   display: flex;
   flex-direction: column;
   max-width: 500px;
+`;
+
+const RegisterInfo = styled.p`
+  text-align: center;
+`;
+
+const RegisterLink = styled(Link)`
+  font-weight: 500;
 `;
 
 const LoginForm = (): JSX.Element => {
@@ -87,6 +95,9 @@ const LoginForm = (): JSX.Element => {
           <Button type="submit" disabled={isSubmitting}>
             Submit
           </Button>
+          <RegisterInfo>
+            Inte medlem? Registrera dig <RegisterLink href="/signup">här!</RegisterLink>
+          </RegisterInfo>
         </StyledForm>
       )}
     </Formik>
