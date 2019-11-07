@@ -10,7 +10,7 @@ export const createUser = async (data: {
   email: string;
   password: string;
   passwordConfirm: string;
-}): Promise<userType> => {
+}): Promise<userType & { token: string }> => {
   const resp = await axios.put(`${config.ACCOUNT_URL}/user`, data);
 
   return resp.data;

@@ -19,9 +19,11 @@ const Mutation = {
     createAccount: async (
       _: unknown,
       args: { email: string; password: string; passwordConfirm: string },
+      ctx: Context,
     ): Promise<userType> => {
       try {
         const user = await createUser(args);
+        setAuthenticationCookie(user.token, ctx);
         return user;
       } catch (error) {
         console.error('Authentication failed', error);
