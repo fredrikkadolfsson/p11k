@@ -85,7 +85,7 @@ const LoginForm = (): JSX.Element => {
           <TextField
             id="password"
             type="password"
-            label="Password"
+            label="Lösenord"
             value={values.password}
             onChange={handleChange}
             onBlur={handleBlur}
@@ -93,7 +93,7 @@ const LoginForm = (): JSX.Element => {
             error={touched.password && Boolean(errors.password)}
           />
           <Button type="submit" disabled={isSubmitting}>
-            Submit
+            Logga in
           </Button>
           <RegisterInfo>
             Inte medlem? Registrera dig <RegisterLink href="/signup">här!</RegisterLink>
