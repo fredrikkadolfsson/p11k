@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import { SerializedStyles, css } from '@emotion/core';
 import styled from '../../lib';
 import Link from '../Link/Link';
 import Container from '../Container/Container';
@@ -16,7 +17,7 @@ type FooterProps = {
 };
 
 const StyledFooter = styled.footer`
-  background-color: ${(props): string => props.theme.palette.primary};
+  background-color: ${(props): string => props.theme.palette.primary.main};
   color: white;
 `;
 
@@ -29,6 +30,12 @@ const Divider = styled.div`
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
+
+  ${(props): SerializedStyles =>
+    props.theme.mqMax.sm(css`
+      align-items: flex-start;
+      flex-direction: column-reverse;
+    `)}
 `;
 
 const Hr = styled.div`
@@ -41,6 +48,11 @@ const Column = styled.div`
 
   :not(:first-of-type) {
     margin-bottom: 5px;
+
+    ${(props): SerializedStyles =>
+      props.theme.mqMax.sm(css`
+        margin-bottom: 20px;
+      `)}
   }
 `;
 
