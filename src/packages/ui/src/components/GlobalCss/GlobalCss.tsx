@@ -19,6 +19,10 @@ const GlobalStyle = css`
     flex-direction: column;
     height: 100%;
   }
+
+  p {
+    margin: 10px;
+  }
 `;
 
 const GlobalCss = (): JSX.Element => (
