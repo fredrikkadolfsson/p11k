@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/prettier-config-p11k",
-  "version": "0.10.11",
+  "version": "0.10.12",
   "description": "Prettier configs to be used for all packages in the monorepo.",
   "main": ".prettierrc.js",
   "license": "UNLICENSED",
