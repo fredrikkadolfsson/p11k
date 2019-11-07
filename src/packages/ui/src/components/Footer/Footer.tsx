@@ -21,15 +21,27 @@ const StyledFooter = styled.footer`
 `;
 
 const StyledContainer = styled(Container)`
-  align-items: flex-end;
-  display: flex;
-  justify-content: space-between;
   padding-bottom: 25px;
   padding-top: 25px;
 `;
+
+const Divider = styled.div`
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Hr = styled.div`
+  border-top: 1px solid white;
+`;
+
 const Column = styled.div`
   display: flex;
   flex-direction: column;
+
+  :not(:first-of-type) {
+    margin-bottom: 5px;
+  }
 `;
 
 const Footer = ({ siteName, linkSections }: FooterProps): JSX.Element => {
@@ -37,21 +49,24 @@ const Footer = ({ siteName, linkSections }: FooterProps): JSX.Element => {
 
   return (
     <StyledFooter>
-      <StyledContainer>
-        <Column>
-          <Typography variant="h5">{siteName}</Typography>
-          <span>Copyright &copy; {currentYear}. All Rights Reserved</span>
-        </Column>
-        {linkSections.map(({ title, links }, sectionIndex) => (
-          <Column key={`${title}-${sectionIndex}`}>
-            <Typography variant="h6">{title}</Typography>
-            {links.map(({ text, url }, linkIndex) => (
-              <Link key={`${text}-${linkIndex}`} href={url}>
-                {text}
-              </Link>
-            ))}
+      <StyledContainer maxWidth="md">
+        <Divider>
+          <Column>
+            <Typography variant="h5">{siteName}</Typography>
           </Column>
-        ))}
+          {linkSections.map(({ title, links }, sectionIndex) => (
+            <Column key={`${title}-${sectionIndex}`}>
+              <Typography variant="h6">{title}</Typography>
+              {links.map(({ text, url }, linkIndex) => (
+                <Link key={`${text}-${linkIndex}`} href={url}>
+                  {text}
+                </Link>
+              ))}
+            </Column>
+          ))}
+        </Divider>
+        <Hr />
+        <span>Copyright &copy; {currentYear}. All Rights Reserved</span>
       </StyledContainer>
     </StyledFooter>
   );
