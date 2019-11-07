@@ -2,7 +2,7 @@ import '@emotion/core';
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import styled, { Container, GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
+import styled, { GlobalCss, ThemeProvider } from '@fredrikkadolfsson/ui';
 import { ApolloProvider } from '@apollo/react-hooks';
 import { ApolloClient } from 'apollo-boost';
 import Header from '../components/Header/Header';
@@ -38,9 +38,7 @@ class MyApp extends App<AppProps> {
             <GlobalCss />
             <Header />
             <StyledMain>
-              <Container>
-                <Component {...pageProps} />
-              </Container>
+              <Component {...pageProps} />
             </StyledMain>
             <Footer />
           </ThemeProvider>

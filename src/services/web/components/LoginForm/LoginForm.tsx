@@ -15,10 +15,10 @@ const AUTHENTICATE = gql`
 `;
 
 const StyledForm = styled(Form)`
-  margin: auto;
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  width: 100%;
 `;
 
 const RegisterInfo = styled.p`
