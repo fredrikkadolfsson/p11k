@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.26](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.25...@fredrikkadolfsson/ui@0.10.26) (2019-11-07)
+
+
+### Bug Fixes
+
+* footer on mobile ([b947558](https://github.com/fredrikkadolfsson/p11k/commit/b947558de370cc09fa7b49ec6aed367ffc0c934e))
+* rework theme and muitheme ([988481a](https://github.com/fredrikkadolfsson/p11k/commit/988481a9d7354dc57c16282f1a6ef465cd9c4f59))
+
+
+
+
+
 ## [0.10.25](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.10.24...@fredrikkadolfsson/ui@0.10.25) (2019-11-07)
 
 
