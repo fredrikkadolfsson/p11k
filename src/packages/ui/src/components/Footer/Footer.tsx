@@ -31,11 +31,12 @@ const Divider = styled.div`
   display: flex;
   justify-content: space-between;
 
-  ${(props): SerializedStyles =>
-    props.theme.mqMax.sm(css`
+  ${(props): SerializedStyles => css`
+    ${props.theme.device.mobileL} {
       align-items: flex-start;
       flex-direction: column-reverse;
-    `)}
+    }
+  `}
 `;
 
 const Hr = styled.div`
@@ -49,10 +50,11 @@ const Column = styled.div`
   :not(:first-of-type) {
     margin-bottom: 5px;
 
-    ${(props): SerializedStyles =>
-      props.theme.mqMax.sm(css`
+    ${(props): SerializedStyles => css`
+      ${props.theme.device.mobileL} {
         margin-bottom: 20px;
-      `)}
+      }
+    `}
   }
 `;
 

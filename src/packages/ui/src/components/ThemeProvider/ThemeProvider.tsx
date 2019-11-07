@@ -1,12 +1,12 @@
 import React, { PropsWithChildren } from 'react';
 import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
 import { ThemeProvider as MuiThemeProvider, StylesProvider } from '@material-ui/styles';
-import theme, { muiTheme } from '../../theme';
+import theme from './theme';
 
 const ThemeProvider = ({ children }: PropsWithChildren<{}>): JSX.Element => (
   <StylesProvider injectFirst>
     <EmotionThemeProvider theme={theme}>
-      <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
+      <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
     </EmotionThemeProvider>
   </StylesProvider>
 );
