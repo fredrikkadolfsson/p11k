@@ -1,4 +1,4 @@
 import styled, { CreateStyled } from '@emotion/styled'; // eslint-disable-line no-restricted-imports
-import { defaultTheme } from '../themes';
+import theme from '../../theme';
 
-export default styled as CreateStyled<typeof defaultTheme>;
+export default styled as CreateStyled<typeof theme>;
