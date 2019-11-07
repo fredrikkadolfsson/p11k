@@ -1,7 +1,6 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
 type AccountType = Document & {
-  id: string;
   email: string;
   password: string;
 };
