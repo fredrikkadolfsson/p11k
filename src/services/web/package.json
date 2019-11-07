@@ -27,7 +27,7 @@
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.13",
     "@fredrikkadolfsson/ui": "^0.10.24",
     "@types/cookie": "0.3.3",
-    "@types/next": "8.0.6",
+    "@types/next": "8.0.7",
     "@types/node": "12.12.6",
     "@types/react": "16.9.11",
     "@types/yup": "0.26.24",
