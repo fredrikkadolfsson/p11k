@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.0.9...@fredrikkadolfsson/account@0.1.0) (2019-11-07)
+
+
+### Bug Fixes
+
+* add types to authenticateUser ([f91a631](https://github.com/fredrikkadolfsson/p11k/commit/f91a631bd028b75cfeecb4e9bdd3f00c60b09c2f))
+* generate token on successfull register ([b9de248](https://github.com/fredrikkadolfsson/p11k/commit/b9de248f25be60b6e1bdf2d214bddfc02bab08d0))
+* mongoose config ([d2b7192](https://github.com/fredrikkadolfsson/p11k/commit/d2b7192ee4d1e33848338b779e3a5ef77722614f))
+
+
+### Features
+
+* add createUser ([abafba4](https://github.com/fredrikkadolfsson/p11k/commit/abafba4a1336569ee3d751d62028b62c7fcdd4f1))
+
+
+
+
+
 ## [0.0.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.0.8...@fredrikkadolfsson/account@0.0.9) (2019-11-06)
 
 **Note:** Version bump only for package @fredrikkadolfsson/account

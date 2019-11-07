@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.38...@fredrikkadolfsson/web@0.11.0) (2019-11-07)
+
+
+### Bug Fixes
+
+* location of container and center login form ([ad8c2d4](https://github.com/fredrikkadolfsson/p11k/commit/ad8c2d47f70006cf06801043ee3e9ac7a0f4ad12))
+* only get data from tree on ssr ([15a5ebf](https://github.com/fredrikkadolfsson/p11k/commit/15a5ebfdcdcda0785f150dd4c64724d1d907b636))
+* text on login page ([819a600](https://github.com/fredrikkadolfsson/p11k/commit/819a600490a02588d083b1d6a8be5ce3701a57f3))
+
+
+### Features
+
+* add register form ([fdf75ff](https://github.com/fredrikkadolfsson/p11k/commit/fdf75ff07a50f052c149acdfd8ddf3212a5cacd9))
+
+
+
+
+
 ## [0.10.38](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.10.37...@fredrikkadolfsson/web@0.10.38) (2019-11-07)
 
 

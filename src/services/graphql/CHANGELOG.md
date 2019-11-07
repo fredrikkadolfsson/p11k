@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.16...@fredrikkadolfsson/graphql@0.1.0) (2019-11-07)
+
+
+### Bug Fixes
+
+* set user token on create account ([bde9c6d](https://github.com/fredrikkadolfsson/p11k/commit/bde9c6dceff84f48940b3cf732abe9ba614e1f64))
+
+
+### Features
+
+* add create account ([828119c](https://github.com/fredrikkadolfsson/p11k/commit/828119cad843081eb485765605118f12fcfb83d0))
+
+
+
+
+
 ## [0.0.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.0.15...@fredrikkadolfsson/graphql@0.0.16) (2019-11-06)
 
 **Note:** Version bump only for package @fredrikkadolfsson/graphql
