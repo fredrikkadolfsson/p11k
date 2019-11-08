@@ -1,7 +1,21 @@
 version: '3.7'
 
 services:
-  postgres:
+  account:
+    image: node:12-alpine
+    volumes:
+      - ../../../:/p11k
+    working_dir: /p11k/src/services/account
+    depends_on:
+      - mongo
+    env_file: .env
+    ports:
+      - ${PORT:-4001}:${PORT:-4001}
+    environment:
+      PORT: ${PORT:-4001}
+    command: yarn nodemon
+
+  mongo:
     image: mongo:4.2
     restart: always
     environment:
@@ -10,3 +24,5 @@ services:
       MONGO_INITDB_ROOT_USERNAME: developer
     ports:
       - 27017:27017
+    logging:
+      driver: none
