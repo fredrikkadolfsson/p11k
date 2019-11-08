@@ -9,7 +9,7 @@
     "apollo:schema": "apollo client:download-schema",
     "apollo:types": "apollo client:codegen --target=typescript --outputFlat types",
     "build": "next build",
-    "dev": "dotenv next",
+    "dev": "docker-compose -f docker-compose.yaml -f ../graphql/docker-compose.yaml -f ../account/docker-compose.yaml up",
     "start": "next start"
   },
   "dependencies": {
@@ -33,7 +33,6 @@
     "@types/yup": "0.26.24",
     "apollo": "2.21.0",
     "babel-plugin-emotion": "10.0.23",
-    "dotenv": "8.2.0",
     "eslint-plugin-graphql": "3.1.0"
   }
 }

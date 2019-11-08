@@ -1,19 +1,17 @@
 version: '3.7'
 
 services:
-  graphql:
+  web:
     image: node:12-alpine
     volumes:
       - p11k:/p11k:cached
-    working_dir: /p11k/src/services/graphql
+    working_dir: /p11k/src/services/web
     depends_on:
-      - account
+      - graphql
     env_file: .env
     ports:
-      - ${PORT:-4000}:${PORT:-4000}
-    environment:
-      PORT: ${PORT:-4000}
-    command: yarn nodemon
+      - ${PORT:-3000}:${PORT:-3000}
+    command: yarn next -p ${PORT:-3000}
 
 volumes:
   p11k:

@@ -4,7 +4,7 @@ services:
   account:
     image: node:12-alpine
     volumes:
-      - ../../../:/p11k
+      - p11k:/p11k:cached
     working_dir: /p11k/src/services/account
     depends_on:
       - mongo
@@ -26,3 +26,11 @@ services:
       - 27017:27017
     logging:
       driver: none
+
+volumes:
+  p11k:
+    driver: local
+    driver_opts:
+      type: none
+      device: $PWD/../../../
+      o: bind
