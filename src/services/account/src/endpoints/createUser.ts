@@ -23,7 +23,8 @@ const createUser = async (req: Request, res: Response): Promise<void> => {
 
     res.send({ id: newAccount._id, email: newAccount.email, token });
     return;
-  } catch {
+  } catch (error) {
+    console.log(error);
     res.status(400);
     res.send('Account with same email already exists');
     return;

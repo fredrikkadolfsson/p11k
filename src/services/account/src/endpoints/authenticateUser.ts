@@ -10,7 +10,8 @@ const authenticateUser = async (req: Request, res: Response): Promise<void> => {
 
     res.send(token);
     return;
-  } catch {
+  } catch (error) {
+    console.log(error);
     res.status(401);
     res.send('Wrong or missing credentials');
     return;
