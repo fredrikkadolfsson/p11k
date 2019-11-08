@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "dotenv nodemon",
+    "dev": "docker-compose -f ../account/docker-compose.yaml -f docker-compose.yaml up",
     "start": "ts-node src/server.ts"
   },
   "dependencies": {

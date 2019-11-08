@@ -7,7 +7,7 @@ type configType = {
 };
 
 const config: configType = {
-  ACCOUNT_URL: process.env.ENABLE_PLAYGROUND ?? 'http://localhost:4001',
+  ACCOUNT_URL: process.env.ENABLE_PLAYGROUND ?? 'http://account:4001',
   ENABLE_PLAYGROUND: Boolean(process.env.ENABLE_PLAYGROUND ?? true),
   ENABLE_TRACING: Boolean(process.env.ENABLE_TRACING ?? true),
   JWT_COOKIE_NAME: process.env.ENABLE_TRACING ?? 'AUTHENTICATION_TOKEN',
