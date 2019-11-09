@@ -1,2 +1,12 @@
+.DS_Store
+.idea
+.next
 .prettierignore
+.vscode
+*.log
+build
 CHANGELOG.md
+dist
+node_modules
+package-lock.json
+storybook-static
