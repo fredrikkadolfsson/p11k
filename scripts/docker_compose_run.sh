@@ -16,5 +16,7 @@ if [ $service = $ORIGIN_SERVICE ]; then
     
     eval $cmd
 else
-    echo "$service-dependencies: $depends_on_configs"
+    if [ ! -z "$depends_on_configs" ]; then
+        echo "$service-dependencies: $depends_on_configs"
+    fi
 fi
