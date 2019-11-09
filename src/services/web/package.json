@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/web",
-  "version": "0.11.7",
+  "version": "0.11.8",
   "description": "p11k's frontend web application.",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "7.4.4",
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.13",
-    "@fredrikkadolfsson/ui": "^0.11.1",
+    "@fredrikkadolfsson/ui": "^0.11.2",
     "@types/cookie": "0.3.3",
     "@types/next": "8.0.7",
     "@types/node": "12.12.7",
