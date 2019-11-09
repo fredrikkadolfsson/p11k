@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 type configType = {
   GRAPHQL_URL: string;
   JWT_COOKIE_NAME: string;

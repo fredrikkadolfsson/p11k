@@ -7,7 +7,6 @@ import { Context } from './typings';
 
 const server = new ApolloServer({
   context: (ctx): Context => {
-    // eslint-disable-next-line prettier/prettier
     const jwt = ctx.req.cookies[config.JWT_COOKIE_NAME] ?? ctx.req.headers.authorization;
 
     return { jwt, ...ctx };
