@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.14](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/prettier-config-p11k@0.10.13...@fredrikkadolfsson/prettier-config-p11k@0.10.14) (2019-11-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier to v1.19.1 ([7ec6eb5](https://github.com/fredrikkadolfsson/p11k/commit/7ec6eb5ebf176b7751603b332dca0df93b90ff49))
+
+
+
+
+
 ## [0.10.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/prettier-config-p11k@0.10.12...@fredrikkadolfsson/prettier-config-p11k@0.10.13) (2019-11-09)
 
 
