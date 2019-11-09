@@ -3,11 +3,17 @@ import { Footer as UiFooter } from '@fredrikkadolfsson/ui';
 
 const linkSections = [
   {
-    links: [{ text: 'Start', url: '/' }, { text: 'Om oss', url: '/about' }],
+    links: [
+      { text: 'Start', url: '/' },
+      { text: 'Om oss', url: '/about' },
+    ],
     title: 'Viktiga länkar',
   },
   {
-    links: [{ text: 'Logga in', url: '/login' }, { text: 'Registrering', url: '/signup' }],
+    links: [
+      { text: 'Logga in', url: '/login' },
+      { text: 'Registrering', url: '/signup' },
+    ],
     title: 'Kom igång',
   },
 ];
