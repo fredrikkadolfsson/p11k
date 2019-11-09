@@ -8,11 +8,11 @@ services:
     working_dir: /p11k/src/services/graphql
     depends_on:
       - account
-    env_file: ../.env
-    ports:
-      - ${PORT:-4000}:${PORT:-4000}
     environment:
-      PORT: ${PORT:-4000}
+      NODE_ENV: development
+      PORT: '4000'
+    ports:
+      - 4000:4000
     command: yarn nodemon
 
 volumes:

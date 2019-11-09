@@ -8,12 +8,12 @@ services:
     working_dir: /p11k/src/services/web
     depends_on:
       - graphql
-    env_file: ../.env
     environment:
       NEXT_TELEMETRY_DISABLED: 'true'
+      NODE_ENV: development
     ports:
-      - ${PORT:-3000}:${PORT:-3000}
-    command: yarn next -p ${PORT:-3000}
+      - 3000:3000
+    command: yarn next -p 3000
 
 volumes:
   p11k:

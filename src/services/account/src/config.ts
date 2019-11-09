@@ -19,7 +19,7 @@ const config: configType = {
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN ?? '12h',
   JWT_ISSUER: process.env.JWT_ISSUER ?? 'Dev corp',
   JWT_SUBJECT: process.env.JWT_SUBJECT ?? 'john@doe.com',
-  PORT: process.env.ENABLE_TRACING ?? '4001',
+  PORT: process.env.ENABLE_TRACING ?? '5000',
 };
 
 export default config;
