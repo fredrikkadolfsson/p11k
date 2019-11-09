@@ -9,7 +9,7 @@
     "apollo:schema": "apollo client:download-schema",
     "apollo:types": "apollo client:codegen --target=typescript --outputFlat types",
     "build": "next build",
-    "dev": "docker-compose -f docker-compose.yaml -f ../graphql/docker-compose.yaml -f ../account/docker-compose.yaml up",
+    "dev": "sh ./docker/run.sh",
     "start": "next start"
   },
   "dependencies": {
