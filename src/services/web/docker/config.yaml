@@ -8,7 +8,9 @@ services:
     working_dir: /p11k/src/services/web
     depends_on:
       - graphql
-    env_file: .env
+    env_file: ../.env
+    environment:
+      NEXT_TELEMETRY_DISABLED: 'true'
     ports:
       - ${PORT:-3000}:${PORT:-3000}
     command: yarn next -p ${PORT:-3000}
@@ -18,5 +20,5 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: $PWD/../../../
+      device: ${ROOT_DIR}
       o: bind

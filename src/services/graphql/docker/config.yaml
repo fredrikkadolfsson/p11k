@@ -8,7 +8,7 @@ services:
     working_dir: /p11k/src/services/graphql
     depends_on:
       - account
-    env_file: .env
+    env_file: ../.env
     ports:
       - ${PORT:-4000}:${PORT:-4000}
     environment:
@@ -20,5 +20,5 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: $PWD/../../../
+      device: ${ROOT_DIR}
       o: bind
