@@ -46,6 +46,8 @@ for dep in "${depends_on[@]}"; do
             depends_on_configs="$depends_on_configs $dep_dependencies"
         fi
     else
-        echo "WARNING: missing config file for $service's dependency $dep"
+        if [ -z "$(yq -y .services.$dep docker/config.yaml)" ]; then
+            echo "WARNING: missing config file for $service's dependency $dep"
+        fi
     fi
 done
