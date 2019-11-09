@@ -9,6 +9,6 @@
     "url": "git@github.com:fredrikkadolfsson/p11k.git"
   },
   "dependencies": {
-    "prettier": "1.19.0"
+    "prettier": "1.19.1"
   }
 }
