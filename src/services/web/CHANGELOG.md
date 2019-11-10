@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.11...@fredrikkadolfsson/web@0.11.12) (2019-11-10)
+
+
+### Bug Fixes
+
+* cleanup css ([0887c6c](https://github.com/fredrikkadolfsson/p11k/commit/0887c6cc066297d9ca6156bacf773251148c5ecd))
+
+
+
+
+
 ## [0.11.11](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.10...@fredrikkadolfsson/web@0.11.11) (2019-11-10)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web

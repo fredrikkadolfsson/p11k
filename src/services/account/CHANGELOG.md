@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.1.6...@fredrikkadolfsson/account@0.1.7) (2019-11-10)
+
+
+### Bug Fixes
+
+* getUser function¨ ([f4f0918](https://github.com/fredrikkadolfsson/p11k/commit/f4f091820b290db8600f47fed8429ef36828c503))
+
+
+
+
+
 ## [0.1.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.1.5...@fredrikkadolfsson/account@0.1.6) (2019-11-10)
 
 **Note:** Version bump only for package @fredrikkadolfsson/account
