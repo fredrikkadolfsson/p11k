@@ -4,7 +4,8 @@ import { ButtonProps, default as MuiButton } from '@material-ui/core/Button';
 import styled from '../../lib';
 
 const StyledButton = styled(MuiButton)`
-  margin: 10px; /* Temporary */
+  margin-bottom: ${(props): string => props.theme.sizes.xxsmall};
+  margin-top: ${(props): string => props.theme.sizes.xxsmall};
 `;
 
 const Button = ({ href, ...restProps }: ButtonProps): JSX.Element => {

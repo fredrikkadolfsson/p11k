@@ -1,13 +1,20 @@
 import React from 'react';
+import styled from '../../lib';
 import Button from './Button';
 
 export default {
   title: 'Button',
 };
 
+const Margins = styled.div`
+  > * {
+    margin: 10px;
+  }
+`;
+
 export const Default = (): JSX.Element => (
   <>
-    <div>
+    <Margins>
       <Button color="primary" variant="contained">
         Button
       </Button>
@@ -17,8 +24,8 @@ export const Default = (): JSX.Element => (
       <Button color="primary" variant="text">
         Button
       </Button>
-    </div>
-    <div>
+    </Margins>
+    <Margins>
       <Button color="secondary" variant="contained">
         Button
       </Button>
@@ -28,13 +35,13 @@ export const Default = (): JSX.Element => (
       <Button color="secondary" variant="text">
         Button
       </Button>
-    </div>
+    </Margins>
   </>
 );
 
 export const Link = (): JSX.Element => (
   <>
-    <div>
+    <Margins>
       <Button color="primary" variant="contained" href="/">
         Link
       </Button>
@@ -44,8 +51,8 @@ export const Link = (): JSX.Element => (
       <Button color="primary" variant="text" href="/">
         Link
       </Button>
-    </div>
-    <div>
+    </Margins>
+    <Margins>
       <Button color="secondary" variant="contained" href="/">
         Link
       </Button>
@@ -55,6 +62,6 @@ export const Link = (): JSX.Element => (
       <Button color="secondary" variant="text" href="/">
         Link
       </Button>
-    </div>
+    </Margins>
   </>
 );

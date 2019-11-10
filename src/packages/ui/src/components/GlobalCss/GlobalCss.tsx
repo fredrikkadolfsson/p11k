@@ -1,35 +1,60 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import { CssBaseline } from '@material-ui/core';
+import { useTheme } from 'emotion-theming';
+import { ThemeType } from '../ThemeProvider';
 
-const GlobalStyle = css`
-  * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
+const GlobalCss = (): JSX.Element => {
+  const theme = useTheme<ThemeType>();
 
-  html,
-  body {
-    height: 100%;
-  }
+  const GlobalStyle = React.useMemo(
+    () => css`
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
 
-  #__next {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
+      html,
+      body {
+        height: 100%;
+      }
 
-  p {
-    margin: 10px;
-  }
-`;
+      #__next {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
 
-const GlobalCss = (): JSX.Element => (
-  <>
-    <CssBaseline />
-    <Global styles={GlobalStyle} />
-  </>
-);
+      p {
+        margin-bottom: ${theme.sizes.xxsmall};
+        margin-top: ${theme.sizes.xxsmall};
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: ${theme.widths.xsmall};
+        width: 100%;
+
+        p {
+          text-align: center;
+
+          a {
+            font-weight: 500;
+          }
+        }
+      }
+    `,
+    [theme.sizes.xxsmall],
+  );
+
+  return (
+    <>
+      <CssBaseline />
+      <Global styles={GlobalStyle} />
+    </>
+  );
+};
 
 export default GlobalCss;

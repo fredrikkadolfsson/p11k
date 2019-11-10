@@ -18,12 +18,12 @@ type FooterProps = {
 
 const StyledFooter = styled.footer`
   background-color: ${(props): string => props.theme.palette.primary.main};
-  color: white;
+  color: ${(props): string => props.theme.palette.primary.contrastText};
 `;
 
 const StyledContainer = styled(Container)`
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: ${(props): string => props.theme.sizes.medium};
+  padding-top: ${(props): string => props.theme.sizes.medium};
 `;
 
 const Divider = styled.div`
@@ -40,7 +40,7 @@ const Divider = styled.div`
 `;
 
 const Hr = styled.div`
-  border-top: 1px solid white;
+  border-top: 1px solid ${(props): string => props.theme.palette.primary.contrastText};
 `;
 
 const Column = styled.div`
@@ -48,11 +48,11 @@ const Column = styled.div`
   flex-direction: column;
 
   :not(:first-of-type) {
-    margin-bottom: 5px;
+    margin-bottom: ${(props): string => props.theme.sizes.xxxsmall};
 
     ${(props): SerializedStyles => css`
       ${props.theme.device.mobileL} {
-        margin-bottom: 20px;
+        margin-bottom: ${props.theme.sizes.normedium};
       }
     `}
   }
