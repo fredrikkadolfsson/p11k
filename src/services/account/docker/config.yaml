@@ -4,7 +4,7 @@ services:
   account:
     image: node:12-alpine
     volumes:
-      - p11k:/p11k:cached
+      - p11k:/p11k:delegated
     working_dir: /p11k/src/services/account
     depends_on:
       - mongo
