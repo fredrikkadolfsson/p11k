@@ -2,7 +2,7 @@ import '@emotion/core';
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import styled, { GlobalCss, PageTransitionLoader, ThemeProvider } from '@fredrikkadolfsson/ui';
+import styled, { GlobalCss, NoScript, PageTransitionLoader, ThemeProvider } from '@fredrikkadolfsson/ui';
 import { ApolloProvider } from '@apollo/react-hooks';
 import { ApolloClient } from 'apollo-boost';
 import { Router } from 'next/router';
@@ -38,6 +38,7 @@ class MyApp extends App<AppProps> {
           <ThemeProvider>
             <GlobalCss />
             <PageTransitionLoader Router={Router} />
+            <NoScript>Your browser does not support JavaScript!</NoScript>
             <Header />
             <StyledMain>
               <Component {...pageProps} />
