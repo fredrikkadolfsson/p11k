@@ -8,6 +8,7 @@ const USER = gql`
   query GetUser {
     user {
       id
+      email
     }
   }
 `;
@@ -18,7 +19,11 @@ const User = (): JSX.Element => {
   return (
     <Container>
       <h1>User</h1>
-      {data && <p>{data.user.id}</p>}
+      {data && (
+        <p>
+          {data.user.id} {data.user.email}
+        </p>
+      )}
     </Container>
   );
 };

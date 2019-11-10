@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Formik, FormikProps } from 'formik';
-import styled, { Button, Link, TextField } from '@fredrikkadolfsson/ui';
+import { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { useRouter } from 'next/router';
@@ -15,21 +15,6 @@ const CREATE_ACCOUNT = gql`
       email
     }
   }
-`;
-
-const StyledForm = styled(Form)`
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  width: 100%;
-`;
-
-const RegisterInfo = styled.p`
-  text-align: center;
-`;
-
-const RegisterLink = styled(Link)`
-  font-weight: 500;
 `;
 
 const SignUpForm = (): JSX.Element => {
@@ -77,7 +62,7 @@ const SignUpForm = (): JSX.Element => {
         handleChange,
         handleBlur,
       }: FormikProps<{ email: string; password: string; passwordConfirm: string }>): JSX.Element => (
-        <StyledForm>
+        <Form>
           <TextField
             id="email"
             type="email"
@@ -111,10 +96,10 @@ const SignUpForm = (): JSX.Element => {
           <Button type="submit" disabled={isSubmitting}>
             Registrera
           </Button>
-          <RegisterInfo>
-            Redan medlem? Logga in <RegisterLink href="/login">här!</RegisterLink>
-          </RegisterInfo>
-        </StyledForm>
+          <p>
+            Redan medlem? Logga in <Link href="/login">här!</Link>
+          </p>
+        </Form>
       )}
     </Formik>
   );
