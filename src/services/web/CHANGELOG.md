@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.10](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.9...@fredrikkadolfsson/web@0.11.10) (2019-11-10)
+
+
+### Bug Fixes
+
+* memo to some components and pages ([e4468f3](https://github.com/fredrikkadolfsson/p11k/commit/e4468f3f39412087639e483057a40bda44cc821d))
+
+
+
+
+
 ## [0.11.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.8...@fredrikkadolfsson/web@0.11.9) (2019-11-09)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
