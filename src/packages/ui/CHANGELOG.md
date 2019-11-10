@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.3](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.2...@fredrikkadolfsson/ui@0.11.3) (2019-11-10)
+
+
+### Bug Fixes
+
+* css for components ([ae98180](https://github.com/fredrikkadolfsson/p11k/commit/ae981807d0414f5124584672d14422d2d733863a))
+
+
+
+
+
 ## [0.11.2](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.1...@fredrikkadolfsson/ui@0.11.2) (2019-11-09)
 
 **Note:** Version bump only for package @fredrikkadolfsson/ui
