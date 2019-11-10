@@ -1,9 +1,9 @@
+import React from 'react';
 import { Form, Formik, FormikProps } from 'formik';
 import styled, { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { useRouter } from 'next/router';
-import { useCallback } from 'react';
 import * as Yup from 'yup';
 import config from '../../config';
 import { Authenticate, AuthenticateVariables } from '../../types/Authenticate';
@@ -34,7 +34,7 @@ const LoginForm = (): JSX.Element => {
   const router = useRouter();
   const [authenticate] = useMutation<Authenticate, AuthenticateVariables>(AUTHENTICATE);
 
-  const onSubmit = useCallback(async (variables) => {
+  const onSubmit = React.useCallback(async (variables) => {
     try {
       const { data } = await authenticate({
         variables,

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 import { Container } from '@fredrikkadolfsson/ui';
@@ -22,4 +23,4 @@ const User = (): JSX.Element => {
   );
 };
 
-export default User;
+export default React.memo(User);

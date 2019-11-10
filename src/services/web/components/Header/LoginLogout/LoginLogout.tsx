@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { Button, Link } from '@fredrikkadolfsson/ui';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
@@ -17,7 +17,7 @@ const LoginLogout = (): JSX.Element => {
   const [unauthenticate] = useMutation<Unauthenticate>(UNAUTHENTICATE);
 
   const isUserAuthenticated = useIsUserAuthenticated();
-  const onLogout = useCallback(async () => {
+  const onLogout = React.useCallback(async () => {
     const { data } = await unauthenticate();
     client.writeData({
       data: {

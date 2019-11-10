@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { Container } from '@fredrikkadolfsson/ui';
 import SignUpForm from '../components/SignUpForm/SignUpForm';
 
@@ -13,4 +14,4 @@ const SignUp = (): JSX.Element => (
   </StyledContainer>
 );
 
-export default SignUp;
+export default React.memo(SignUp);

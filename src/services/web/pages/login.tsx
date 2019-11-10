@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { Container } from '@fredrikkadolfsson/ui';
 import LoginForm from '../components/LoginForm/LoginForm';
 
@@ -14,4 +15,4 @@ const Index = (): JSX.Element => (
   </StyledContainer>
 );
 
-export default Index;
+export default React.memo(Index);

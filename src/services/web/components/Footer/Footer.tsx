@@ -20,4 +20,4 @@ const linkSections = [
 
 const Footer = (): JSX.Element => <UiFooter siteName="Perfect Stack" linkSections={linkSections} />;
 
-export default Footer;
+export default React.memo(Footer);

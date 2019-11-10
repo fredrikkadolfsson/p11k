@@ -14,4 +14,4 @@ const Header = (): JSX.Element => (
   </UiHeader>
 );
 
-export default Header;
+export default React.memo(Header);

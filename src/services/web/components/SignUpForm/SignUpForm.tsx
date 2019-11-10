@@ -1,9 +1,9 @@
+import React from 'react';
 import { Form, Formik, FormikProps } from 'formik';
 import styled, { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { useRouter } from 'next/router';
-import { useCallback } from 'react';
 import * as Yup from 'yup';
 import config from '../../config';
 import { CreateAccount, CreateAccountVariables } from '../../types/CreateAccount';
@@ -37,7 +37,7 @@ const SignUpForm = (): JSX.Element => {
   const router = useRouter();
   const [createAccount] = useMutation<CreateAccount, CreateAccountVariables>(CREATE_ACCOUNT);
 
-  const onSubmit = useCallback(async (variables) => {
+  const onSubmit = React.useCallback(async (variables) => {
     try {
       const { data } = await createAccount({
         variables,

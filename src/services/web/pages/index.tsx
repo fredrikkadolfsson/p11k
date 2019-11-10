@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from '@fredrikkadolfsson/ui';
 
 const Index = (): JSX.Element => (
@@ -6,4 +7,4 @@ const Index = (): JSX.Element => (
   </Container>
 );
 
-export default Index;
+export default React.memo(Index);
