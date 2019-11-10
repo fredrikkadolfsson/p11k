@@ -9,6 +9,7 @@ services:
     depends_on:
       - graphql
     environment:
+      GRAPHQL_URL: http://host.docker.internal:4000/graphql
       NEXT_TELEMETRY_DISABLED: 'true'
       NODE_ENV: development
     ports:
