@@ -4,7 +4,7 @@ services:
   web:
     image: node:12-alpine
     volumes:
-      - p11k:/p11k:delegated
+      - p11k:/p11k:cached
     working_dir: /p11k/src/services/web
     depends_on:
       - graphql
