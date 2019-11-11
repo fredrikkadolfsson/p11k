@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.1.6...@fredrikkadolfsson/graphql@0.1.7) (2019-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ts-node to v8.5.0 ([9b503de](https://github.com/fredrikkadolfsson/p11k/commit/9b503de1bf845660b3f8c6512c567c99f4e3b7a0))
+
+
+
+
+
 ## [0.1.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.1.5...@fredrikkadolfsson/graphql@0.1.6) (2019-11-10)
 
 **Note:** Version bump only for package @fredrikkadolfsson/graphql
