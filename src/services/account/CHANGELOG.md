@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.1.12...@fredrikkadolfsson/account@0.1.13) (2019-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ts-node to v8.5.2 ([acc796b](https://github.com/fredrikkadolfsson/p11k/commit/acc796bbe18ac314b003bb7f5a3891c6765c23ce))
+
+
+
+
+
 ## [0.1.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.1.11...@fredrikkadolfsson/account@0.1.12) (2019-11-14)
 
 
