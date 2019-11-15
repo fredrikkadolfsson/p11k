@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.15...@fredrikkadolfsson/web@0.11.16) (2019-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v16.12.0 ([a2359e5](https://github.com/fredrikkadolfsson/p11k/commit/a2359e5be3bc3027b31210aa91436591f55e847f))
+
+
+
+
+
 ## [0.11.15](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.14...@fredrikkadolfsson/web@0.11.15) (2019-11-12)
 
 
