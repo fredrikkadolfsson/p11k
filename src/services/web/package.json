@@ -28,7 +28,7 @@
     "@fredrikkadolfsson/ui": "^0.11.8",
     "@types/cookie": "0.3.3",
     "@types/next": "8.0.7",
-    "@types/node": "12.12.7",
+    "@types/node": "12.12.8",
     "@types/react": "16.9.11",
     "@types/yup": "0.26.24",
     "apollo": "2.21.0",
