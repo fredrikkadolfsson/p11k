@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.19](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.18...@fredrikkadolfsson/web@0.11.19) (2019-11-16)
+
+
+### Bug Fixes
+
+* change to graphql codegen ([03ea256](https://github.com/fredrikkadolfsson/p11k/commit/03ea256d29f42f294708c5a13f895ffc652ff50a))
+
+
+
+
+
 ## [0.11.18](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.17...@fredrikkadolfsson/web@0.11.18) (2019-11-15)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
