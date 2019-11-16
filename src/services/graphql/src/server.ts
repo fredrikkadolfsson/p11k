@@ -5,12 +5,16 @@ import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
 import config from './config';
 import schema from './schema';
 import { Context } from './typings';
+import dataLoaders from './lib/dataLoaders';
 
 const server = new ApolloServer({
   context: (ctx: ExpressContext): Context => {
     const jwt = ctx.req.cookies[config.JWT_COOKIE_NAME] ?? ctx.req.headers.authorization;
-
-    return { jwt, ...ctx };
+    return {
+      dataLoaders,
+      jwt,
+      ...ctx,
+    };
   },
   playground: config.ENABLE_PLAYGROUND,
   schema,

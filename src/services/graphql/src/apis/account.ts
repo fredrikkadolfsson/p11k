@@ -1,33 +1,42 @@
 import axios from 'axios';
 import config from '../config';
+import { Error } from '../typings';
 
 export interface User {
   email: string;
   id: string;
 }
 
-export const createUser = async (data: {
+export interface UserWithToken extends User {
+  token: string;
+}
+
+export interface UserAuthentication {
+  email: string;
+  password: string;
+}
+
+export interface UserRegistration {
   email: string;
   password: string;
   passwordConfirm: string;
-}): Promise<User & { token: string }> => {
-  const resp = await axios.put(`${config.ACCOUNT_URL}/user`, data);
+}
 
+export const createUsers = async (data: UserRegistration[]): Promise<(UserWithToken | Error)[]> => {
+  const resp = await axios.put<(UserWithToken | Error)[]>(`${config.ACCOUNT_URL}/users`, data);
   return resp.data;
 };
 
-export const getUser = async (jwt: string): Promise<User> => {
-  const resp = await axios.get(`${config.ACCOUNT_URL}/user`, {
-    headers: {
-      authorization: jwt,
+export const getUsers = async (tokens: string[]): Promise<(User | Error)[]> => {
+  const resp = await axios.get<(User | Error)[]>(`${config.ACCOUNT_URL}/users`, {
+    params: {
+      tokens,
     },
   });
-
   return resp.data;
 };
 
-export const getJwtToken = async (data: { email: string; password: string }): Promise<string> => {
-  const resp = await axios.post(`${config.ACCOUNT_URL}/user/authenticate`, data);
-
+export const getJwtTokens = async (data: UserAuthentication[]): Promise<(string | Error)[]> => {
+  const resp = await axios.post<(string | Error)[]>(`${config.ACCOUNT_URL}/users/authenticate`, data);
   return resp.data;
 };
