@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.23](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.22...@fredrikkadolfsson/eslint-config-p11k@0.10.23) (2019-11-16)
+
+
+### Bug Fixes
+
+* toggle on harder linting rules for ts ([b3fd093](https://github.com/fredrikkadolfsson/p11k/commit/b3fd093018125b24acd77bab209460139df83152))
+
+
+
+
+
 ## [0.10.22](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.21...@fredrikkadolfsson/eslint-config-p11k@0.10.22) (2019-11-11)
 
 

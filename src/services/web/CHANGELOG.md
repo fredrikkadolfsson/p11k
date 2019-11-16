@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.22](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.21...@fredrikkadolfsson/web@0.11.22) (2019-11-16)
+
+
+### Bug Fixes
+
+* toggle on harder linting rules for ts ([b3fd093](https://github.com/fredrikkadolfsson/p11k/commit/b3fd093018125b24acd77bab209460139df83152))
+* use isAuthenticated query ([58b25a2](https://github.com/fredrikkadolfsson/p11k/commit/58b25a223daf3b04b6c39772c0600d5158379203))
+
+
+
+
+
 ## [0.11.21](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.20...@fredrikkadolfsson/web@0.11.21) (2019-11-16)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web

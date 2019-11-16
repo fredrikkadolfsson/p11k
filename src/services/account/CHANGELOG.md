@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.1.16...@fredrikkadolfsson/account@0.2.0) (2019-11-16)
+
+
+### Bug Fixes
+
+* smaller update to error message ([a0137ff](https://github.com/fredrikkadolfsson/p11k/commit/a0137ffb5b777d7f65ada4c22e925983b8b6e61c))
+* toggle on harder linting rules for ts ([b3fd093](https://github.com/fredrikkadolfsson/p11k/commit/b3fd093018125b24acd77bab209460139df83152))
+
+
+### Features
+
+* change to batch apis ([58ba3b7](https://github.com/fredrikkadolfsson/p11k/commit/58ba3b760f37d8718b7b0be3da81e4dbdf805863))
+
+
+
+
+
 ## [0.1.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.1.15...@fredrikkadolfsson/account@0.1.16) (2019-11-16)
 
 

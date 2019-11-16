@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.1.13...@fredrikkadolfsson/graphql@0.2.0) (2019-11-16)
+
+
+### Bug Fixes
+
+* change back authenticate and add isAuthenticated ([a1c6130](https://github.com/fredrikkadolfsson/p11k/commit/a1c61300a091d5d31f82cf8af1a91bfec4820a2d))
+* toggle on harder linting rules for ts ([b3fd093](https://github.com/fredrikkadolfsson/p11k/commit/b3fd093018125b24acd77bab209460139df83152))
+
+
+### Features
+
+* add dataloader and utalize accounts batch api ([107ab20](https://github.com/fredrikkadolfsson/p11k/commit/107ab20aa15d3046f9d49580118e1e53588e7f94))
+
+
+
+
+
 ## [0.1.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.1.12...@fredrikkadolfsson/graphql@0.1.13) (2019-11-16)
 
 
