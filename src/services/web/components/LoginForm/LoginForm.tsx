@@ -9,9 +9,7 @@ import { minPasswordLength } from '../../constants';
 
 gql`
   mutation authenticate($email: String!, $password: String!) {
-    authenticate(email: $email, password: $password) {
-      id
-    }
+    authenticate(email: $email, password: $password)
   }
 `;
 

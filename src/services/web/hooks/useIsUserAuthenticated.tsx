@@ -3,15 +3,13 @@ import { useIsUserAuthenticatedQuery } from '../generated/graphql';
 
 gql`
   query isUserAuthenticated {
-    user {
-      id
-    }
+    isAuthenticated
   }
 `;
 
 const useIsUserAuthenticated = (): boolean => {
   const { data } = useIsUserAuthenticatedQuery();
-  return Boolean(data?.user.id);
+  return Boolean(data?.isAuthenticated);
 };
 
 export default useIsUserAuthenticated;

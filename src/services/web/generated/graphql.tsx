@@ -13,7 +13,7 @@ export type Scalars = {
 
 export type Mutation = {
    __typename?: 'Mutation',
-  authenticate: User,
+  authenticate: Scalars['String'],
   createAccount: User,
   unauthenticate: Scalars['Boolean'],
 };
@@ -33,6 +33,7 @@ export type MutationCreateAccountArgs = {
 
 export type Query = {
    __typename?: 'Query',
+  isAuthenticated: Scalars['Boolean'],
   user: User,
 };
 
@@ -58,10 +59,7 @@ export type AuthenticateMutationVariables = {
 
 export type AuthenticateMutation = (
   { __typename?: 'Mutation' }
-  & { authenticate: (
-    { __typename?: 'User' }
-    & Pick<User, 'id'>
-  ) }
+  & Pick<Mutation, 'authenticate'>
 );
 
 export type CreateAccountMutationVariables = {
@@ -84,10 +82,7 @@ export type IsUserAuthenticatedQueryVariables = {};
 
 export type IsUserAuthenticatedQuery = (
   { __typename?: 'Query' }
-  & { user: (
-    { __typename?: 'User' }
-    & Pick<User, 'id'>
-  ) }
+  & Pick<Query, 'isAuthenticated'>
 );
 
 export type UserQueryVariables = {};
@@ -133,9 +128,7 @@ export type UnauthenticateMutationResult = ApolloReactCommon.MutationResult<Unau
 export type UnauthenticateMutationOptions = ApolloReactCommon.BaseMutationOptions<UnauthenticateMutation, UnauthenticateMutationVariables>;
 export const AuthenticateDocument = gql`
     mutation authenticate($email: String!, $password: String!) {
-  authenticate(email: $email, password: $password) {
-    id
-  }
+  authenticate(email: $email, password: $password)
 }
     `;
 export type AuthenticateMutationFn = ApolloReactCommon.MutationFunction<AuthenticateMutation, AuthenticateMutationVariables>;
@@ -201,9 +194,7 @@ export type CreateAccountMutationResult = ApolloReactCommon.MutationResult<Creat
 export type CreateAccountMutationOptions = ApolloReactCommon.BaseMutationOptions<CreateAccountMutation, CreateAccountMutationVariables>;
 export const IsUserAuthenticatedDocument = gql`
     query isUserAuthenticated {
-  user {
-    id
-  }
+  isAuthenticated
 }
     `;
 
