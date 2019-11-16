@@ -1,7 +1,7 @@
 import axios from 'axios';
 import config from '../config';
 
-export type userType = {
+export type User = {
   email: string;
   id: string;
 };
@@ -10,13 +10,13 @@ export const createUser = async (data: {
   email: string;
   password: string;
   passwordConfirm: string;
-}): Promise<userType & { token: string }> => {
+}): Promise<User & { token: string }> => {
   const resp = await axios.put(`${config.ACCOUNT_URL}/user`, data);
 
   return resp.data;
 };
 
-export const getUser = async (jwt: string): Promise<userType> => {
+export const getUser = async (jwt: string): Promise<User> => {
   const resp = await axios.get(`${config.ACCOUNT_URL}/user`, {
     headers: {
       authorization: jwt,

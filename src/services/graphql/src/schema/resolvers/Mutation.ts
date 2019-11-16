@@ -1,15 +1,15 @@
 import { ApolloError } from 'apollo-server-core';
 import { assertAuthentication, setAuthenticationCookie, unsetAuthenticationCookie } from '../../lib/authentication';
-import { createUser, getJwtToken, userType } from '../../apis/account';
+import { User, createUser, getJwtToken, getUser } from '../../apis/account';
 import { Context } from '../../typings';
 
 const Mutation = {
   Mutation: {
-    authenticate: async (_: unknown, args: { email: string; password: string }, ctx: Context): Promise<string> => {
+    authenticate: async (_: unknown, args: { email: string; password: string }, ctx: Context): Promise<User> => {
       try {
         const token = await getJwtToken(args);
         setAuthenticationCookie(token, ctx);
-        return token;
+        return getUser(token);
       } catch (error) {
         console.error('Authentication failed', error);
         throw new ApolloError('Faild to authenticate user');
@@ -20,7 +20,7 @@ const Mutation = {
       _: unknown,
       args: { email: string; password: string; passwordConfirm: string },
       ctx: Context,
-    ): Promise<userType> => {
+    ): Promise<User> => {
       try {
         const user = await createUser(args);
         setAuthenticationCookie(user.token, ctx);

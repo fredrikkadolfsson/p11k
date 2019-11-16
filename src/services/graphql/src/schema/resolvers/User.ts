@@ -1,9 +1,9 @@
-import { userType } from '../../apis/account';
+import { User as UserType } from '../../apis/account';
 
 const User = {
   User: {
-    email: (user: userType): string => user.email,
-    id: (user: userType): string => user.id,
+    email: (user: UserType): string => user.email,
+    id: (user: UserType): string => user.id,
   },
 };
 

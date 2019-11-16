@@ -1,10 +1,10 @@
 import { Context } from '../../typings';
 import { assertAuthentication } from '../../lib/authentication';
-import { getUser, userType } from '../../apis/account';
+import { User, getUser } from '../../apis/account';
 
 const Query = {
   Query: {
-    user: (_: unknown, __: unknown, { jwt = '' }: Context): Promise<userType> => {
+    user: (_: unknown, __: unknown, { jwt = '' }: Context): Promise<User> => {
       assertAuthentication(jwt);
       return getUser(jwt);
     },
