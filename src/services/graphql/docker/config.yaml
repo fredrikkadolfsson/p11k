@@ -10,6 +10,7 @@ services:
       - account
     env_file: ${GRAPHQL_DIR}/.env
     environment:
+      ACCOUNT_URL: http://account:5000,
       PORT: 4000
     ports:
       - 4000:4000
