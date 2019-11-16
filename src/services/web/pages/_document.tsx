@@ -1,17 +1,26 @@
 import React from 'react';
 import Document, { DocumentContext, Head, Main, NextScript } from 'next/document';
-import { DocumentInitialProps, RenderPageResult } from 'next/dist/next-server/lib/utils';
+import {
+  AppContextType,
+  AppInitialProps,
+  AppPropsType,
+  DocumentInitialProps,
+  NextComponentType,
+  RenderPageResult,
+} from 'next/dist/next-server/lib/utils';
 import { ServerStyleSheets } from '@material-ui/styles';
 import { StylesProviderProps } from '@material-ui/styles/StylesProvider';
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+  public static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
     const sheets = new ServerStyleSheets();
     const originalRenderPage = ctx.renderPage;
 
     ctx.renderPage = (): RenderPageResult | Promise<RenderPageResult> =>
       originalRenderPage({
-        enhanceApp: (App) => (props): React.ReactElement<StylesProviderProps> => sheets.collect(<App {...props} />),
+        enhanceApp: (App: NextComponentType<AppContextType, AppInitialProps, AppPropsType>) => (
+          props: React.PropsWithChildren<AppPropsType>,
+        ): React.ReactElement<StylesProviderProps> => sheets.collect(<App {...props} />),
       });
 
     const initialProps = await Document.getInitialProps(ctx);
@@ -27,7 +36,7 @@ class MyDocument extends Document {
     };
   }
 
-  render(): JSX.Element {
+  public render(): JSX.Element {
     return (
       <html lang="en">
         <Head>

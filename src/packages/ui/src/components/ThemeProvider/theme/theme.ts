@@ -1,4 +1,4 @@
-import { Theme as MuiThemeType, createMuiTheme } from '@material-ui/core/styles';
+import { Theme as MuiTheme, createMuiTheme } from '@material-ui/core/styles';
 
 const breakpoints = {
   mobileS: 320,
@@ -54,6 +54,6 @@ const theme = {
   },
 };
 
-export type ThemeType = MuiThemeType & typeof theme;
+export type Theme = MuiTheme & typeof theme;
 
-export default createMuiTheme(theme) as ThemeType;
+export default createMuiTheme(theme) as Theme;

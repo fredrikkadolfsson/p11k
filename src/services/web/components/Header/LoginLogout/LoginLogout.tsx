@@ -18,7 +18,7 @@ const LoginLogout = (): JSX.Element => {
 
   const onLogout = React.useCallback(async () => {
     await unauthenticate();
-    client.resetStore();
+    await client.resetStore();
   }, []);
 
   if (isUserAuthenticated) {

@@ -4,7 +4,8 @@ import { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useRouter } from 'next/router';
 import * as Yup from 'yup';
-import { useAuthenticateMutation } from '../../generated/graphql';
+import { AuthenticateMutationVariables, useAuthenticateMutation } from '../../generated/graphql';
+import { minPasswordLength } from '../../constants';
 
 gql`
   mutation authenticate($email: String!, $password: String!) {
@@ -18,12 +19,12 @@ const LoginForm = (): JSX.Element => {
   const router = useRouter();
   const [authenticate] = useAuthenticateMutation();
 
-  const onSubmit = React.useCallback(async (variables) => {
+  const onSubmit = React.useCallback(async (variables: AuthenticateMutationVariables) => {
     try {
       await authenticate({
         variables,
       });
-      router.replace('/');
+      await router.replace('/');
     } catch (error) {
       console.error(error);
     }
@@ -37,7 +38,7 @@ const LoginForm = (): JSX.Element => {
           .email('Invalid email')
           .required('Required'),
         password: Yup.string()
-          .min(8, 'Password is too short - should be 8 chars minimum.')
+          .min(minPasswordLength, 'Password is too short - should be 8 chars minimum.')
           .required('Required'),
       })}
       onSubmit={onSubmit}

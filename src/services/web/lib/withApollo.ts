@@ -1,9 +1,11 @@
-import withApollo from 'next-with-apollo';
+import withApollo, { InitApolloOptions } from 'next-with-apollo';
 import ApolloClient, { InMemoryCache } from 'apollo-boost';
 import config from '../config';
 
 export default withApollo(
-  ({ initialState = {}, headers }) =>
+  (
+    { initialState = {}, headers }: InitApolloOptions<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+  ) =>
     new ApolloClient({
       cache: new InMemoryCache().restore(initialState),
       credentials: process.env.NODE_ENV === 'development' ? 'include' : 'same-origin',

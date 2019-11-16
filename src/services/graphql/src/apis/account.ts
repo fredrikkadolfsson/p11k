@@ -1,10 +1,10 @@
 import axios from 'axios';
 import config from '../config';
 
-export type User = {
+export interface User {
   email: string;
   id: string;
-};
+}
 
 export const createUser = async (data: {
   email: string;

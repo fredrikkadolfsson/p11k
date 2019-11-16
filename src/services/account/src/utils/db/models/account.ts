@@ -1,6 +1,6 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
-type AccountType = Document & {
+interface Account extends Document {
   _id: string;
   email: string;
   password: string;
@@ -8,9 +8,9 @@ type AccountType = Document & {
     email: string;
     id: string;
   };
-};
+}
 
-const AccountSchema: Schema<AccountType> = new Schema({
+const AccountSchema: Schema<Account> = new Schema({
   email: {
     type: String,
     required: true,
@@ -22,7 +22,7 @@ const AccountSchema: Schema<AccountType> = new Schema({
   },
 });
 
-AccountSchema.method('toClient', function(this: AccountType) {
+AccountSchema.method('toClient', function(this: Account) {
   const obj = this.toObject();
 
   obj.id = obj._id;
@@ -31,6 +31,4 @@ AccountSchema.method('toClient', function(this: AccountType) {
   return obj;
 });
 
-const Account = mongoose.model<AccountType>('User', AccountSchema);
-
-export default Account;
+export default mongoose.model<Account>('User', AccountSchema);

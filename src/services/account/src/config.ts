@@ -1,4 +1,4 @@
-type configType = {
+interface Config {
   DB_NAME: string;
   DB_PASSWORD: string;
   DB_USER: string;
@@ -8,9 +8,9 @@ type configType = {
   JWT_ISSUER: string;
   JWT_SUBJECT: string;
   PORT: string;
-};
+}
 
-const config: configType = {
+const config: Config = {
   DB_NAME: process.env.DB_NAME ?? 'accounts',
   DB_PASSWORD: process.env.DB_PASSWORD ?? 'developer_password',
   DB_USER: process.env.DB_USER ?? 'developer',

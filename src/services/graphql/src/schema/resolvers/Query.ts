@@ -4,7 +4,7 @@ import { User, getUser } from '../../apis/account';
 
 const Query = {
   Query: {
-    user: (_: unknown, __: unknown, { jwt = '' }: Context): Promise<User> => {
+    user: async (_: unknown, __: unknown, { jwt = '' }: Context): Promise<User> => {
       assertAuthentication(jwt);
       return getUser(jwt);
     },

@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import HttpStatus from 'http-status-codes';
 import { verifyToken } from '../utils/token';
 import Account from '../utils/db/models/account';
 
@@ -6,7 +7,7 @@ const getUser = async (req: Request, res: Response): Promise<void> => {
   const jwt = req.header('authorization');
 
   if (!jwt) {
-    res.status(400);
+    res.status(HttpStatus.BAD_REQUEST);
     res.send('missing authorization header');
     return;
   }
@@ -15,7 +16,7 @@ const getUser = async (req: Request, res: Response): Promise<void> => {
     const { uid } = verifyToken(jwt);
     const account = await Account.findOne({ _id: uid });
     if (!account) {
-      res.status(400);
+      res.status(HttpStatus.BAD_REQUEST);
       res.send('no account associated with given header');
       return;
     }
@@ -24,7 +25,7 @@ const getUser = async (req: Request, res: Response): Promise<void> => {
     return;
   } catch (error) {
     console.log(error);
-    res.status(400);
+    res.status(HttpStatus.BAD_REQUEST);
     res.send('Something whent wrong fetching the account');
     return;
   }

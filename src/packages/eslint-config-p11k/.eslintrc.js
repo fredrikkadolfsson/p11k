@@ -2,7 +2,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/all',
     'plugin:react/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
@@ -11,6 +11,10 @@ module.exports = {
   ],
   plugins: ['prettier'],
   rules: {
+    '@typescript-eslint/no-magic-numbers': ['error', { ignore: [0] }],
+    '@typescript-eslint/no-type-alias': ['error', { allowAliases: 'in-unions-and-intersections' }],
+    '@typescript-eslint/no-unused-expressions': ['error', { allowTaggedTemplates: true }],
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'arrow-body-style': 'error',
     'brace-style': 'error',
     'import/order': ['error', { 'newlines-between': 'never' }],
@@ -27,7 +31,8 @@ module.exports = {
         patterns: ['@emotion/styled'],
       },
     ],
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    'no-unused-expressions': 'off',
+    'no-unused-vars': 'off',
     'object-shorthand': 'error',
     'prettier/prettier': 'error',
     'react/prop-types': 'off',
@@ -39,6 +44,10 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
+
+    // Try to turn on agail later!
+    '@typescript-eslint/no-unnecessary-condition': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
   },
   globals: {
     React: 'writable',
@@ -51,5 +60,6 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    es2020: true,
   },
 };

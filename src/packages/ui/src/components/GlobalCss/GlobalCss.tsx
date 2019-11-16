@@ -2,10 +2,10 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 import { CssBaseline } from '@material-ui/core';
 import { useTheme } from 'emotion-theming';
-import { ThemeType } from '../ThemeProvider';
+import { Theme } from '../ThemeProvider';
 
 const GlobalCss = (): JSX.Element => {
-  const theme = useTheme<ThemeType>();
+  const theme = useTheme<Theme>();
 
   const GlobalStyle = React.useMemo(
     () => css`

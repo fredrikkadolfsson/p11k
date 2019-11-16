@@ -2,19 +2,19 @@ import React from 'react';
 import NProgress from 'nprogress';
 import { Global, css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
-import { ThemeType } from '../ThemeProvider';
+import { Theme } from '../ThemeProvider';
 
 NProgress.configure({ showSpinner: false });
 
-type PageTransitionLoaderProps = {
+interface PageTransitionLoaderProps {
   Router: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     events: { on: any };
   };
-};
+}
 
 const PageTransitionLoader = ({ Router }: PageTransitionLoaderProps): JSX.Element => {
-  const theme = useTheme<ThemeType>();
+  const theme = useTheme<Theme>();
 
   React.useEffect(() => {
     Router.events.on('routeChangeStart', () => NProgress.start());

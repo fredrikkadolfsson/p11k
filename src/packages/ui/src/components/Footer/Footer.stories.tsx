@@ -15,6 +15,7 @@ const linkSections = [
     links: [
       { text: 'hej4', url: '/' },
       { text: 'hej3', url: '/' },
+      { text: 'hej2', url: '/' },
     ],
     title: 'Något2',
   },

@@ -4,7 +4,8 @@ import { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useRouter } from 'next/router';
 import * as Yup from 'yup';
-import { useCreateAccountMutation } from '../../generated/graphql';
+import { CreateAccountMutationVariables, useCreateAccountMutation } from '../../generated/graphql';
+import { minPasswordLength } from '../../constants';
 
 gql`
   mutation createAccount($email: String!, $password: String!, $passwordConfirm: String!) {
@@ -19,12 +20,12 @@ const SignUpForm = (): JSX.Element => {
   const router = useRouter();
   const [createAccount] = useCreateAccountMutation();
 
-  const onSubmit = React.useCallback(async (variables) => {
+  const onSubmit = React.useCallback(async (variables: CreateAccountMutationVariables) => {
     try {
       await createAccount({
         variables,
       });
-      router.replace('/');
+      await router.replace('/');
     } catch (error) {
       console.error(error);
     }
@@ -38,7 +39,7 @@ const SignUpForm = (): JSX.Element => {
           .email('Invalid email')
           .required('Required'),
         password: Yup.string()
-          .min(8, 'Password is too short - should be 8 chars minimum.')
+          .min(minPasswordLength, 'Password is too short - should be 8 chars minimum.')
           .required('Required'),
         passwordConfirm: Yup.string()
           .oneOf([Yup.ref('password')], 'Passwords do not match')

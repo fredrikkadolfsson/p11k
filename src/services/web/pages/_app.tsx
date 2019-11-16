@@ -10,23 +10,23 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import withApollo from '../lib/withApollo';
 
-type AppProps = {
+interface AppProps {
   apollo: ApolloClient<{}>;
-};
+}
 
 const StyledMain = styled.main`
   flex-grow: 1;
 `;
 
 class MyApp extends App<AppProps> {
-  componentDidMount(): void {
+  public componentDidMount(): void {
     const jssStyles = document.querySelector('#jss-server-side'); // eslint-disable-line no-undef
     if (jssStyles && jssStyles.parentNode) {
       jssStyles.parentNode.removeChild(jssStyles);
     }
   }
 
-  render(): JSX.Element {
+  public render(): JSX.Element {
     const { apollo, Component, pageProps } = this.props;
 
     return (

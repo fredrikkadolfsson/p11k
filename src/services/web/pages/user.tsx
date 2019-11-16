@@ -17,7 +17,7 @@ const User = (): JSX.Element => {
   return (
     <Container>
       <h1>User</h1>
-      {data && (
+      {data !== undefined && (
         <p>
           {data.user.id} {data.user.email}
         </p>

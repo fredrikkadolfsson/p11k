@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import HttpStatus from 'http-status-codes';
 import { getUID } from '../utils/user';
 import { createToken } from '../utils/token';
 
@@ -12,7 +13,7 @@ const authenticateUser = async (req: Request, res: Response): Promise<void> => {
     return;
   } catch (error) {
     console.log(error);
-    res.status(401);
+    res.status(HttpStatus.UNAUTHORIZED);
     res.send('Wrong or missing credentials');
     return;
   }

@@ -1,9 +1,9 @@
 import React, { PropsWithChildren } from 'react';
-import styled from '../../lib';
+import styled, { StyledProps } from '../../lib';
 
 const StyledNoScript = styled.noscript`
-  background-color: ${(props): string => props.theme.palette.secondary.main};
-  color: ${(props): string => props.theme.palette.secondary.contrastText};
+  background-color: ${(props: StyledProps): string => props.theme.palette.secondary.main};
+  color: ${(props: StyledProps): string => props.theme.palette.secondary.contrastText};
   text-align: center;
 `;
 

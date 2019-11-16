@@ -1,5 +1,5 @@
 import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
 
-export type Context = ExpressContext & {
+export interface Context extends ExpressContext {
   jwt?: string;
-};
+}

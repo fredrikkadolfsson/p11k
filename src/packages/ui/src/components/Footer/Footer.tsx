@@ -1,11 +1,11 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import { SerializedStyles, css } from '@emotion/core';
-import styled from '../../lib';
+import styled, { StyledProps } from '../../lib';
 import Link from '../Link/Link';
 import Container from '../Container/Container';
 
-type FooterProps = {
+interface FooterProps {
   siteName: string;
   linkSections: {
     title: string;
@@ -14,24 +14,23 @@ type FooterProps = {
       url: string;
     }[];
   }[];
-};
+}
 
 const StyledFooter = styled.footer`
-  background-color: ${(props): string => props.theme.palette.primary.main};
-  color: ${(props): string => props.theme.palette.primary.contrastText};
+  background-color: ${(props: StyledProps): string => props.theme.palette.primary.main};
+  color: ${(props: StyledProps): string => props.theme.palette.primary.contrastText};
 `;
 
 const StyledContainer = styled(Container)`
-  padding-bottom: ${(props): string => props.theme.sizes.medium};
-  padding-top: ${(props): string => props.theme.sizes.medium};
+  padding-bottom: ${(props: StyledProps): string => props.theme.sizes.medium};
+  padding-top: ${(props: StyledProps): string => props.theme.sizes.medium};
 `;
 
 const Divider = styled.div`
-  align-items: flex-end;
   display: flex;
   justify-content: space-between;
 
-  ${(props): SerializedStyles => css`
+  ${(props: StyledProps): SerializedStyles => css`
     ${props.theme.device.mobileL} {
       align-items: flex-start;
       flex-direction: column-reverse;
@@ -40,17 +39,21 @@ const Divider = styled.div`
 `;
 
 const Hr = styled.div`
-  border-top: 1px solid ${(props): string => props.theme.palette.primary.contrastText};
+  border-top: 1px solid ${(props: StyledProps): string => props.theme.palette.primary.contrastText};
 `;
 
 const Column = styled.div`
   display: flex;
   flex-direction: column;
 
-  :not(:first-of-type) {
-    margin-bottom: ${(props): string => props.theme.sizes.xxxsmall};
+  :first-of-type {
+    justify-content: flex-end;
+  }
 
-    ${(props): SerializedStyles => css`
+  :not(:first-of-type) {
+    margin-bottom: ${(props: StyledProps): string => props.theme.sizes.xxxsmall};
+
+    ${(props: StyledProps): SerializedStyles => css`
       ${props.theme.device.mobileL} {
         margin-bottom: ${props.theme.sizes.normedium};
       }
@@ -68,10 +71,10 @@ const Footer = ({ siteName, linkSections }: FooterProps): JSX.Element => {
           <Column>
             <Typography variant="h5">{siteName}</Typography>
           </Column>
-          {linkSections.map(({ title, links }, sectionIndex) => (
+          {linkSections.map(({ title, links }: FooterProps['linkSections'][0], sectionIndex: number) => (
             <Column key={`${title}-${sectionIndex}`}>
               <Typography variant="h6">{title}</Typography>
-              {links.map(({ text, url }, linkIndex) => (
+              {links.map(({ text, url }: FooterProps['linkSections'][0]['links'][0], linkIndex: number) => (
                 <Link key={`${text}-${linkIndex}`} href={url}>
                   {text}
                 </Link>

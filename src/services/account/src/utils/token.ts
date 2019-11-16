@@ -5,9 +5,9 @@ import config from '../config';
 const publicKey = fs.readFileSync('mock/SSL/public.key');
 const privateKey = fs.readFileSync('mock/SSL/private.key');
 
-type jwtType = {
+interface JWT {
   uid: string;
-};
+}
 
 const jwtOptions = {
   algorithm: config.JWT_ALGORITHM,
@@ -17,7 +17,7 @@ const jwtOptions = {
   subject: config.JWT_SUBJECT,
 };
 
-export const createToken = ({ uid }: jwtType): string =>
+export const createToken = ({ uid }: JWT): string =>
   jwt.sign(
     {
       uid,
@@ -26,4 +26,4 @@ export const createToken = ({ uid }: jwtType): string =>
     jwtOptions,
   );
 
-export const verifyToken = (token: string): jwtType => jwt.verify(token, publicKey, jwtOptions) as jwtType;
+export const verifyToken = (token: string): JWT => jwt.verify(token, publicKey, jwtOptions) as JWT;

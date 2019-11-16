@@ -6,6 +6,7 @@ const linkSections = [
     links: [
       { text: 'Start', url: '/' },
       { text: 'Om oss', url: '/about' },
+      { text: 'Mitt konto', url: '/user' },
     ],
     title: 'Viktiga länkar',
   },
