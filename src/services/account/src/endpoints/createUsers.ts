@@ -28,7 +28,7 @@ const createUser = async ({
     return { id: newAccount._id, email: newAccount.email, token };
   } catch (error) {
     console.log(error);
-    return { code: HttpStatus.INTERNAL_SERVER_ERROR, info: 'Something went wrong' };
+    return { code: HttpStatus.INTERNAL_SERVER_ERROR, info: 'Account already exists or something went wrong' };
   }
 };
 
