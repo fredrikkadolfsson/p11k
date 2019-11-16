@@ -1,18 +1,17 @@
-import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-import config from '../config';
+import { useIsUserAuthenticatedQuery } from '../generated/graphql';
 
-/* eslint-disable graphql/template-strings */
-const IS_USER_AUTHENTICATED = gql`
-  query ${config.JWT_EXISTS_APOLLO_CACHE_NAME} {
-    ${config.JWT_EXISTS_APOLLO_CACHE_NAME}
+gql`
+  query isUserAuthenticated {
+    user {
+      id
+    }
   }
 `;
-/* eslint-enable graphql/template-strings */
 
 const useIsUserAuthenticated = (): boolean => {
-  const { data } = useQuery(IS_USER_AUTHENTICATED, { fetchPolicy: 'cache-only' });
-  return Boolean(data && data[config.JWT_EXISTS_APOLLO_CACHE_NAME]);
+  const { data } = useIsUserAuthenticatedQuery();
+  return Boolean(data?.user.id);
 };
 
 export default useIsUserAuthenticated;

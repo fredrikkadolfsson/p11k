@@ -1,29 +1,23 @@
 import React from 'react';
 import { Button, Link } from '@fredrikkadolfsson/ui';
-import { useApolloClient, useMutation } from '@apollo/react-hooks';
+import { useApolloClient } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 import useIsUserAuthenticated from '../../../hooks/useIsUserAuthenticated';
-import config from '../../../config';
-import { Unauthenticate } from '../../../types/Unauthenticate';
+import { useUnauthenticateMutation } from '../../../generated/graphql';
 
-const UNAUTHENTICATE = gql`
-  mutation Unauthenticate {
+gql`
+  mutation unauthenticate {
     unauthenticate
   }
 `;
 
 const LoginLogout = (): JSX.Element => {
   const client = useApolloClient();
-  const [unauthenticate] = useMutation<Unauthenticate>(UNAUTHENTICATE);
-
+  const [unauthenticate] = useUnauthenticateMutation();
   const isUserAuthenticated = useIsUserAuthenticated();
+
   const onLogout = React.useCallback(async () => {
-    const { data } = await unauthenticate();
-    client.writeData({
-      data: {
-        [config.JWT_EXISTS_APOLLO_CACHE_NAME]: data && !data.unauthenticate,
-      },
-    });
+    await unauthenticate();
     client.resetStore();
   }, []);
 

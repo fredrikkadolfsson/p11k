@@ -2,32 +2,26 @@ import React from 'react';
 import { Form, Formik, FormikProps } from 'formik';
 import { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
-import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { useRouter } from 'next/router';
 import * as Yup from 'yup';
-import config from '../../config';
-import { Authenticate, AuthenticateVariables } from '../../types/Authenticate';
+import { useAuthenticateMutation } from '../../generated/graphql';
 
-const AUTHENTICATE = gql`
-  mutation Authenticate($email: String!, $password: String!) {
-    authenticate(email: $email, password: $password)
+gql`
+  mutation authenticate($email: String!, $password: String!) {
+    authenticate(email: $email, password: $password) {
+      id
+    }
   }
 `;
 
 const LoginForm = (): JSX.Element => {
-  const client = useApolloClient();
   const router = useRouter();
-  const [authenticate] = useMutation<Authenticate, AuthenticateVariables>(AUTHENTICATE);
+  const [authenticate] = useAuthenticateMutation();
 
   const onSubmit = React.useCallback(async (variables) => {
     try {
-      const { data } = await authenticate({
+      await authenticate({
         variables,
-      });
-      client.writeData({
-        data: {
-          [config.JWT_EXISTS_APOLLO_CACHE_NAME]: Boolean(data && data.authenticate),
-        },
       });
       router.replace('/');
     } catch (error) {

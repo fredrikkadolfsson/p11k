@@ -2,14 +2,12 @@ import React from 'react';
 import { Form, Formik, FormikProps } from 'formik';
 import { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
-import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { useRouter } from 'next/router';
 import * as Yup from 'yup';
-import config from '../../config';
-import { CreateAccount, CreateAccountVariables } from '../../types/CreateAccount';
+import { useCreateAccountMutation } from '../../generated/graphql';
 
-const CREATE_ACCOUNT = gql`
-  mutation CreateAccount($email: String!, $password: String!, $passwordConfirm: String!) {
+gql`
+  mutation createAccount($email: String!, $password: String!, $passwordConfirm: String!) {
     createAccount(email: $email, password: $password, passwordConfirm: $passwordConfirm) {
       id
       email
@@ -18,19 +16,13 @@ const CREATE_ACCOUNT = gql`
 `;
 
 const SignUpForm = (): JSX.Element => {
-  const client = useApolloClient();
   const router = useRouter();
-  const [createAccount] = useMutation<CreateAccount, CreateAccountVariables>(CREATE_ACCOUNT);
+  const [createAccount] = useCreateAccountMutation();
 
   const onSubmit = React.useCallback(async (variables) => {
     try {
-      const { data } = await createAccount({
+      await createAccount({
         variables,
-      });
-      client.writeData({
-        data: {
-          [config.JWT_EXISTS_APOLLO_CACHE_NAME]: Boolean(data && data.createAccount.id),
-        },
       });
       router.replace('/');
     } catch (error) {

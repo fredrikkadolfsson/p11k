@@ -1,11 +1,10 @@
 import React from 'react';
-import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 import { Container } from '@fredrikkadolfsson/ui';
-import { GetUser } from '../types/GetUser';
+import { useUserQuery } from '../generated/graphql';
 
-const USER = gql`
-  query GetUser {
+gql`
+  query user {
     user {
       id
       email
@@ -14,8 +13,7 @@ const USER = gql`
 `;
 
 const User = (): JSX.Element => {
-  const { data } = useQuery<GetUser>(USER);
-
+  const { data } = useUserQuery();
   return (
     <Container>
       <h1>User</h1>

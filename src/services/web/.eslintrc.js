@@ -5,7 +5,7 @@ module.exports = {
       'error',
       {
         env: 'apollo',
-        schemaJson: require('./schema.json'),
+        schemaJson: require('./generated/introspection.json'),
       },
     ],
   },
