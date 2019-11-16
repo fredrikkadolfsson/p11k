@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "concurrently 'next' 'yarn generate'",
+    "dev": "concurrently 'dotenv next' 'yarn generate'",
     "dev:all": "concurrently 'sh ./docker/run.sh' 'yarn generate'",
     "generate": "graphql-codegen",
     "start": "next start"

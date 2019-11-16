@@ -6,7 +6,8 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "sh ./docker/run.sh",
+    "dev": "dotenv nodemon",
+    "dev:all": "sh ./docker/run.sh",
     "start": "ts-node src/server.ts"
   },
   "dependencies": {

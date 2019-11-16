@@ -1,14 +1,11 @@
 #!/bin/sh
 
 if [ $service = $ORIGIN_SERVICE ]; then
-    # Create docker-compose command
-    cmd="docker-compose -f docker/config.yaml"
+    # Set dotenv paths in environment
+    . "$ROOT_DIR/scripts/docker_set_dotenv.sh"
     
-    if [ ! -z "$depends_on_configs" ]; then
-        cmd="$cmd $depends_on_configs up"
-    else
-        cmd="$cmd up"
-    fi
+    # Create docker-compose command
+    cmd="docker-compose $depends_on_configs up"
     
     echo ""
     echo "Running: $cmd"

@@ -3,9 +3,12 @@
 # Get service name
 service=$(basename "$PWD")
 
-# Configure origin service
+# Configure origin service and add own config
 if [ -z "$ORIGIN_SERVICE" ]; then
     export ORIGIN_SERVICE=$service
+    depends_on_configs="-f docker/config.yaml"
+else
+    depends_on_configs="-f ../$service/docker/config.yaml"
 fi
 
 # Get depends_on array from docker-compose config
@@ -22,32 +25,18 @@ done
 for dep in "${depends_on[@]}"; do
     dep_dir="../$dep"
     dep_run="$dep_dir/docker/run.sh"
-    dep_config="$dep_dir/docker/config.yaml"
     
-    if [ -f "$dep_config" ]; then
-        # Build the dependencys dependencies
-        if [ -f "$dep_run" ]; then
-            dep_resp=$(cd $dep_dir && sh "./docker/run.sh")
-            echo "$dep_resp"
-            
-            dep_dependencies=$(echo "$dep_resp" | grep "$dep-dependencies")
-            dep_dependencies=${dep_dependencies#"$dep-dependencies: "}
-        fi
+    # Build the dependencys dependencies
+    if [ -f "$dep_run" ]; then
+        dep_resp=$(cd $dep_dir && sh "./docker/run.sh")
+        echo "$dep_resp"
         
-        # Add depends_on_configs
-        if [ -z "$depends_on_configs" ]; then
-            depends_on_configs="-f $dep_config"
-        else
-            depends_on_configs="$depends_on_configs -f $dep_config"
-        fi
+        dep_dependencies=$(echo "$dep_resp" | grep "$dep-dependencies")
+        dep_dependencies=${dep_dependencies#"$dep-dependencies: "}
         
         # Add dep_dependencies if exists
         if [ ! -z "$dep_dependencies" ]; then
             depends_on_configs="$depends_on_configs $dep_dependencies"
-        fi
-    else
-        if [ -z "$(yq -y .services.$dep docker/config.yaml)" ]; then
-            echo "WARNING: missing config file for $service's dependency $dep"
         fi
     fi
 done

@@ -8,10 +8,10 @@ services:
     working_dir: /p11k/src/services/web
     depends_on:
       - graphql
+    env_file: ${WEB_DIR}/.env
     environment:
-      GRAPHQL_URL: http://host.docker.internal:4000/graphql
-      NEXT_TELEMETRY_DISABLED: 'true'
-      NODE_ENV: development
+      GRAPHQL_URL: 'http://host.docker.internal:4000/graphql'
+      PORT: 3000
     ports:
       - 3000:3000
     command: yarn next -p 3000
