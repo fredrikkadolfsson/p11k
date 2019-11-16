@@ -10,8 +10,8 @@ const config: configType = {
   ACCOUNT_URL: process.env.ENABLE_PLAYGROUND ?? 'http://account:5000',
   ENABLE_PLAYGROUND: Boolean(process.env.ENABLE_PLAYGROUND ?? true),
   ENABLE_TRACING: Boolean(process.env.ENABLE_TRACING ?? true),
-  JWT_COOKIE_NAME: process.env.ENABLE_TRACING ?? 'AUTHENTICATION_TOKEN',
-  PORT: process.env.ENABLE_TRACING ?? '4000',
+  JWT_COOKIE_NAME: process.env.JWT_COOKIE_NAME ?? 'AUTHENTICATION_TOKEN',
+  PORT: process.env.PORT ?? '4000',
 };
 
 export default config;
