@@ -33,8 +33,16 @@ const createUser = async ({
 };
 
 const createUsers = async (req: Request, res: Response): Promise<void> => {
+  const body: unknown = req.body;
+
+  if (!Array.isArray(body)) {
+    res.status(HttpStatus.BAD_REQUEST);
+    res.send('User inforamtion not provided in correct format');
+    return;
+  }
+
   try {
-    let ret = await Promise.all(req.body.map(createUser));
+    const ret = await Promise.all(body.map(createUser));
     res.send(ret);
     return;
   } catch (error) {

@@ -24,8 +24,16 @@ const getUser = async (jwt: string): Promise<AccountExternal | Error> => {
 };
 
 const getUsers = async (req: Request, res: Response): Promise<void> => {
+  const tokens: unknown = req.query?.tokens;
+
+  if (!Array.isArray(tokens)) {
+    res.status(HttpStatus.BAD_REQUEST);
+    res.send('Tokens not provided or not an array');
+    return;
+  }
+
   try {
-    let ret = await Promise.all(req.query.tokens.map(getUser));
+    const ret = await Promise.all(tokens.map(getUser));
     res.send(ret);
     return;
   } catch (error) {

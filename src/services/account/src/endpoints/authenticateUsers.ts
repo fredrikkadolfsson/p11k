@@ -15,8 +15,16 @@ const authenticateUser = async ({ email, password }: { email: string; password: 
 };
 
 const authenticateUsers = async (req: Request, res: Response): Promise<void> => {
+  const body: unknown = req.body;
+
+  if (!Array.isArray(body)) {
+    res.status(HttpStatus.BAD_REQUEST);
+    res.send('Authentication inforamtion not provided in correct format');
+    return;
+  }
+
   try {
-    let ret = await Promise.all(req.body.map(authenticateUser));
+    const ret = await Promise.all(body.map(authenticateUser));
     res.send(ret);
     return;
   } catch (error) {
