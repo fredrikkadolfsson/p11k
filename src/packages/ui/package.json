@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "@babel/core": "7.7.2",
-    "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.13",
     "@storybook/addon-actions": "5.2.6",
     "@storybook/addon-centered": "5.2.6",
     "@storybook/addon-info": "5.2.6",
