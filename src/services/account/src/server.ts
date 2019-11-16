@@ -2,17 +2,17 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import config from './config';
 import connectDB from './utils/db/connect';
-import getUser from './endpoints/getUser';
-import createUser from './endpoints/createUser';
-import authenticateUser from './endpoints/authenticateUser';
+import getUsers from './endpoints/getUsers';
+import createUsers from './endpoints/createUsers';
+import authenticateUsers from './endpoints/authenticateUsers';
 
 Promise.resolve(
   (async (): Promise<void> => {
     const app = express();
     app.use(bodyParser.json());
-    app.get('/user', getUser);
-    app.put('/user', createUser);
-    app.post('/user/authenticate', authenticateUser);
+    app.get('/users', getUsers);
+    app.put('/users', createUsers);
+    app.post('/users/authenticate', authenticateUsers);
 
     await connectDB();
 

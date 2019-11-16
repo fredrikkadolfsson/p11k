@@ -1,13 +1,16 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
+export interface AccountExternal {
+  email: string;
+  id: string;
+  token: string;
+}
+
 interface Account extends Document {
   _id: string;
   email: string;
   password: string;
-  toClient(): {
-    email: string;
-    id: string;
-  };
+  toClient(): AccountExternal;
 }
 
 const AccountSchema: Schema<Account> = new Schema({
