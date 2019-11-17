@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.1...@fredrikkadolfsson/account@0.2.2) (2019-11-17)
+
+
+### Bug Fixes
+
+* some safechecking ([537eb85](https://github.com/fredrikkadolfsson/p11k/commit/537eb85a6496f75ce78e9f968ad14d60f706e358))
+
+
+
+
+
 ## [0.2.1](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.0...@fredrikkadolfsson/account@0.2.1) (2019-11-16)
 
 
