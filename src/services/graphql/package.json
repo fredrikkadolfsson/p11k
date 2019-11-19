@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@types/cookie-parser": "1.4.2",
-    "@types/node": "12.12.9",
+    "@types/node": "12.12.11",
     "nodemon": "1.19.4"
   }
 }
