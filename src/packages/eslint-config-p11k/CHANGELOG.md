@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.25](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.24...@fredrikkadolfsson/eslint-config-p11k@0.10.25) (2019-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v6.7.0 ([0d18c7d](https://github.com/fredrikkadolfsson/p11k/commit/0d18c7dbcd7cb8617cef9d84b0e3cbb88c7a12cf))
+
+
+
+
+
 ## [0.10.24](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.23...@fredrikkadolfsson/eslint-config-p11k@0.10.24) (2019-11-17)
 
 
