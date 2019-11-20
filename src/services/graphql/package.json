@@ -11,7 +11,7 @@
     "start": "ts-node src/server.ts"
   },
   "dependencies": {
-    "apollo-server-express": "2.9.10",
+    "apollo-server-express": "2.9.11",
     "axios": "0.19.0",
     "cookie-parser": "1.4.4",
     "dataloader": "1.4.0",
