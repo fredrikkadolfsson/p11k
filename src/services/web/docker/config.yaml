@@ -14,7 +14,7 @@ services:
       PORT: 3000
     ports:
       - 3000:3000
-    command: yarn next -p 3000
+    command: yarn nodemon
 
 volumes:
   p11k:
