@@ -12,4 +12,4 @@ const NextI18NextInstance = new NextI18Next({
 
 export default NextI18NextInstance;
 
-export const { appWithTranslation, withTranslation, useTranslation } = NextI18NextInstance;
+export const { appWithTranslation } = NextI18NextInstance;

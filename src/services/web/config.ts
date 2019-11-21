@@ -1,4 +1,5 @@
 import { Locale, NodeEnv } from './typings';
+import localeConfig from './localeConfig';
 
 interface Config {
   GRAPHQL_URL: string;
@@ -10,8 +11,8 @@ interface Config {
 }
 
 const config: Config = {
-  LOCALE_DEFAULT: 'en',
-  LOCALE_SUPPORTED: ['en', 'sv'],
+  LOCALE_DEFAULT: localeConfig.LOCALE_DEFAULT,
+  LOCALE_SUPPORTED: localeConfig.LOCALE_SUPPORTED,
   GRAPHQL_URL: process.env.GRAPHQL_URL ?? 'http://localhost:4000/graphql',
   JWT_COOKIE_NAME: process.env.JWT_COOKIE_NAME ?? 'AUTHENTICATION_TOKEN',
   NODE_ENV: (process.env.NODE_ENV as NodeEnv) ?? 'development',
