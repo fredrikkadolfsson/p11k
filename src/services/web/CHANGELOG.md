@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.28](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.27...@fredrikkadolfsson/web@0.11.28) (2019-11-21)
+
+
+### Bug Fixes
+
+* trigger build ([06a642c](https://github.com/fredrikkadolfsson/p11k/commit/06a642cb38ebc2bf7415c97c047b6be5b3e90e2e))
+
+
+
+
+
 ## [0.11.27](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.26...@fredrikkadolfsson/web@0.11.27) (2019-11-20)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
