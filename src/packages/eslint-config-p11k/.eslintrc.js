@@ -15,6 +15,8 @@ module.exports = {
     '@typescript-eslint/no-type-alias': ['error', { allowAliases: 'in-unions-and-intersections' }],
     '@typescript-eslint/no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
+    '@typescript-eslint/strict-boolean-expressions': 'off',
     'arrow-body-style': 'error',
     'brace-style': 'error',
     'import/order': ['error', { 'newlines-between': 'never' }],
@@ -47,7 +49,6 @@ module.exports = {
 
     // Try to turn on agail later!
     '@typescript-eslint/no-unnecessary-condition': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'off',
   },
   globals: {
     React: 'writable',
