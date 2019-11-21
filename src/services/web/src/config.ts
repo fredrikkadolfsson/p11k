@@ -1,5 +1,5 @@
-import { Locale, NodeEnv } from './typings';
 import localeConfig from './localeConfig';
+import { Locale, NodeEnv } from './typings';
 
 interface Config {
   GRAPHQL_URL: string;

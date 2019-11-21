@@ -1,6 +1,6 @@
 module.exports = {
   client: {
-    includes: ['**'],
+    includes: ['src/**'],
     service: {
       name: 'p11k',
       url: 'http://localhost:4000/graphql',

@@ -1,4 +1,4 @@
-const config = require('./localeConfig');
+const config = require('./src/localeConfig');
 
 module.exports = {
   presets: ['next/babel'],
@@ -11,7 +11,7 @@ module.exports = {
         defaultNS: 'common',
         discardOldKeys: true,
         locales: config.LOCALE_SUPPORTED,
-        outputPath: './locales/{{locale}}/{{ns}}.json',
+        outputPath: './src/locales/{{locale}}/{{ns}}.json',
         useI18nextDefaultValue: [config.LOCALE_DEFAULT],
       },
     ],
