@@ -1,8 +1,8 @@
 overwrite: true
 schema: 'http://localhost:4000/graphql'
-documents: './**/*.{ts,tsx}'
+documents: './src/**/*.{ts,tsx}'
 generates:
-  generated/graphql.tsx:
+  src/generated/graphql.tsx:
     plugins:
       - typescript
       - typescript-operations
@@ -11,6 +11,6 @@ generates:
       withComponent: false
       withHOC: false
       withHooks: true
-  generated/introspection.json:
+  src/generated/introspection.json:
     plugins:
       - introspection
