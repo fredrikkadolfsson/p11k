@@ -9,5 +9,5 @@
     "skipLibCheck": true
   },
   "exclude": ["node_modules", "server.ts"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "apollo.config.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "apollo.config.js", "localeConfig.js"]
 }
