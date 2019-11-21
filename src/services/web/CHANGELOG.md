@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.31...@fredrikkadolfsson/web@0.12.0) (2019-11-21)
+
+
+### Features
+
+* first version of react-i18n ([0034321](https://github.com/fredrikkadolfsson/p11k/commit/003432186e11767e9c4fa389026697e4a93c8e86))
+
+
+
+
+
 ## [0.11.31](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.11.30...@fredrikkadolfsson/web@0.11.31) (2019-11-21)
 
 

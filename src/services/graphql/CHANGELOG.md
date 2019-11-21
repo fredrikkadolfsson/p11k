@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.2.7...@fredrikkadolfsson/graphql@0.3.0) (2019-11-21)
+
+
+### Features
+
+* first version of react-i18n ([0034321](https://github.com/fredrikkadolfsson/p11k/commit/003432186e11767e9c4fa389026697e4a93c8e86))
+
+
+
+
+
 ## [0.2.7](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.2.6...@fredrikkadolfsson/graphql@0.2.7) (2019-11-21)
 
 
