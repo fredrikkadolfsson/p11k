@@ -8,7 +8,7 @@ export default withApollo(
   ) =>
     new ApolloClient({
       cache: new InMemoryCache().restore(initialState),
-      credentials: process.env.NODE_ENV === 'development' ? 'include' : 'same-origin',
+      credentials: config.NODE_ENV === 'development' ? 'include' : 'same-origin',
       headers,
       uri: config.GRAPHQL_URL,
     }),

@@ -10,3 +10,5 @@ export interface Error {
   code: number;
   info: string;
 }
+
+export type NodeEnv = 'development' | 'production';

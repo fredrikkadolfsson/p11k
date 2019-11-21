@@ -9,6 +9,7 @@ import { Router } from 'next/router';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import withApollo from '../lib/withApollo';
+import { appWithTranslation } from '../lib/i18n';
 
 interface AppProps {
   apollo: ApolloClient<{}>;
@@ -51,4 +52,4 @@ class MyApp extends App<AppProps> {
   }
 }
 
-export default withApollo(MyApp);
+export default withApollo(appWithTranslation(MyApp));
