@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.26](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.25...@fredrikkadolfsson/eslint-config-p11k@0.10.26) (2019-11-21)
+
+
+### Bug Fixes
+
+* restrict-template-expressions ([bb780ca](https://github.com/fredrikkadolfsson/p11k/commit/bb780ca994f836b45dbe74cb7b19e8c81e7642a4))
+* **deps:** update typescript-eslint monorepo to v2.8.0 ([0b3c4ad](https://github.com/fredrikkadolfsson/p11k/commit/0b3c4adac63fa53ac33ed5635695770763044bd9))
+
+
+
+
+
 ## [0.10.25](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.24...@fredrikkadolfsson/eslint-config-p11k@0.10.25) (2019-11-19)
 
 
