@@ -22,6 +22,6 @@
     "@types/jsonwebtoken": "8.3.5",
     "@types/mongoose": "5.5.32",
     "@types/node": "12.12.11",
-    "nodemon": "2.0.0"
+    "nodemon": "2.0.1"
   }
 }
