@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/jsonwebtoken": "8.3.5",
     "@types/mongoose": "5.5.32",
-    "@types/node": "12.12.11",
+    "@types/node": "12.12.12",
     "nodemon": "2.0.1"
   }
 }
