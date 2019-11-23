@@ -1,8 +1,9 @@
 {
-  "extends": ["config:base"],
   "automerge": true,
+  "commitBody": "[skip ci]",
+  "extends": ["config:base"],
+  "ignorePresets": [":prHourlyLimit2"],
   "major": {
     "automerge": false
-  },
-  "ignorePresets": [":prHourlyLimit2"]
+  }
 }
