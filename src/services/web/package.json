@@ -38,7 +38,7 @@
     "@types/cookie": "0.3.3",
     "@types/node": "12.12.14",
     "@types/react": "16.9.13",
-    "@types/yup": "0.26.24",
+    "@types/yup": "0.26.26",
     "babel-plugin-emotion": "10.0.23",
     "babel-plugin-i18next-extract": "0.4.0",
     "concurrently": "5.0.0",
