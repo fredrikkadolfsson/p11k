@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.28](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.27...@fredrikkadolfsson/eslint-config-p11k@0.10.28) (2019-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint to v6.7.2 ([83e7086](https://github.com/fredrikkadolfsson/p11k/commit/83e70865dbecf59e8dd90ef24cf76ea557bafe0b))
+* **deps:** update dependency eslint-plugin-react to v7.17.0 ([049945b](https://github.com/fredrikkadolfsson/p11k/commit/049945be88bc7b92b93bd185963a1c453b651a20))
+* **deps:** update typescript-eslint monorepo to v2.9.0 ([5bdaa39](https://github.com/fredrikkadolfsson/p11k/commit/5bdaa3922c5794e025a920c689ec80263569b659))
+
+
+
+
+
 ## [0.10.27](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.26...@fredrikkadolfsson/eslint-config-p11k@0.10.27) (2019-11-22)
 
 

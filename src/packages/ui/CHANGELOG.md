@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.14](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.13...@fredrikkadolfsson/ui@0.11.14) (2019-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update mui monorepo to v4.7.1 ([88d1428](https://github.com/fredrikkadolfsson/p11k/commit/88d14285f98c36ec93c1538c2ef862ede58244b2))
+
+
+
+
+
 ## [0.11.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.12...@fredrikkadolfsson/ui@0.11.13) (2019-11-23)
 
 **Note:** Version bump only for package @fredrikkadolfsson/ui

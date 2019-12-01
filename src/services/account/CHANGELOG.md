@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.8...@fredrikkadolfsson/account@0.2.9) (2019-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mongoose to v5.7.13 ([be11af4](https://github.com/fredrikkadolfsson/p11k/commit/be11af4e3cc12d442877f4ce6a4c2ca22f3d1a5b))
+* **deps:** update dependency ts-node to v8.5.4 ([ea42cb3](https://github.com/fredrikkadolfsson/p11k/commit/ea42cb3a63f2be05e37a39a1cb45a03b90303726))
+
+
+
+
+
 ## [0.2.8](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.7...@fredrikkadolfsson/account@0.2.8) (2019-11-23)
 
 **Note:** Version bump only for package @fredrikkadolfsson/account

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.7](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.6...@fredrikkadolfsson/web@0.12.7) (2019-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-i18next to v2.1.1 ([c762169](https://github.com/fredrikkadolfsson/p11k/commit/c762169dcf238bdc93467f3767e7f627ab01f12f))
+* **deps:** update dependency ts-node to v8.5.4 ([ea42cb3](https://github.com/fredrikkadolfsson/p11k/commit/ea42cb3a63f2be05e37a39a1cb45a03b90303726))
+
+
+
+
+
 ## [0.12.6](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.5...@fredrikkadolfsson/web@0.12.6) (2019-12-01)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
