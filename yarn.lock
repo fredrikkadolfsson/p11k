@@ -12104,10 +12104,10 @@ nested-object-assign@^1.0.3:
   resolved "https://registry.yarnpkg.com/nested-object-assign/-/nested-object-assign-1.0.3.tgz#5aca69390d9affe5a612152b5f0843ae399ac597"
   integrity sha512-kgq1CuvLyUcbcIuTiCA93cQ2IJFSlRwXcN+hLcb2qLJwC2qrePHGZZa7IipyWqaWF6tQjdax2pQnVxdq19Zzwg==
 
-next-i18next@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-2.1.0.tgz#4f72ded1ddd93b5be6e7a4f0f3e1344410538e7c"
-  integrity sha512-XiLk59u/ZCZKkqJzKC7nozGy7bTSo4nr4YKv+3YTxQspMlG1+/wZJDHPoY2P79ueavdYNGKI9d2YOpG0K8CVag==
+next-i18next@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-2.1.1.tgz#fb669b57b42efe95242af98a892be85096e2371a"
+  integrity sha512-Mbeb73SK9ozNBQIp8Fp/Fb51Xw7Tx/1m4rNHFnkTEupztrMCHBdKsG0t7L4k4VWwchW+a2sJ284nxSxtFSHOaw==
   dependencies:
     core-js "^2"
     detect-node "^2.0.4"
