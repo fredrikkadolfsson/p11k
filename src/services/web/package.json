@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/web",
-  "version": "0.12.11",
+  "version": "0.12.12",
   "description": "p11k's frontend web application.",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "7.7.4",
     "@babel/plugin-proposal-optional-chaining": "7.7.5",
-    "@fredrikkadolfsson/ui": "^0.11.16",
+    "@fredrikkadolfsson/ui": "^0.11.17",
     "@graphql-codegen/cli": "1.9.1",
     "@graphql-codegen/introspection": "1.9.1",
     "@graphql-codegen/typescript": "1.9.1",
