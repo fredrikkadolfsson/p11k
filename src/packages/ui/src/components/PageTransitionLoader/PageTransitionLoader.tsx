@@ -8,8 +8,7 @@ NProgress.configure({ showSpinner: false });
 
 interface PageTransitionLoaderProps {
   Router: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    events: { on: any };
+    events: { on: unknown };
   };
 }
 
@@ -17,9 +16,11 @@ const PageTransitionLoader = ({ Router }: PageTransitionLoaderProps): JSX.Elemen
   const theme = useTheme<Theme>();
 
   React.useEffect(() => {
-    Router.events.on('routeChangeStart', () => NProgress.start());
-    Router.events.on('routeChangeComplete', () => NProgress.done());
-    Router.events.on('routeChangeError', () => NProgress.done());
+    if (typeof Router.events.on === 'function') {
+      Router.events.on('routeChangeStart', () => NProgress.start());
+      Router.events.on('routeChangeComplete', () => NProgress.done());
+      Router.events.on('routeChangeError', () => NProgress.done());
+    }
   }, []);
 
   const GlobalStyle = React.useMemo(

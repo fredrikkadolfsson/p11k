@@ -21,7 +21,7 @@ const StyledMain = styled.main`
 
 class MyApp extends App<AppProps> {
   public componentDidMount(): void {
-    const jssStyles = document.querySelector('#jss-server-side'); // eslint-disable-line no-undef
+    const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles?.parentNode) {
       jssStyles.parentNode.removeChild(jssStyles);
     }
