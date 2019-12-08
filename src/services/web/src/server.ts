@@ -8,7 +8,6 @@ const app = next({ dev: config.NODE_ENV !== 'production' });
 const handle = app.getRequestHandler();
 
 Promise.resolve(
-  // eslint-disable-next-line @typescript-eslint/require-await
   (async (): Promise<void> => {
     await app.prepare();
     const server = express();

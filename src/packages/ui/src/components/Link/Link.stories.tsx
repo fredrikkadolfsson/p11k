@@ -18,10 +18,10 @@ export const Default = (): JSX.Element => (
 
 export const Button = (): JSX.Element => (
   <>
-    <Link onClick={(): void => {}} color="primary">
+    <Link onClick={(): null => null} color="primary">
       Button
     </Link>
-    <Link onClick={(): void => {}} color="secondary">
+    <Link onClick={(): null => null} color="secondary">
       Button
     </Link>
   </>
