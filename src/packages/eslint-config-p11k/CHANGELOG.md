@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.30](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.29...@fredrikkadolfsson/eslint-config-p11k@0.10.30) (2019-12-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-import to v2.19.1 ([041a681](https://github.com/fredrikkadolfsson/p11k/commit/041a681edc8ced71aba50caccba83568e3bd0463))
+
+
+
+
+
 ## [0.10.29](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.28...@fredrikkadolfsson/eslint-config-p11k@0.10.29) (2019-12-08)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/web",
-  "version": "0.12.14",
+  "version": "0.12.15",
   "description": "p11k's frontend web application.",
   "main": "index.js",
   "license": "UNLICENSED",
