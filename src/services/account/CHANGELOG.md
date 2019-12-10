@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.13](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.12...@fredrikkadolfsson/account@0.2.13) (2019-12-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mongoose to v5.8.0 ([b1bb0cb](https://github.com/fredrikkadolfsson/p11k/commit/b1bb0cbdb87ae36a934b26df3ab69bfb0e60aed2))
+
+
+
+
+
 ## [0.2.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.11...@fredrikkadolfsson/account@0.2.12) (2019-12-09)
 
 **Note:** Version bump only for package @fredrikkadolfsson/account
