@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.21](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.20...@fredrikkadolfsson/web@0.12.21) (2019-12-11)
+
+**Note:** Version bump only for package @fredrikkadolfsson/web
+
+
+
+
+
 ## [0.12.20](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.19...@fredrikkadolfsson/web@0.12.20) (2019-12-10)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
