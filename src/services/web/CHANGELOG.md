@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.23](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.22...@fredrikkadolfsson/web@0.12.23) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency formik to v2.0.8 ([5606031](https://github.com/fredrikkadolfsson/p11k/commit/5606031068c08c6dd52912a108d13663c6f3141b))
+
+
+
+
+
 ## [0.12.22](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.21...@fredrikkadolfsson/web@0.12.22) (2019-12-11)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
