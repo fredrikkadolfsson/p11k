@@ -5,6 +5,7 @@
   "version": "independent",
   "command": {
     "publish": {
+      "changelogPreset": "conventional-changelog-angular",
       "conventionalCommits": true,
       "ignoreChanges": ["*.md"],
       "message": "chore(release): publish [ci skip]"
