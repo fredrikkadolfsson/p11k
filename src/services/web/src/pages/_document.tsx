@@ -10,6 +10,7 @@ import {
 } from 'next/dist/next-server/lib/utils';
 import { ServerStyleSheets } from '@material-ui/styles';
 import { StylesProviderProps } from '@material-ui/styles/StylesProvider';
+import config from '../config';
 
 class MyDocument extends Document {
   public static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -38,7 +39,7 @@ class MyDocument extends Document {
 
   public render(): JSX.Element {
     return (
-      <html lang="en">
+      <html lang={config.LOCALE_DEFAULT}>
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
