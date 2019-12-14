@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.28](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.27...@fredrikkadolfsson/web@0.12.28) (2019-12-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency apollo-boost to v0.4.7 ([d2286f0](https://github.com/fredrikkadolfsson/p11k/commit/d2286f004403e2ad52de20f03e25c50de09af4cb))
+
+
+
+
+
 ## [0.12.27](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.26...@fredrikkadolfsson/web@0.12.27) (2019-12-14)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
