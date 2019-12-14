@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.26](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.25...@fredrikkadolfsson/web@0.12.26) (2019-12-14)
+
+
+### Bug Fixes
+
+* keep formik on 2.0.7 untill 2.0.8 is fixed ([8f196bb](https://github.com/fredrikkadolfsson/p11k/commit/8f196bb2eb3bc53e1cf43da6fd66661bb35e197b))
+* set page lang depending on config ([e5c7599](https://github.com/fredrikkadolfsson/p11k/commit/e5c7599e7a4df0a4ee607a2dacfb6d4732998463))
+
+
+
+
+
 ## [0.12.25](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.24...@fredrikkadolfsson/web@0.12.25) (2019-12-14)
 
 
