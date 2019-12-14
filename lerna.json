@@ -8,7 +8,7 @@
       "changelogPreset": "conventional-changelog-angular",
       "conventionalCommits": true,
       "ignoreChanges": ["*.md"],
-      "message": "chore(release): publish [ci skip]"
+      "message": "build(release): publish [ci skip]"
     }
   }
 }

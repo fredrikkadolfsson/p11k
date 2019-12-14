@@ -4,5 +4,6 @@
   "ignorePresets": [":prHourlyLimit2"],
   "major": {
     "automerge": false
-  }
+  },
+  "semanticCommitType": "build"
 }

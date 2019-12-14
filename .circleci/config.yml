@@ -73,7 +73,7 @@ jobs:
       - *restore_build
       - *allowe_github
       - run:
-          name: Conventional commit and push to registry
+          name: Semantic release and push to registry
           command: yarn lerna:publish --yes
 
 workflows:
