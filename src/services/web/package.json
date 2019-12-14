@@ -7,8 +7,7 @@
   "private": true,
   "scripts": {
     "build": "next build && tsc --project tsconfig.server.json",
-    "dev": "dotenv nodemon",
-    "dev2": "concurrently 'dotenv nodemon' 'yarn generate --watch'",
+    "dev": "concurrently 'dotenv nodemon' 'yarn generate --watch'",
     "dev:all": "concurrently 'sh ./docker/run.sh' 'yarn generate --watch'",
     "generate": "graphql-codegen",
     "start": "ts-node --project tsconfig.server.json ./src/server.ts"
