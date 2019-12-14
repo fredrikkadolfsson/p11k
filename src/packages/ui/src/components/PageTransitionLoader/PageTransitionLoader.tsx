@@ -29,24 +29,24 @@ const PageTransitionLoader = ({ Router }: PageTransitionLoaderProps): JSX.Elemen
         pointer-events: none;
 
         .bar {
-          background: ${theme.palette.secondary.main};
-          height: 2px;
-          left: 0;
           position: fixed;
-          top: 0;
-          width: 100%;
           z-index: 1131;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: ${theme.palette.secondary.main};
         }
 
         .peg {
-          box-shadow: 0 0 10px ${theme.palette.secondary.main}, 0 0 5px ${theme.palette.secondary.main};
-          display: block;
-          height: 100%;
-          opacity: 1;
           position: absolute;
-          right: 0px;
-          transform: rotate(3deg) translate(0px, -4px);
+          right: 0;
+          display: block;
           width: 100px;
+          height: 100%;
+          box-shadow: 0 0 10px ${theme.palette.secondary.main}, 0 0 5px ${theme.palette.secondary.main};
+          opacity: 1;
+          transform: rotate(3deg) translate(0, -4px);
         }
       }
     `,

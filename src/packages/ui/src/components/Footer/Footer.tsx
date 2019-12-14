@@ -32,10 +32,10 @@ const Divider = styled.div`
 
   ${(props: StyledProps): SerializedStyles => css`
     ${props.theme.device.mobileL} {
-      align-items: flex-start;
       flex-direction: column-reverse;
+      align-items: flex-start;
     }
-  `}
+  `};
 `;
 
 const Hr = styled.div`

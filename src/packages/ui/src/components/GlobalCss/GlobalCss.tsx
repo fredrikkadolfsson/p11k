@@ -11,8 +11,8 @@ const GlobalCss = (): JSX.Element => {
     () => css`
       * {
         box-sizing: border-box;
-        margin: 0px;
-        padding: 0px;
+        padding: 0;
+        margin: 0;
       }
 
       html,
@@ -22,20 +22,20 @@ const GlobalCss = (): JSX.Element => {
 
       #__next {
         display: flex;
-        flex-direction: column;
         height: 100%;
+        flex-direction: column;
       }
 
       p {
-        margin-bottom: ${theme.sizes.xxsmall};
         margin-top: ${theme.sizes.xxsmall};
+        margin-bottom: ${theme.sizes.xxsmall};
       }
 
       form {
         display: flex;
-        flex-direction: column;
-        max-width: ${theme.widths.xsmall};
         width: 100%;
+        max-width: ${theme.widths.xsmall};
+        flex-direction: column;
 
         p {
           text-align: center;
