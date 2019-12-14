@@ -1,3 +1,10 @@
 {
-  "rules": {}
+  "extends": ["stylelint-config-standard", "stylelint-config-idiomatic-order"],
+  "rules": {
+    "no-empty-source": null,
+    "no-eol-whitespace": null,
+    "no-missing-end-of-source-newline": null,
+    "property-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true
+  }
 }
