@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.25](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.24...@fredrikkadolfsson/web@0.12.25) (2019-12-14)
+
+
+### Bug Fixes
+
+* about translations ([5aff638](https://github.com/fredrikkadolfsson/p11k/commit/5aff6384f40074bf61c19a217cdd67b161e41255))
+
+
+
+
+
 ## [0.12.24](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.23...@fredrikkadolfsson/web@0.12.24) (2019-12-13)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
