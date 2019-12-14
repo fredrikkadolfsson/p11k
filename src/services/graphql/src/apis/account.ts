@@ -22,12 +22,12 @@ export interface UserRegistration {
   passwordConfirm: string;
 }
 
-export const createUsers = async (data: UserRegistration[]): Promise<(UserWithToken | Error)[]> => {
+export const createUsers = async (data: readonly UserRegistration[]): Promise<(UserWithToken | Error)[]> => {
   const resp = await axios.put<(UserWithToken | Error)[]>(`${config.ACCOUNT_URL}/users`, data);
   return resp.data;
 };
 
-export const getUsers = async (tokens: string[]): Promise<(User | Error)[]> => {
+export const getUsers = async (tokens: readonly string[]): Promise<(User | Error)[]> => {
   const resp = await axios.get<(User | Error)[]>(`${config.ACCOUNT_URL}/users`, {
     params: {
       tokens,
@@ -36,7 +36,7 @@ export const getUsers = async (tokens: string[]): Promise<(User | Error)[]> => {
   return resp.data;
 };
 
-export const getJwtTokens = async (data: UserAuthentication[]): Promise<(string | Error)[]> => {
+export const getJwtTokens = async (data: readonly UserAuthentication[]): Promise<(string | Error)[]> => {
   const resp = await axios.post<(string | Error)[]>(`${config.ACCOUNT_URL}/users/authenticate`, data);
   return resp.data;
 };

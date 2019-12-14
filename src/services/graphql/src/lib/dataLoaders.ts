@@ -20,7 +20,7 @@ export interface DataLoaders {
 
 const dataLoaders: DataLoaders = {
   jwtLoader: new DataLoader(
-    async (tokens: UserAuthentication[]): Promise<string[]> => {
+    async (tokens: readonly UserAuthentication[]): Promise<string[]> => {
       const users = await getJwtTokens(tokens);
 
       return users.map((data: string | Error) => {
@@ -33,7 +33,7 @@ const dataLoaders: DataLoaders = {
     },
   ),
   userCreateLoader: new DataLoader(
-    async (data: UserRegistration[]): Promise<UserWithToken[]> => {
+    async (data: readonly UserRegistration[]): Promise<UserWithToken[]> => {
       const users = await createUsers(data);
 
       return users.map((data: UserWithToken | Error) => {
@@ -49,7 +49,7 @@ const dataLoaders: DataLoaders = {
     },
   ),
   userLoader: new DataLoader(
-    async (tokens: string[]): Promise<User[]> => {
+    async (tokens: readonly string[]): Promise<User[]> => {
       const users = await getUsers(tokens);
 
       return users.map((data: User | Error) => {
