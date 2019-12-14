@@ -59,21 +59,29 @@ jobs:
       - *cache_yarn
       - *cache_build
 
-  lint:
+  lint_eslint:
     <<: *node_container
     steps:
       - *restore_build
       - run:
-          name: Run linting
-          command: yarn lint
+          name: Run ESLint
+          command: yarn lint:eslint
 
-  semantic_release:
+  lint_tsc:
+    <<: *node_container
+    steps:
+      - *restore_build
+      - run:
+          name: Run tsc linting
+          command: yarn lint:tsc
+
+  publish:
     <<: *node_container
     steps:
       - *restore_build
       - *allowe_github
       - run:
-          name: Semantic release and push to registry
+          name: Publish and push to registry
           command: yarn lerna:publish --yes
 
 workflows:
@@ -81,12 +89,18 @@ workflows:
   pipe:
     jobs:
       - build
-      - lint:
+
+      - lint_eslint:
           requires:
             - build
-      - semantic_release:
+      - lint_tsc:
           requires:
-            - lint
+            - build
+
+      - publish:
+          requires:
+            - lint_eslint
+            - lint_tsc
           filters:
             branches:
               only: master
