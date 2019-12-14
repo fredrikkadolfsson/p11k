@@ -10,8 +10,9 @@
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build": "lerna run --parallel --no-private build",
     "lerna:publish": "lerna publish --registry https://npm.pkg.github.com/",
-    "lint": "concurrently 'yarn lint:eslint' 'yarn lint:tsc'",
+    "lint": "concurrently 'yarn lint:eslint' 'yarn lint:stylelint' 'yarn lint:tsc'",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:stylelint": "stylelint --syntax css-in-js .",
     "lint:tsc": "lerna exec --parallel -- sh ../../../scripts/tsc.sh"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "@commitlint/prompt-cli": "8.2.0",
     "@fredrikkadolfsson/eslint-config-p11k": "^0.10.15",
     "@fredrikkadolfsson/prettier-config-p11k": "^0.10.10",
+    "@fredrikkadolfsson/stylelint-config-p11k": "^0.0.0",
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.13",
     "concurrently": "5.0.1",
     "dotenv": "8.2.0",

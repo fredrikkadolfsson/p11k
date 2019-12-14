@@ -67,6 +67,14 @@ jobs:
           name: Run ESLint
           command: yarn lint:eslint
 
+  lint_stylelint:
+    <<: *node_container
+    steps:
+      - *restore_build
+      - run:
+          name: Run StyleLint
+          command: yarn lint:stylelint
+
   lint_tsc:
     <<: *node_container
     steps:
@@ -93,6 +101,9 @@ workflows:
       - lint_eslint:
           requires:
             - build
+      - lint_stylelint:
+          requires:
+            - build
       - lint_tsc:
           requires:
             - build
@@ -100,6 +111,7 @@ workflows:
       - publish:
           requires:
             - lint_eslint
+            - lint_stylelint
             - lint_tsc
           filters:
             branches:

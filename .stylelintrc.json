@@ -1,0 +1,3 @@
+{
+  "extends": "@fredrikkadolfsson/stylelint-config-p11k"
+}
