@@ -14,6 +14,7 @@ interface FooterProps {
       url: string;
     }[];
   }[];
+  locale: JSX.Element;
 }
 
 const StyledFooter = styled.footer`
@@ -61,7 +62,13 @@ const Column = styled.div`
   }
 `;
 
-const Footer = ({ siteName, linkSections }: FooterProps): JSX.Element => {
+const SpaceBetween = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Footer = ({ siteName, linkSections, locale }: FooterProps): JSX.Element => {
   const currentYear = React.useMemo(() => new Date().getFullYear(), []);
 
   return (
@@ -83,7 +90,10 @@ const Footer = ({ siteName, linkSections }: FooterProps): JSX.Element => {
           ))}
         </Divider>
         <Hr />
-        <span>Copyright &copy; {currentYear}. All Rights Reserved</span>
+        <SpaceBetween>
+          <span>Copyright &copy; {currentYear}. All Rights Reserved</span>
+          {locale}
+        </SpaceBetween>
       </StyledContainer>
     </StyledFooter>
   );
