@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Formik, FormikProps } from 'formik';
+import { useFormik } from 'formik';
 import { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useRouter } from 'next/router';
@@ -17,68 +17,60 @@ const LoginForm = (): JSX.Element => {
   const router = useRouter();
   const [authenticate] = useAuthenticateMutation();
 
-  const onSubmit = React.useCallback(async (variables: AuthenticateMutationVariables) => {
-    try {
-      await authenticate({
-        variables,
-      });
-      await router.replace('/');
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+      password: '',
+    },
+    validationSchema: Yup.object().shape({
+      email: Yup.string()
+        .email('Invalid email')
+        .required('Required'),
+      password: Yup.string()
+        .min(minPasswordLength, 'Password is too short - should be 8 chars minimum.')
+        .required('Required'),
+    }),
+    onSubmit: async (variables: AuthenticateMutationVariables) => {
+      try {
+        await authenticate({
+          variables,
+        });
+        await router.replace('/');
+      } catch (error) {
+        console.error(error);
+      }
+    },
+  });
 
   return (
-    <Formik
-      initialValues={{ email: '', password: '' }}
-      validationSchema={Yup.object().shape({
-        email: Yup.string()
-          .email('Invalid email')
-          .required('Required'),
-        password: Yup.string()
-          .min(minPasswordLength, 'Password is too short - should be 8 chars minimum.')
-          .required('Required'),
-      })}
-      onSubmit={onSubmit}
-    >
-      {({
-        values,
-        touched,
-        errors,
-        isSubmitting,
-        handleChange,
-        handleBlur,
-      }: FormikProps<{ email: string; password: string }>): JSX.Element => (
-        <Form>
-          <TextField
-            id="email"
-            type="email"
-            label="Email"
-            value={values.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            helperText={touched.email ? errors.email : ''}
-            error={touched.email && Boolean(errors.email)}
-          />
-          <TextField
-            id="password"
-            type="password"
-            label="Lösenord"
-            value={values.password}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            helperText={touched.password ? errors.password : ''}
-            error={touched.password && Boolean(errors.password)}
-          />
-          <Button type="submit" disabled={isSubmitting}>
-            Logga in
-          </Button>
-          <p>
-            Inte medlem? Registrera dig <Link href="/signup">här!</Link>
-          </p>
-        </Form>
-      )}
-    </Formik>
+    <form onSubmit={formik.handleSubmit}>
+      <TextField
+        id="email"
+        type="email"
+        label="Email"
+        value={formik.values.email}
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        helperText={formik.touched.email ? formik.errors.email : ''}
+        error={formik.touched.email && Boolean(formik.errors.email)}
+      />
+      <TextField
+        id="password"
+        type="password"
+        label="Lösenord"
+        value={formik.values.password}
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        helperText={formik.touched.password ? formik.errors.password : ''}
+        error={formik.touched.password && Boolean(formik.errors.password)}
+      />
+      <Button type="submit" disabled={formik.isSubmitting}>
+        Logga in
+      </Button>
+      <p>
+        Inte medlem? Registrera dig <Link href="/signup">här!</Link>
+      </p>
+    </form>
   );
 };
 
