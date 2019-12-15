@@ -9,7 +9,6 @@ module.exports = {
       'i18next-extract',
       {
         defaultNS: 'common',
-        discardOldKeys: true,
         locales: config.LOCALE_SUPPORTED,
         outputPath: './src/locales/{{locale}}/{{ns}}.json',
         useI18nextDefaultValue: [config.LOCALE_DEFAULT],
