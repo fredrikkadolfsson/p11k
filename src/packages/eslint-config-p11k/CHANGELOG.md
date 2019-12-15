@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.32](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.31...@fredrikkadolfsson/eslint-config-p11k@0.10.32) (2019-12-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-prettier to v3.1.2 ([490ae6e](https://github.com/fredrikkadolfsson/p11k/commit/490ae6e0fb03d4f05abc0897deebc260a30e7c34))
+
+
+
+
+
 ## [0.10.31](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.30...@fredrikkadolfsson/eslint-config-p11k@0.10.31) (2019-12-09)
 
 
