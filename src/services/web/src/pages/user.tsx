@@ -1,5 +1,6 @@
 import React from 'react';
 import gql from 'graphql-tag';
+import { useTranslation } from 'react-i18next';
 import { Container } from '@fredrikkadolfsson/ui';
 import { useUserQuery } from '../generated/graphql';
 
@@ -13,10 +14,12 @@ gql`
 `;
 
 const User = (): JSX.Element => {
+  const { t } = useTranslation('user');
   const { data } = useUserQuery();
+
   return (
     <Container>
-      <h1>User</h1>
+      <h1>{t('title', 'User')}</h1>
       {data !== undefined && (
         <p>
           {data.user.id} {data.user.email}
@@ -25,5 +28,9 @@ const User = (): JSX.Element => {
     </Container>
   );
 };
+
+User.getInitialProps = (): { namespacesRequired: string[] } => ({
+  namespacesRequired: ['user', 'common'],
+});
 
 export default React.memo(User);

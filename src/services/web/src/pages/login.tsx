@@ -9,10 +9,14 @@ const StyledContainer = styled(Container)`
   justify-content: center;
 `;
 
-const Index = (): JSX.Element => (
+const Login = (): JSX.Element => (
   <StyledContainer>
     <LoginForm />
   </StyledContainer>
 );
 
-export default React.memo(Index);
+Login.getInitialProps = (): { namespacesRequired: string[] } => ({
+  namespacesRequired: ['login', 'common'],
+});
+
+export default React.memo(Login);

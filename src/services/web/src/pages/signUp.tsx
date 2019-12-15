@@ -8,10 +8,15 @@ const StyledContainer = styled(Container)`
   display: flex;
   justify-content: center;
 `;
+
 const SignUp = (): JSX.Element => (
   <StyledContainer>
     <SignUpForm />
   </StyledContainer>
 );
+
+SignUp.getInitialProps = (): { namespacesRequired: string[] } => ({
+  namespacesRequired: ['signUp', 'common'],
+});
 
 export default React.memo(SignUp);
