@@ -10,7 +10,7 @@ module.exports = {
       {
         defaultNS: 'common',
         locales: config.LOCALE_SUPPORTED,
-        outputPath: './static/locales/{{locale}}/{{ns}}.json',
+        outputPath: './public/locales/{{locale}}/{{ns}}.json',
         useI18nextDefaultValue: [config.LOCALE_DEFAULT],
       },
     ],
