@@ -4,6 +4,7 @@ import { useIsUserAuthenticatedQuery } from '../generated/graphql';
 gql`
   query isUserAuthenticated {
     authentication {
+      id
       isAuthenticated
     }
   }

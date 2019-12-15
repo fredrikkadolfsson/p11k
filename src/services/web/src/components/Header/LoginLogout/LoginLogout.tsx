@@ -9,6 +9,7 @@ import { useUnauthenticateMutation } from '../../../generated/graphql';
 gql`
   mutation unauthenticate {
     unauthenticate {
+      id
       isAuthenticated
     }
   }
