@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Footer as UiFooter } from '@fredrikkadolfsson/ui';
+import useIsUserAuthenticated from '../../hooks/useIsUserAuthenticated';
 
 const Footer = (): JSX.Element => {
   const { t } = useTranslation('common');
+  const isUserAuthenticated = useIsUserAuthenticated();
 
   const linkSections = React.useMemo(
     () => [
@@ -15,15 +17,19 @@ const Footer = (): JSX.Element => {
         ],
         title: t('important_links', 'Important links'),
       },
-      {
-        links: [
-          { text: t('sign_in', 'Sign in'), url: '/login' },
-          { text: t('register', 'Register'), url: '/signup' },
-        ],
-        title: t('get_started', 'Get started'),
-      },
+      ...(!isUserAuthenticated
+        ? [
+            {
+              links: [
+                { text: t('sign_in', 'Sign in'), url: '/login' },
+                { text: t('register', 'Register'), url: '/signup' },
+              ],
+              title: t('get_started', 'Get started'),
+            },
+          ]
+        : []),
     ],
-    [t],
+    [t, isUserAuthenticated],
   );
 
   return <UiFooter siteName={t('site_name', 'Perfect Stack')} linkSections={linkSections} />;
