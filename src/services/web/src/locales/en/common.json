@@ -1,11 +1,21 @@
 {
+  "about": "About us",
+  "account": "My account",
   "email": "Email",
+  "get_started": "Get started",
   "here": "here!",
+  "home": "Home",
+  "important_links": "Important links",
   "invalid_email": "Invalid email",
+  "invalid_password_match": "Passwords do not match",
   "invalid_required": "Password is too short - should be {{minPasswordLength}} chars minimum.",
   "password": "Password",
+  "password_repeat": "Repeat password",
+  "perfect_stack": "Perfect Stack",
+  "register": "Register",
   "required": "Required",
   "sign_in": "Sign in",
+  "sign_in_link": "Already a member? Sign in",
   "sign_out": "Sign out",
   "sign_up_link": "Not a member? Register"
 }
