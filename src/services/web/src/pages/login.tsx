@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, { Container } from '@fredrikkadolfsson/ui';
 import LoginForm from '../components/LoginForm/LoginForm';
-import { InitialProps } from '../typings';
+import { InitialProps, InitialPropsProps } from '../typings';
+import redirectAuthenticated from '../lib/redirectAuthenticated';
 
 const StyledContainer = styled(Container)`
   align-items: center;
@@ -16,8 +17,12 @@ const Login = (): JSX.Element => (
   </StyledContainer>
 );
 
-Login.getInitialProps = (): InitialProps => ({
-  namespacesRequired: ['login', 'common'],
-});
+Login.getInitialProps = async (props: InitialPropsProps): Promise<InitialProps> => {
+  await redirectAuthenticated(props);
+
+  return {
+    namespacesRequired: ['login', 'common'],
+  };
+};
 
 export default Login;

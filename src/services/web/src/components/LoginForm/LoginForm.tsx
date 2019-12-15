@@ -45,7 +45,7 @@ const LoginForm = (): JSX.Element => {
         await authenticate({
           variables,
         });
-        await router.replace('/');
+        await router.replace('/user');
       } catch (error) {
         console.error(error);
       }
