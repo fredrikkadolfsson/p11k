@@ -6,7 +6,7 @@ const NextI18NextInstance = new NextI18Next({
   defaultLanguage: config.LOCALE_DEFAULT,
   otherLanguages: config.LOCALE_SUPPORTED.filter((locale: Locale) => locale !== config.LOCALE_DEFAULT),
 
-  localePath: 'src/locales',
+  localePath: 'static/locales',
   serverLanguageDetection: config.NODE_ENV !== 'development',
 });
 
