@@ -31,12 +31,12 @@ const Mutation = {
       }
     },
 
-    unauthenticate: (_: unknown, __: unknown, ctx: Context): boolean => {
+    unauthenticate: (_: unknown, __: unknown, ctx: Context): string => {
       assertAuthentication(ctx.jwt);
 
       try {
         unsetAuthenticationCookie(ctx);
-        return true;
+        return '';
       } catch (error) {
         console.error('Sign out failed', error);
         throw new ApolloError('Faild to unauthenticate user');

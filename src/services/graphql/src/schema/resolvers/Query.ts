@@ -4,7 +4,7 @@ import { User } from '../../apis/account';
 
 const Query = {
   Query: {
-    isAuthenticated: (_: unknown, __: unknown, { jwt = '' }: Context): boolean => Boolean(jwt),
+    authentication: (_: unknown, __: unknown, { jwt = '' }: Context): string => jwt,
     user: async (_: unknown, __: unknown, { jwt = '', dataLoaders }: Context): Promise<User> => {
       assertAuthentication(jwt);
       return dataLoaders.userLoader.load(jwt);
