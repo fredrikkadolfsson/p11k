@@ -4,10 +4,12 @@ import { Locale } from '../typings';
 
 const NextI18NextInstance = new NextI18Next({
   defaultLanguage: config.LOCALE_DEFAULT,
+  fallbackLng: config.LOCALE_DEFAULT,
   otherLanguages: config.LOCALE_SUPPORTED.filter((locale: Locale) => locale !== config.LOCALE_DEFAULT),
 
   // Until public dir is fixed: https://github.com/isaachinman/next-i18next/issues/523
   localePath: typeof window === 'undefined' ? 'public/locales' : 'locales',
+  returnEmptyString: false,
   serverLanguageDetection: config.NODE_ENV !== 'development',
 });
 
