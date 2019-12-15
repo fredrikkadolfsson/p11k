@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Footer as UiFooter } from '@fredrikkadolfsson/ui';
 import useIsUserAuthenticated from '../../hooks/useIsUserAuthenticated';
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 const Footer = (): JSX.Element => {
   const { t } = useTranslation('common');
@@ -29,7 +30,13 @@ const Footer = (): JSX.Element => {
     [t, isUserAuthenticated],
   );
 
-  return <UiFooter siteName={t('perfect_stack', 'Perfect Stack')} linkSections={linkSections} />;
+  return (
+    <UiFooter
+      siteName={t('perfect_stack', 'Perfect Stack')}
+      linkSections={linkSections}
+      locale={<LanguageSelector />}
+    />
+  );
 };
 
 export default React.memo(Footer);
