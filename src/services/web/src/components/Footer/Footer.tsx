@@ -10,24 +10,21 @@ const Footer = (): JSX.Element => {
   const linkSections = React.useMemo(
     () => [
       {
+        title: t('important_links', 'Important links'),
         links: [
           { text: t('home', 'Home'), url: '/' },
           { text: t('about', 'About us'), url: '/about' },
-          { text: t('account', 'My account'), url: '/user' },
         ],
-        title: t('important_links', 'Important links'),
       },
-      ...(!isUserAuthenticated
-        ? [
-            {
-              links: [
-                { text: t('sign_in', 'Sign in'), url: '/login' },
-                { text: t('register', 'Register'), url: '/signup' },
-              ],
-              title: t('get_started', 'Get started'),
-            },
-          ]
-        : []),
+      {
+        title: t('get_started', 'Get started'),
+        links: isUserAuthenticated
+          ? [{ text: t('account', 'My account'), url: '/user' }]
+          : [
+              { text: t('sign_in', 'Sign in'), url: '/login' },
+              { text: t('register', 'Register'), url: '/signup' },
+            ],
+      },
     ],
     [t, isUserAuthenticated],
   );
