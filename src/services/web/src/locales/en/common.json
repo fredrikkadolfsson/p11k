@@ -4,8 +4,8 @@
   "invalid_email": "Invalid email",
   "invalid_required": "Password is too short - should be {{minPasswordLength}} chars minimum.",
   "password": "Password",
-  "perfect_stack": "Perfect Stack",
   "required": "Required",
   "sign_in": "Sign in",
+  "sign_out": "Sign out",
   "sign_up_link": "Not a member? Register"
 }
