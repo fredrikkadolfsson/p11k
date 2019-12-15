@@ -3,7 +3,8 @@ import gql from 'graphql-tag';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@fredrikkadolfsson/ui';
 import { useUserQuery } from '../generated/graphql';
-import { InitialProps } from '../typings';
+import { InitialProps, InitialPropsProps } from '../typings';
+import { redirectUnAuthenticated } from '../lib/redirects';
 
 gql`
   query user {
@@ -30,8 +31,12 @@ const User = (): JSX.Element => {
   );
 };
 
-User.getInitialProps = (): InitialProps => ({
-  namespacesRequired: ['user', 'common'],
-});
+User.getInitialProps = async (props: InitialPropsProps): Promise<InitialProps> => {
+  await redirectUnAuthenticated(props);
+
+  return {
+    namespacesRequired: ['user', 'common'],
+  };
+};
 
 export default User;

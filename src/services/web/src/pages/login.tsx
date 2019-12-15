@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { Container } from '@fredrikkadolfsson/ui';
 import LoginForm from '../components/LoginForm/LoginForm';
 import { InitialProps, InitialPropsProps } from '../typings';
-import redirectAuthenticated from '../lib/redirectAuthenticated';
+import { redirectAuthenticated } from '../lib/redirects';
 
 const StyledContainer = styled(Container)`
   align-items: center;
