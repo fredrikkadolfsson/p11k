@@ -9,6 +9,8 @@
   "invalid_email": "Ogiltig e-post",
   "invalid_password_match": "Lösenord matchar inte",
   "invalid_required": "Lösenordet är för kort - bör vara {{minPasswordLength}} -tecken minst.",
+  "locale_en": "Engelska",
+  "locale_sv": "Svenska",
   "password": "Password",
   "password_repeat": "Upprepa lösenord",
   "perfect_stack": "Perfect Stack",

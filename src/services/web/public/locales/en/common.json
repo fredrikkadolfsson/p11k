@@ -9,6 +9,8 @@
   "invalid_email": "Invalid email",
   "invalid_password_match": "Passwords do not match",
   "invalid_required": "Password is too short - should be {{minPasswordLength}} chars minimum.",
+  "locale_en": "English",
+  "locale_sv": "Swedish",
   "password": "Password",
   "password_repeat": "Repeat password",
   "perfect_stack": "Perfect Stack",
