@@ -4,6 +4,7 @@ import { Button, Link, TextField } from '@fredrikkadolfsson/ui';
 import gql from 'graphql-tag';
 import { useRouter } from 'next/router';
 import * as Yup from 'yup';
+import { useTranslation } from 'react-i18next';
 import { AuthenticateMutationVariables, useAuthenticateMutation } from '../../generated/graphql';
 import { minPasswordLength } from '../../constants';
 
@@ -14,6 +15,7 @@ gql`
 `;
 
 const LoginForm = (): JSX.Element => {
+  const { t } = useTranslation('common');
   const router = useRouter();
   const [authenticate] = useAuthenticateMutation();
 
@@ -24,11 +26,16 @@ const LoginForm = (): JSX.Element => {
     },
     validationSchema: Yup.object().shape({
       email: Yup.string()
-        .email('Invalid email')
-        .required('Required'),
+        .email(t('invalid_email', 'Invalid email'))
+        .required(t('required', 'Required')),
       password: Yup.string()
-        .min(minPasswordLength, 'Password is too short - should be 8 chars minimum.')
-        .required('Required'),
+        .min(
+          minPasswordLength,
+          t('invalid_required', 'Password is too short - should be {{minPasswordLength}} chars minimum.', {
+            minPasswordLength,
+          }),
+        )
+        .required(t('required', 'Required')),
     }),
     onSubmit: async (variables: AuthenticateMutationVariables) => {
       try {
@@ -44,31 +51,13 @@ const LoginForm = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <TextField
-        id="email"
-        type="email"
-        label="Email"
-        value={formik.values.email}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        helperText={formik.touched.email ? formik.errors.email : ''}
-        error={formik.touched.email && Boolean(formik.errors.email)}
-      />
-      <TextField
-        id="password"
-        type="password"
-        label="Lösenord"
-        value={formik.values.password}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        helperText={formik.touched.password ? formik.errors.password : ''}
-        error={formik.touched.password && Boolean(formik.errors.password)}
-      />
+      <TextField id="email" type="email" label={t('email', 'Email')} formik={formik} />
+      <TextField id="password" type="password" label={t('password', 'Password')} formik={formik} />
       <Button type="submit" disabled={formik.isSubmitting}>
-        Logga in
+        {t('sign_in', 'Sign in')}
       </Button>
       <p>
-        Inte medlem? Registrera dig <Link href="/signup">här!</Link>
+        {t('sign_up_link', 'Not a member? Register')} <Link href="/signup">{t('here', 'here!')}</Link>
       </p>
     </form>
   );

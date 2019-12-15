@@ -1,1 +1,12 @@
-{}
+{
+  "email": "",
+  "here": "",
+  "invalid_email": "",
+  "invalid_password_match": "",
+  "invalid_required": "",
+  "password": "",
+  "password_repeat": "",
+  "register": "",
+  "required": "",
+  "sign_in_link": ""
+}

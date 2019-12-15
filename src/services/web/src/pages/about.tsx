@@ -7,7 +7,7 @@ const About = (): JSX.Element => {
 
   return (
     <Container>
-      <h1>{t('About', 'About us!')}</h1>
+      <h1>{t('about', 'About us!')}</h1>
     </Container>
   );
 };

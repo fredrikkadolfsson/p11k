@@ -1,1 +1,12 @@
-{}
+{
+  "email": "Email",
+  "here": "here!",
+  "invalid_email": "Invalid email",
+  "invalid_password_match": "Passwords do not match",
+  "invalid_required": "Password is too short - should be {{minPasswordLength}} chars minimum.",
+  "password": "Password",
+  "password_repeat": "Repeat password",
+  "register": "Register",
+  "required": "Required",
+  "sign_in_link": "Already a member? Sign in"
+}
