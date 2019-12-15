@@ -7,10 +7,11 @@
   "private": true,
   "scripts": {
     "build": "next build && tsc --project tsconfig.server.json",
-    "dev": "concurrently 'dotenv nodemon' 'yarn generate --watch'",
-    "dev:all": "concurrently 'sh ./docker/run.sh' 'yarn generate --watch'",
+    "dev": "concurrently 'dotenv nodemon' 'yarn generate:graphql --watch'",
+    "dev:all": "concurrently 'sh ./docker/run.sh' 'yarn generate:graphql --watch'",
     "dev:no-generate": "dotenv nodemon",
-    "generate": "graphql-codegen",
+    "generate:graphql": "graphql-codegen",
+    "generate:i18n": "babel -f .babelrc 'src/**/*.{js,ts,tsx}' > /dev/null",
     "start": "ts-node --project tsconfig.server.json ./src/server.ts"
   },
   "dependencies": {
@@ -27,6 +28,7 @@
     "yup": "0.27.0"
   },
   "devDependencies": {
+    "@babel/cli": "7.7.5",
     "@babel/plugin-proposal-nullish-coalescing-operator": "7.7.4",
     "@babel/plugin-proposal-optional-chaining": "7.7.5",
     "@fredrikkadolfsson/ui": "^0.11.20",
