@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Link } from '@fredrikkadolfsson/ui';
+import { Button } from '@fredrikkadolfsson/ui';
 import { useApolloClient } from '@apollo/react-hooks';
 import { useTranslation } from 'react-i18next';
 import gql from 'graphql-tag';
@@ -30,10 +30,18 @@ const LoginLogout = (): JSX.Element => {
   }, []);
 
   if (isUserAuthenticated) {
-    return <Button onClick={onLogout}>{t('sign_out', 'Sign out')}</Button>;
+    return (
+      <Button onClick={onLogout} color="inherit" variant="text">
+        {t('sign_out', 'Sign out')}
+      </Button>
+    );
   }
 
-  return <Link href="/login">{t('sign_in', 'Sign in')}</Link>;
+  return (
+    <Button href="/login" color="inherit" variant="text">
+      {t('sign_in', 'Sign in')}
+    </Button>
+  );
 };
 
 export default LoginLogout;
