@@ -1,12 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import styled, { Button, Link, Popover } from '@fredrikkadolfsson/ui';
+import styled, { Button, Link, Popover, StyledProps } from '@fredrikkadolfsson/ui';
 import config from '../../config';
 import { Locale } from '../../typings';
 
 const StyledButton = styled(Button)`
   padding: 0;
   margin: 0;
+`;
+
+const StyledDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: ${(props: StyledProps): string => props.theme.sizes.medium};
 `;
 
 const LanguageSelector = (): JSX.Element => {
@@ -40,26 +46,28 @@ const LanguageSelector = (): JSX.Element => {
         }}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'center',
+          horizontal: 'right',
         }}
         transformOrigin={{
           vertical: 'bottom',
-          horizontal: 'center',
+          horizontal: 'right',
         }}
       >
-        {availableLocales.map(
-          (locale: string): JSX.Element => (
-            <Link
-              key={locale}
-              onClick={async (): Promise<void> => {
-                await i18n.changeLanguage(locale);
-                setAnchorEl(null);
-              }}
-            >
-              {t(`locale_${locale}`, locale)}
-            </Link>
-          ),
-        )}
+        <StyledDiv>
+          {availableLocales.map(
+            (locale: string): JSX.Element => (
+              <Link
+                key={locale}
+                onClick={async (): Promise<void> => {
+                  await i18n.changeLanguage(locale);
+                  setAnchorEl(null);
+                }}
+              >
+                {t(`locale_${locale}`, locale)}
+              </Link>
+            ),
+          )}
+        </StyledDiv>
       </Popover>
     </>
   );
