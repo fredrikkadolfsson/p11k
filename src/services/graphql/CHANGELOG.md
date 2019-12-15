@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.10](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.3.9...@fredrikkadolfsson/graphql@0.3.10) (2019-12-15)
+
+
+### Bug Fixes
+
+* add static id to enable caching ([ddde6a2](https://github.com/fredrikkadolfsson/p11k/commit/ddde6a2176a58ae965767faadfe1b48ef0cbc2f3))
+* change to autnetication object ([b24f3c4](https://github.com/fredrikkadolfsson/p11k/commit/b24f3c4b5a7cc80e769aa6fff6aa22114a023d44))
+* disable no-magic-numbers ([9f9a956](https://github.com/fredrikkadolfsson/p11k/commit/9f9a956dbbf79d31368340dbbc716eea9464bdfa))
+
+
+
+
+
 ## [0.3.9](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.3.8...@fredrikkadolfsson/graphql@0.3.9) (2019-12-14)
 
 

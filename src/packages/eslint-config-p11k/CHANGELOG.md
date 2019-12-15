@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.33](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.32...@fredrikkadolfsson/eslint-config-p11k@0.10.33) (2019-12-15)
+
+
+### Bug Fixes
+
+* disable no-magic-numbers ([9f9a956](https://github.com/fredrikkadolfsson/p11k/commit/9f9a956dbbf79d31368340dbbc716eea9464bdfa))
+
+
+
+
+
 ## [0.10.32](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.31...@fredrikkadolfsson/eslint-config-p11k@0.10.32) (2019-12-15)
 
 

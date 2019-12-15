@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.21](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.20...@fredrikkadolfsson/ui@0.11.21) (2019-12-15)
+
+
+### Bug Fixes
+
+* add formik support to TextField ([ac43ee1](https://github.com/fredrikkadolfsson/p11k/commit/ac43ee19295a637303a1b7ad43a91bc5f836270b))
+
+
+
+
+
 ## [0.11.20](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.19...@fredrikkadolfsson/ui@0.11.20) (2019-12-14)
 
 

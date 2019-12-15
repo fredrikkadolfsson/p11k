@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.30](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.29...@fredrikkadolfsson/web@0.12.30) (2019-12-15)
+
+
+### Bug Fixes
+
+* add back missing keys ([f8657c0](https://github.com/fredrikkadolfsson/p11k/commit/f8657c0eb0203871c2a88917b383fcba79a871d7))
+* change to autnetication object ([2452ded](https://github.com/fredrikkadolfsson/p11k/commit/2452dedce5420682241af53e576805739a787b85))
+* change to public dir ([320fba3](https://github.com/fredrikkadolfsson/p11k/commit/320fba378242b1c6c44d51fa26c7709a0d4dbb93))
+* client side redirection and redirect on user page ([6b35692](https://github.com/fredrikkadolfsson/p11k/commit/6b35692a61065f03494b31a3811e5464ffd7f034))
+* conditional show some links in footer ([6813b2f](https://github.com/fredrikkadolfsson/p11k/commit/6813b2fcb2a93ac97edc7673282a0bd5a6cde92c))
+* disable no-magic-numbers ([9f9a956](https://github.com/fredrikkadolfsson/p11k/commit/9f9a956dbbf79d31368340dbbc716eea9464bdfa))
+* downgrade to formik 2.0.6 witch dose not have problems ([51fd1e1](https://github.com/fredrikkadolfsson/p11k/commit/51fd1e1e130362053ea061543bbb797557d0e643))
+* fallback on empty string ([6af062c](https://github.com/fredrikkadolfsson/p11k/commit/6af062c0c9cbfeb63652ee29d4306dc715f7ee10))
+* footer links ([5c17cf1](https://github.com/fredrikkadolfsson/p11k/commit/5c17cf121949dccd48def318ea62e8c0bcee68bb))
+* localize app ([2a0a52f](https://github.com/fredrikkadolfsson/p11k/commit/2a0a52fbc922b3ab6c6ac16db1423a48cb214435))
+* localize footer and header ([53070c2](https://github.com/fredrikkadolfsson/p11k/commit/53070c2d409c87567a552fc433563a73d42ae03e))
+* prevent authenticated users from accessing login and register ([f3e7ed0](https://github.com/fredrikkadolfsson/p11k/commit/f3e7ed025b10ad36dffa1accc99f9bb64579c57c))
+* problem with initial props ([7a6cc5e](https://github.com/fredrikkadolfsson/p11k/commit/7a6cc5e6f673acc5cd2bab405e9e4638d12a9ce9))
+* problem with locales not being fetchable ([e73cfb2](https://github.com/fredrikkadolfsson/p11k/commit/e73cfb24faaa55fa73641783497b90aadd8f90a9))
+* problem with useIsUserAuthenticated ([e66ec84](https://github.com/fredrikkadolfsson/p11k/commit/e66ec84e31c4f3f592cb24d2d530930f0a34ab09))
+* rework and localize forms ([85f584d](https://github.com/fredrikkadolfsson/p11k/commit/85f584db8f35d6b53a8411967e143bcf6eb8023b))
+* translate common ([dcfe05e](https://github.com/fredrikkadolfsson/p11k/commit/dcfe05eeb0f73fc621e03aca8bded61b4afb7d90))
+
+
+
+
+
 ## [0.12.29](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.28...@fredrikkadolfsson/web@0.12.29) (2019-12-14)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
