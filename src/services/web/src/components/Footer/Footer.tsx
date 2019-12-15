@@ -32,7 +32,7 @@ const Footer = (): JSX.Element => {
     [t, isUserAuthenticated],
   );
 
-  return <UiFooter siteName={t('site_name', 'Perfect Stack')} linkSections={linkSections} />;
+  return <UiFooter siteName={t('perfect_stack', 'Perfect Stack')} linkSections={linkSections} />;
 };
 
 export default React.memo(Footer);

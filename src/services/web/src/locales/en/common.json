@@ -11,10 +11,11 @@
   "invalid_required": "Password is too short - should be {{minPasswordLength}} chars minimum.",
   "password": "Password",
   "password_repeat": "Repeat password",
+  "perfect_stack": "Perfect Stack",
   "register": "Register",
   "required": "Required",
   "sign_in": "Sign in",
   "sign_in_link": "Already a member? Sign in",
-  "site_name": "Perfect Stack",
-  "start": "Start"
+  "sign_out": "Sign out",
+  "sign_up_link": "Not a member? Register"
 }

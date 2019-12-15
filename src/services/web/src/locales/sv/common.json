@@ -11,10 +11,11 @@
   "invalid_required": "",
   "password": "",
   "password_repeat": "",
+  "perfect_stack": "",
   "register": "",
   "required": "",
   "sign_in": "",
   "sign_in_link": "",
-  "site_name": "",
-  "start": ""
+  "sign_out": "",
+  "sign_up_link": ""
 }
