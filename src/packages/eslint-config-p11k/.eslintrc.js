@@ -11,7 +11,7 @@ module.exports = {
   ],
   plugins: ['prettier'],
   rules: {
-    '@typescript-eslint/no-magic-numbers': ['error', { ignore: [0] }],
+    '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-type-alias': ['error', { allowAliases: 'in-unions-and-intersections' }],
     '@typescript-eslint/no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],

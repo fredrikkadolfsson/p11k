@@ -8,7 +8,7 @@ gql`
 `;
 
 const useIsUserAuthenticated = (): boolean => {
-  const { data } = useIsUserAuthenticatedQuery();
+  const { data } = useIsUserAuthenticatedQuery({ pollInterval: 5 * 1000 });
   return Boolean(data?.isAuthenticated);
 };
 

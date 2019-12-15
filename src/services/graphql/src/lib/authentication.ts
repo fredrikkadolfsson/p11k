@@ -5,7 +5,7 @@ import { Context } from '../typings';
 export const setAuthenticationCookie = (token: string, { res }: Context): void => {
   res.cookie(config.JWT_COOKIE_NAME, token, {
     httpOnly: true,
-    maxAge: 1000 * 60 * 60 * 24 * 365, // eslint-disable-line @typescript-eslint/no-magic-numbers
+    maxAge: 1000 * 60 * 60 * 24 * 365,
     secure: config.NODE_ENV !== 'development',
   });
 };
