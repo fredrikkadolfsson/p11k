@@ -1,6 +1,11 @@
 {
+  "about": "",
+  "account": "",
   "email": "",
+  "get_started": "",
   "here": "",
+  "home": "",
+  "important_links": "",
   "invalid_email": "",
   "invalid_password_match": "",
   "invalid_required": "",
@@ -8,5 +13,8 @@
   "password_repeat": "",
   "register": "",
   "required": "",
-  "sign_in_link": ""
+  "sign_in": "",
+  "sign_in_link": "",
+  "site_name": "",
+  "start": ""
 }
