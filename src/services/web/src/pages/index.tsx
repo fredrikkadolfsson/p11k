@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@fredrikkadolfsson/ui';
+import { InitialProps } from '../typings';
 
 const Index = (): JSX.Element => {
   const { t } = useTranslation('index');
@@ -12,12 +13,8 @@ const Index = (): JSX.Element => {
   );
 };
 
-Index.getInitialProps = async (): Promise<{ namespacesRequired: string[] }> => {
-  await Promise.resolve();
+Index.getInitialProps = (): InitialProps => ({
+  namespacesRequired: ['index', 'common'],
+});
 
-  return {
-    namespacesRequired: ['index', 'common'],
-  };
-};
-
-export default React.memo(Index);
+export default Index;

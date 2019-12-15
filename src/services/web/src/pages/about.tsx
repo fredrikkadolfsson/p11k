@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@fredrikkadolfsson/ui';
+import { InitialProps } from '../typings';
 
 const About = (): JSX.Element => {
   const { t } = useTranslation('about');
@@ -12,8 +13,8 @@ const About = (): JSX.Element => {
   );
 };
 
-About.getInitialProps = (): { namespacesRequired: string[] } => ({
+About.getInitialProps = (): InitialProps => ({
   namespacesRequired: ['about', 'common'],
 });
 
-export default React.memo(About);
+export default About;

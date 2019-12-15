@@ -3,6 +3,7 @@ import gql from 'graphql-tag';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@fredrikkadolfsson/ui';
 import { useUserQuery } from '../generated/graphql';
+import { InitialProps } from '../typings';
 
 gql`
   query user {
@@ -29,8 +30,8 @@ const User = (): JSX.Element => {
   );
 };
 
-User.getInitialProps = (): { namespacesRequired: string[] } => ({
+User.getInitialProps = (): InitialProps => ({
   namespacesRequired: ['user', 'common'],
 });
 
-export default React.memo(User);
+export default User;

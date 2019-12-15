@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { Container } from '@fredrikkadolfsson/ui';
 import LoginForm from '../components/LoginForm/LoginForm';
+import { InitialProps } from '../typings';
 
 const StyledContainer = styled(Container)`
   align-items: center;
@@ -15,8 +16,8 @@ const Login = (): JSX.Element => (
   </StyledContainer>
 );
 
-Login.getInitialProps = (): { namespacesRequired: string[] } => ({
+Login.getInitialProps = (): InitialProps => ({
   namespacesRequired: ['login', 'common'],
 });
 
-export default React.memo(Login);
+export default Login;
