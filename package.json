@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "src/packages/*",
-    "src/services/*"
+    "packages/private/*",
+    "packages/public/*"
   ],
   "scripts": {
     "commit": "commit",

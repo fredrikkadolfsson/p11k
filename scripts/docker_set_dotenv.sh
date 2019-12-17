@@ -20,7 +20,7 @@ for compose_file in "${compose_files[@]}"; do
         s=${s#*"$delimiter"};
     done;
     
-    path=$(find $ROOT_DIR/src/services -name "${owner[0]}")
+    path=$(find $ROOT_DIR/packages/private -name "${owner[0]}")
     
     if [ ! -z "$path" ]; then
         service_dir=$(echo "${owner[0]}_DIR" | tr [a-z] [A-Z])

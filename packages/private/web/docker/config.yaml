@@ -1,19 +1,19 @@
 version: '3.7'
 
 services:
-  graphql:
+  web:
     image: node:12-alpine
     volumes:
       - p11k:/p11k:cached
-    working_dir: /p11k/src/services/graphql
+    working_dir: /p11k/packages/private/web
     depends_on:
-      - account
-    env_file: ${GRAPHQL_DIR}/.env
+      - graphql
+    env_file: ${WEB_DIR}/.env
     environment:
-      ACCOUNT_URL: http://account:5000
-      PORT: 4000
+      GRAPHQL_URL: 'http://host.docker.internal:4000/graphql'
+      PORT: 3000
     ports:
-      - 4000:4000
+      - 3000:3000
     command: yarn nodemon
 
 volumes:

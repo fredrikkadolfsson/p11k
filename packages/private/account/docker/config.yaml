@@ -5,7 +5,7 @@ services:
     image: node:12-alpine
     volumes:
       - p11k:/p11k:cached
-    working_dir: /p11k/src/services/account
+    working_dir: /p11k/packages/private/account
     depends_on:
       - mongo
     env_file: ${ACCOUNT_DIR}/.env
