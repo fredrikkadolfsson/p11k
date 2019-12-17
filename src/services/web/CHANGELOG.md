@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.34](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.33...@fredrikkadolfsson/web@0.12.34) (2019-12-17)
+
+
+### Bug Fixes
+
+* routes file to future proof when wanting to change slugs ([32cc01e](https://github.com/fredrikkadolfsson/p11k/commit/32cc01ed530d77e6e6a44536ad967974d0037489))
+
+
+
+
+
 ## [0.12.33](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.32...@fredrikkadolfsson/web@0.12.33) (2019-12-17)
 
 
