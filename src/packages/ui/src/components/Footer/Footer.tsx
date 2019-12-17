@@ -14,7 +14,7 @@ interface FooterProps {
       url: string;
     }[];
   }[];
-  locale: JSX.Element;
+  locale?: JSX.Element;
 }
 
 const StyledFooter = styled.footer`
