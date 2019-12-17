@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.20](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.19...@fredrikkadolfsson/account@0.2.20) (2019-12-17)
+
+**Note:** Version bump only for package @fredrikkadolfsson/account
+
+
+
+
+
 ## [0.2.19](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.18...@fredrikkadolfsson/account@0.2.19) (2019-12-14)
 
 **Note:** Version bump only for package @fredrikkadolfsson/account
