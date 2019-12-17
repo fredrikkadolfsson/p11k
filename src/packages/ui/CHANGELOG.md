@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.22](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.21...@fredrikkadolfsson/ui@0.11.22) (2019-12-17)
+
+
+### Bug Fixes
+
+* add Popover and possible locale to footer ([d4b4f64](https://github.com/fredrikkadolfsson/p11k/commit/d4b4f648630724404428edc0d8639a66bd90fa67))
+* locale to optional ([2bd92fd](https://github.com/fredrikkadolfsson/p11k/commit/2bd92fdb162afa09f2999f08ce3d15268c5fc1e6))
+* pointer to link ([a6537c6](https://github.com/fredrikkadolfsson/p11k/commit/a6537c67cf594d9e28bc17652df19859ce24c5b2))
+
+
+
+
+
 ## [0.11.21](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.20...@fredrikkadolfsson/ui@0.11.21) (2019-12-15)
 
 

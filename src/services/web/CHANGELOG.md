@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.31](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.30...@fredrikkadolfsson/web@0.12.31) (2019-12-17)
+
+
+### Bug Fixes
+
+* add some translations ([14993dd](https://github.com/fredrikkadolfsson/p11k/commit/14993dd27e2ee19085d237ded4125786efd90d80))
+* pass languageselector to footer ([120d044](https://github.com/fredrikkadolfsson/p11k/commit/120d044c34b3938a44b56adff9c6d9a60aa8daf0))
+* visual of loginlogout ([41ebf08](https://github.com/fredrikkadolfsson/p11k/commit/41ebf0830d879b6f3ae1ec9106d4496cbf0b8f5e))
+
+
+
+
+
 ## [0.12.30](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.29...@fredrikkadolfsson/web@0.12.30) (2019-12-15)
 
 
