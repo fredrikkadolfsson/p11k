@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import next from 'next';
 import nextI18NextMiddleware from 'next-i18next/middleware';
-import nextI18next from './lib/i18n';
+import NextI18NextInstance from './lib/i18n';
 import config from './config';
 
 const app = next({ dev: config.NODE_ENV !== 'production' });
@@ -13,7 +13,7 @@ Promise.resolve(
     const server = express();
 
     server
-      .use(nextI18NextMiddleware(nextI18next))
+      .use(nextI18NextMiddleware(NextI18NextInstance))
       .get('*', async (req: Request, res: Response) => handle(req, res))
       .listen({ port: config.PORT }, () => {
         console.log(`> Ready on http://localhost:${config.PORT}`);
