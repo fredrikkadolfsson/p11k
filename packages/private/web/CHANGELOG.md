@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.36](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.35...@fredrikkadolfsson/web@0.12.36) (2019-12-17)
+
+
+### Bug Fixes
+
+* add detection for i18n ([9b67cb8](https://github.com/fredrikkadolfsson/p11k/commit/9b67cb8ba03be326f6b8d479614d1f007c2694c9))
+* update deps ([2d70ab7](https://github.com/fredrikkadolfsson/p11k/commit/2d70ab79e747f2b278bfa6d13bef2abd3a5807eb))
+
+
+
+
+
 ## [0.12.35](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.34...@fredrikkadolfsson/web@0.12.35) (2019-12-17)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
