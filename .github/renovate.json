@@ -1,9 +1,18 @@
 {
   "automerge": true,
   "extends": ["config:base"],
-  "ignorePresets": [":prHourlyLimit2"],
+  "ignorePresets": [":prHourlyLimit2", ":semanticPrefixFixDepsChoreOthers"],
   "major": {
     "automerge": false
   },
-  "semanticCommitType": "build"
+  "packageRules": [
+    {
+      "packagePatterns": ["*"],
+      "semanticCommitType": "build"
+    },
+    {
+      "depTypeList": ["dependencies"],
+      "semanticCommitType": "fix"
+    }
+  ]
 }
