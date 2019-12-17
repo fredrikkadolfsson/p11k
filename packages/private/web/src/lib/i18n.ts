@@ -10,7 +10,15 @@ const NextI18NextInstance = new NextI18Next({
   // Until public dir is fixed: https://github.com/isaachinman/next-i18next/issues/523
   localePath: typeof window === 'undefined' ? 'public/locales' : 'locales',
   returnEmptyString: false,
-  serverLanguageDetection: config.NODE_ENV !== 'development',
+
+  detection: {
+    order: ['querystring', 'cookie', 'localStorage', 'path', 'subdomain'],
+    lookupQuerystring: 'lng',
+    lookupCookie: 'lng',
+    lookupHeader: 'accept-language',
+    caches: ['cookie'],
+    cookieSecure: config.NODE_ENV !== 'development',
+  },
 });
 
 export default NextI18NextInstance;
