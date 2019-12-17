@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.12](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.3.11...@fredrikkadolfsson/graphql@0.3.12) (2019-12-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency apollo-server-express to v2.9.14 ([546f2ce](https://github.com/fredrikkadolfsson/p11k/commit/546f2ce5b7f68b115f3517cb08c5d1bfada24347))
+
+
+
+
+
 ## [0.3.11](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.3.10...@fredrikkadolfsson/graphql@0.3.11) (2019-12-17)
 
 **Note:** Version bump only for package @fredrikkadolfsson/graphql

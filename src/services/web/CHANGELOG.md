@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.33](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.32...@fredrikkadolfsson/web@0.12.33) (2019-12-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v9.1.6 ([e576b57](https://github.com/fredrikkadolfsson/p11k/commit/e576b5798c990a0938cd5069b5e18e68c4e26196))
+* **deps:** update dependency yup to v0.28.0 ([9cc2ffc](https://github.com/fredrikkadolfsson/p11k/commit/9cc2ffc0b8b0fc0cea128f44cfbbed9d35b2eaf0))
+
+
+
+
+
 ## [0.12.32](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.31...@fredrikkadolfsson/web@0.12.32) (2019-12-17)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
