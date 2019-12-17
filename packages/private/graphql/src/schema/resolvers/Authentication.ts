@@ -1,4 +1,6 @@
-const Authentication = {
+import { AuthenticationResolvers } from '../../generated/graphql';
+
+const Authentication: { Authentication: AuthenticationResolvers } = {
   Authentication: {
     id: (): string => 'static_1',
     isAuthenticated: (token: string): boolean => Boolean(token),

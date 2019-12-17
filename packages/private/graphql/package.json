@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "dotenv nodemon",
     "dev:all": "sh ./docker/run.sh",
-    "start": "ts-node src/server.ts"
+    "start": "ts-node src/server.ts",
+    "generate:graphql": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "apollo-server-express": "2.9.14",
@@ -20,6 +21,9 @@
     "ts-node": "8.5.4"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^1.9.1",
+    "@graphql-codegen/typescript": "1.9.1",
+    "@graphql-codegen/typescript-resolvers": "1.9.1",
     "@types/cookie-parser": "1.4.2",
     "@types/node": "12.12.20",
     "@types/node-fetch": "2.5.4",

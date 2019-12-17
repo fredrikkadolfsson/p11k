@@ -2,8 +2,9 @@ import { ApolloError } from 'apollo-server-core';
 import { assertAuthentication, setAuthenticationCookie, unsetAuthenticationCookie } from '../../lib/authentication';
 import { User } from '../../apis/account';
 import { Context } from '../../typings';
+import { MutationResolvers } from '../../generated/graphql';
 
-const Mutation = {
+const Mutation: { Mutation: MutationResolvers } = {
   Mutation: {
     authenticate: async (_: unknown, args: { email: string; password: string }, ctx: Context): Promise<string> => {
       try {
