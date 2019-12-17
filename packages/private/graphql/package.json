@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/cookie-parser": "1.4.2",
     "@types/node": "12.12.20",
-    "@types/node-fetch": "^2.5.4",
+    "@types/node-fetch": "2.5.4",
     "nodemon": "2.0.2"
   }
 }
