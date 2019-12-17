@@ -7,6 +7,7 @@ import { useFormik } from 'formik';
 import { useTranslation } from 'react-i18next';
 import { CreateAccountMutationVariables, useCreateAccountMutation } from '../../generated/graphql';
 import { minPasswordLength } from '../../constants';
+import routes from '../../routes';
 
 gql`
   mutation createAccount($email: String!, $password: String!, $passwordConfirm: String!) {
@@ -45,7 +46,7 @@ const SignUpForm = (): JSX.Element => {
         await createAccount({
           variables,
         });
-        await router.replace('/user');
+        await router.replace(routes.account);
       } catch (error) {
         console.error(error);
       }
@@ -62,7 +63,7 @@ const SignUpForm = (): JSX.Element => {
         {t('register', 'Register')}
       </Button>
       <p>
-        {t('sign_in_link', 'Already a member? Sign in')} <Link href="/login">{t('here', 'here!')}</Link>
+        {t('sign_in_link', 'Already a member? Sign in')} <Link href={routes.login}>{t('here', 'here!')}</Link>
       </p>
     </form>
   );

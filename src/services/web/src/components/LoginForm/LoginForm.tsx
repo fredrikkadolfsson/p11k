@@ -7,6 +7,7 @@ import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
 import { AuthenticateMutationVariables, useAuthenticateMutation } from '../../generated/graphql';
 import { minPasswordLength } from '../../constants';
+import routes from '../../routes';
 
 gql`
   mutation authenticate($email: String!, $password: String!) {
@@ -45,7 +46,7 @@ const LoginForm = (): JSX.Element => {
         await authenticate({
           variables,
         });
-        await router.replace('/user');
+        await router.replace(routes.account);
       } catch (error) {
         console.error(error);
       }
@@ -60,7 +61,7 @@ const LoginForm = (): JSX.Element => {
         {t('sign_in', 'Sign in')}
       </Button>
       <p>
-        {t('sign_up_link', 'Not a member? Register')} <Link href="/signup">{t('here', 'here!')}</Link>
+        {t('sign_up_link', 'Not a member? Register')} <Link href={routes.register}>{t('here', 'here!')}</Link>
       </p>
     </form>
   );

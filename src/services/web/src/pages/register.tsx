@@ -11,18 +11,18 @@ const StyledContainer = styled(Container)`
   justify-content: center;
 `;
 
-const SignUp = (): JSX.Element => (
+const Register = (): JSX.Element => (
   <StyledContainer>
     <SignUpForm />
   </StyledContainer>
 );
 
-SignUp.getInitialProps = async (props: InitialPropsProps): Promise<InitialProps> => {
+Register.getInitialProps = async (props: InitialPropsProps): Promise<InitialProps> => {
   await redirectAuthenticated(props);
 
   return {
-    namespacesRequired: ['signUp', 'common'],
+    namespacesRequired: ['register', 'common'],
   };
 };
 
-export default SignUp;
+export default Register;

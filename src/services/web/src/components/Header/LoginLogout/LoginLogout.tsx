@@ -6,6 +6,7 @@ import gql from 'graphql-tag';
 import { useRouter } from 'next/router';
 import useIsUserAuthenticated from '../../../hooks/useIsUserAuthenticated';
 import { useUnauthenticateMutation } from '../../../generated/graphql';
+import routes from '../../../routes';
 
 gql`
   mutation unauthenticate {
@@ -25,7 +26,7 @@ const LoginLogout = (): JSX.Element => {
 
   const onLogout = React.useCallback(async () => {
     await unauthenticate();
-    await router.push('/');
+    await router.push(routes.index);
     await client.resetStore();
   }, []);
 
@@ -38,7 +39,7 @@ const LoginLogout = (): JSX.Element => {
   }
 
   return (
-    <Button href="/login" color="inherit" variant="text">
+    <Button href={routes.login} color="inherit" variant="text">
       {t('sign_in', 'Sign in')}
     </Button>
   );

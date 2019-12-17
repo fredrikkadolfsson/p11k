@@ -15,13 +15,13 @@ gql`
   }
 `;
 
-const User = (): JSX.Element => {
-  const { t } = useTranslation('user');
+const Account = (): JSX.Element => {
+  const { t } = useTranslation('account');
   const { data } = useUserQuery();
 
   return (
     <Container>
-      <h1>{t('title', 'User')}</h1>
+      <h1>{t('title', 'Account')}</h1>
       {data !== undefined && (
         <p>
           {data.user.id} {data.user.email}
@@ -31,12 +31,12 @@ const User = (): JSX.Element => {
   );
 };
 
-User.getInitialProps = async (props: InitialPropsProps): Promise<InitialProps> => {
+Account.getInitialProps = async (props: InitialPropsProps): Promise<InitialProps> => {
   await redirectUnAuthenticated(props);
 
   return {
-    namespacesRequired: ['user', 'common'],
+    namespacesRequired: ['account', 'common'],
   };
 };
 
-export default User;
+export default Account;

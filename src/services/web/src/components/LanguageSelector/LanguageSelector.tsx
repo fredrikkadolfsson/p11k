@@ -35,7 +35,7 @@ const LanguageSelector = (): JSX.Element => {
           setAnchorEl(event.currentTarget);
         }}
       >
-        {t(`locale_${currentLocale}`, currentLocale)}
+        {t(`locale_${currentLocale}`, currentLocale) /* i18next-extract-disable-line */}
       </StyledButton>
       <Popover
         id={'locale-popover'}
@@ -63,7 +63,7 @@ const LanguageSelector = (): JSX.Element => {
                   setAnchorEl(null);
                 }}
               >
-                {t(`locale_${locale}`, locale)}
+                {t(`locale_${locale}`, locale) /* i18next-extract-disable-line */}
               </Link>
             ),
           )}

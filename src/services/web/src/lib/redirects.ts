@@ -3,15 +3,17 @@ import router from 'next/router';
 import { ApolloClient, gql } from 'apollo-boost';
 import { InitialPropsProps } from '../typings';
 import { IsUserAuthenticatedQuery } from '../generated/graphql';
+import routes from '../routes';
 
 const redirect = async (res?: ServerResponse, path?: string): Promise<void> => {
+  const pathWithFallback = path ?? routes.index;
   if (res) {
     res.writeHead(302, {
-      Location: path ?? '/',
+      Location: pathWithFallback,
     });
     res.end();
   } else {
-    await router.push(path ?? '/');
+    await router.push(pathWithFallback);
   }
 };
 

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Footer as UiFooter } from '@fredrikkadolfsson/ui';
 import useIsUserAuthenticated from '../../hooks/useIsUserAuthenticated';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
+import routes from '../../routes';
 
 const Footer = (): JSX.Element => {
   const { t } = useTranslation('common');
@@ -13,17 +14,17 @@ const Footer = (): JSX.Element => {
       {
         title: t('important_links', 'Important links'),
         links: [
-          { text: t('home', 'Home'), url: '/' },
-          { text: t('about', 'About us'), url: '/about' },
+          { text: t('home', 'Home'), url: routes.index },
+          { text: t('about', 'About us'), url: routes.about },
         ],
       },
       {
         title: t('get_started', 'Get started'),
         links: isUserAuthenticated
-          ? [{ text: t('account', 'My account'), url: '/user' }]
+          ? [{ text: t('account', 'My account'), url: routes.account }]
           : [
-              { text: t('sign_in', 'Sign in'), url: '/login' },
-              { text: t('register', 'Register'), url: '/signup' },
+              { text: t('sign_in', 'Sign in'), url: routes.login },
+              { text: t('register', 'Register'), url: routes.register },
             ],
       },
     ],
