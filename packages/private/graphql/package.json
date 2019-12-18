@@ -6,8 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "dotenv nodemon",
-    "dev:all": "sh ./docker/run.sh",
+    "dev": "concurrently 'dotenv nodemon' 'yarn generate:graphql --watch'",
+    "dev:all": "concurrently 'sh ./docker/run.sh' 'yarn generate:graphql --watch'",
+    "dev:no-generate": "dotenv nodemon",
     "start": "ts-node src/server.ts",
     "generate:graphql": "graphql-codegen --config codegen.yml"
   },
