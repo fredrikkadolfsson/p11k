@@ -43,7 +43,7 @@
     "@types/yup": "0.26.26",
     "babel-plugin-emotion": "10.0.23",
     "babel-plugin-i18next-extract": "0.4.2",
-    "concurrently": "5.0.1",
+    "concurrently": "5.0.2",
     "eslint-plugin-graphql": "3.1.0",
     "nodemon": "2.0.2"
   }
