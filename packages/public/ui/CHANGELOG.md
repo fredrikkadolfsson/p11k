@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.25](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.24...@fredrikkadolfsson/ui@0.11.25) (2019-12-19)
+
+**Note:** Version bump only for package @fredrikkadolfsson/ui
+
+
+
+
+
 ## [0.11.24](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.23...@fredrikkadolfsson/ui@0.11.24) (2019-12-17)
 
 **Note:** Version bump only for package @fredrikkadolfsson/ui
