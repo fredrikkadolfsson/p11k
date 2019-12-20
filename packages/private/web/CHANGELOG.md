@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.40](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.39...@fredrikkadolfsson/web@0.12.40) (2019-12-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-i18next to v2.1.3 ([184f454](https://github.com/fredrikkadolfsson/p11k/commit/184f4549868d0d77b923fbdcfd9e36f9566d85dc))
+
+
+
+
+
 ## [0.12.39](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.38...@fredrikkadolfsson/web@0.12.39) (2019-12-19)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
