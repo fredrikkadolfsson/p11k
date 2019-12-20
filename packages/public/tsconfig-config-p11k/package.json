@@ -9,6 +9,6 @@
     "url": "git@github.com:fredrikkadolfsson/p11k.git"
   },
   "dependencies": {
-    "typescript": "3.7.3"
+    "typescript": "3.7.4"
   }
 }
