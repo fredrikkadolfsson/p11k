@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.27](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.26...@fredrikkadolfsson/ui@0.11.27) (2019-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update emotion monorepo to v10.0.27 ([6e5de7f](https://github.com/fredrikkadolfsson/p11k/commit/6e5de7f8559d14ce25be1ac9f70665b750ba0381))
+
+
+
+
+
 ## [0.11.26](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.25...@fredrikkadolfsson/ui@0.11.26) (2019-12-19)
 
 **Note:** Version bump only for package @fredrikkadolfsson/ui
