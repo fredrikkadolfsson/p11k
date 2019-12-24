@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.28](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.27...@fredrikkadolfsson/ui@0.11.28) (2019-12-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @material-ui/core to v4.8.1 ([d912341](https://github.com/fredrikkadolfsson/p11k/commit/d9123411d66587bbecff6b998738b9173d16ca62))
+
+
+
+
+
 ## [0.11.27](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.26...@fredrikkadolfsson/ui@0.11.27) (2019-12-23)
 
 
