@@ -44,7 +44,7 @@
     "babel-plugin-emotion": "10.0.27",
     "babel-plugin-i18next-extract": "0.4.2",
     "concurrently": "5.0.2",
-    "eslint-plugin-graphql": "3.1.0",
+    "eslint-plugin-graphql": "3.1.1",
     "nodemon": "2.0.2"
   }
 }
