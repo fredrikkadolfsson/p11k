@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/stylelint-config-p11k@0.0.2...@fredrikkadolfsson/stylelint-config-p11k@0.0.4) (2019-12-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint to v12.0.1 ([ecea8b4](https://github.com/fredrikkadolfsson/p11k/commit/ecea8b4731aa2b0474023cd947eae58f20c0eec5))
+
+
+
+
+
 ## [0.0.3](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/stylelint-config-p11k@0.0.2...@fredrikkadolfsson/stylelint-config-p11k@0.0.3) (2019-12-25)
 
 
