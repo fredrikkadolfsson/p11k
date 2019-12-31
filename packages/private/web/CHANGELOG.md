@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.46](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.45...@fredrikkadolfsson/web@0.12.46) (2019-12-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency formik to v2.0.10 ([b1aad22](https://github.com/fredrikkadolfsson/p11k/commit/b1aad2293b02bd64b7e58f51574e65bab8729a6b))
+* **deps:** update dependency next-i18next to v3 ([b71fc82](https://github.com/fredrikkadolfsson/p11k/commit/b71fc821a8f7628a250c1f2960ca0a49ca05e483))
+
+
+
+
+
 ## [0.12.45](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.44...@fredrikkadolfsson/web@0.12.45) (2019-12-24)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web

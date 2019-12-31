@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/stylelint-config-p11k",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "StyleLint configs to be used for all packages in the monorepo.",
   "main": ".stylelintrc.json",
   "license": "UNLICENSED",
