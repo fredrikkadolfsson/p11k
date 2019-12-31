@@ -21,7 +21,7 @@
     "@commitlint/prompt-cli": "8.2.0",
     "@fredrikkadolfsson/eslint-config-p11k": "^0.10.15",
     "@fredrikkadolfsson/prettier-config-p11k": "^0.10.10",
-    "@fredrikkadolfsson/stylelint-config-p11k": "^0.0.3",
+    "@fredrikkadolfsson/stylelint-config-p11k": "^0.0.4",
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.13",
     "concurrently": "5.0.2",
     "dotenv": "8.2.0",
