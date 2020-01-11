@@ -15,12 +15,12 @@
     "express": "4.17.1",
     "http-status-codes": "1.4.0",
     "jsonwebtoken": "8.5.1",
-    "mongoose": "5.8.3",
+    "mongoose": "5.8.7",
     "ts-node": "8.5.4"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "8.3.5",
-    "@types/mongoose": "5.5.36",
+    "@types/mongoose": "5.5.41",
     "@types/node": "12.12.22",
     "@types/vfile-message": "2.0.0",
     "nodemon": "2.0.2"
