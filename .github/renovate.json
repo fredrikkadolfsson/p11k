@@ -1,7 +1,6 @@
 {
   "automerge": true,
   "extends": ["config:base"],
-  "ignorePresets": [":prHourlyLimit2", ":semanticPrefixFixDepsChoreOthers"],
   "major": {
     "automerge": false
   },
@@ -9,10 +8,6 @@
     {
       "packagePatterns": ["*"],
       "semanticCommitType": "build"
-    },
-    {
-      "depTypeList": ["dependencies"],
-      "semanticCommitType": "fix"
     }
   ]
 }
