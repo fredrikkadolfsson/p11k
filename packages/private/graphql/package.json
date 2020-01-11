@@ -26,7 +26,7 @@
     "@graphql-codegen/typescript": "1.9.1",
     "@graphql-codegen/typescript-resolvers": "1.9.1",
     "@types/cookie-parser": "1.4.2",
-    "@types/node": "12.12.22",
+    "@types/node": "12.12.24",
     "@types/node-fetch": "2.5.4",
     "nodemon": "2.0.2"
   }
