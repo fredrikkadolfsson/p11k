@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "post-checkout": "yarn",
+    "post-merge": "yarn",
+    "post-rewrite": "yarn",
+    "pre-commit": "lint-staged"
+  }
+}

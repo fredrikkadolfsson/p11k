@@ -29,15 +29,6 @@
     "lerna": "3.20.2",
     "lint-staged": "9.5.0"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "post-checkout": "yarn",
-      "post-merge": "yarn",
-      "post-rewrite": "yarn",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,tx,tsx}": [
       "stylelint --syntax css-in-js",
