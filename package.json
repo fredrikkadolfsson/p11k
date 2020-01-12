@@ -28,16 +28,5 @@
     "husky": "4.0.7",
     "lerna": "3.20.2",
     "lint-staged": "9.5.0"
-  },
-  "lint-staged": {
-    "*.{js,tx,tsx}": [
-      "stylelint --syntax css-in-js",
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{html,json,gql,md,yaml,yml}": [
-      "prettier --write",
-      "git add"
-    ]
   }
 }

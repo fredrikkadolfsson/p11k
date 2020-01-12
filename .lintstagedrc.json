@@ -1,0 +1,4 @@
+{
+  "*.{js,tx,tsx}": ["stylelint --syntax css-in-js", "eslint --fix", "git add"],
+  "*.{html,json,gql,md,yaml,yml}": ["prettier --write", "git add"]
+}

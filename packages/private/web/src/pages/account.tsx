@@ -2,9 +2,9 @@ import React from 'react';
 import gql from 'graphql-tag';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@fredrikkadolfsson/ui';
+import { redirectUnAuthenticated } from '../lib/redirects';
 import { useUserQuery } from '../generated/graphql';
 import { InitialProps, InitialPropsProps } from '../typings';
-import { redirectUnAuthenticated } from '../lib/redirects';
 
 gql`
   query user {
