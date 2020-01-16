@@ -16,9 +16,9 @@
     "lint:tsc": "lerna exec --parallel -- sh ../../../scripts/tsc.sh"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.4",
+    "@commitlint/cli": "8.3.5",
     "@commitlint/config-angular": "8.3.4",
-    "@commitlint/prompt-cli": "8.3.4",
+    "@commitlint/prompt-cli": "8.3.5",
     "@fredrikkadolfsson/eslint-config-p11k": "^0.10.15",
     "@fredrikkadolfsson/prettier-config-p11k": "^0.10.10",
     "@fredrikkadolfsson/stylelint-config-p11k": "^0.0.5",
