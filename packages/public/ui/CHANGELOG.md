@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.33](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.32...@fredrikkadolfsson/ui@0.11.33) (2020-01-18)
+
+
+### Bug Fixes
+
+* update lots of packages ([a841b8a](https://github.com/fredrikkadolfsson/p11k/commit/a841b8a8148bbd4c6f35f9d071a9c85d32b39beb))
+
+
+
+
+
 ## [0.11.32](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.31...@fredrikkadolfsson/ui@0.11.32) (2020-01-12)
 
 **Note:** Version bump only for package @fredrikkadolfsson/ui

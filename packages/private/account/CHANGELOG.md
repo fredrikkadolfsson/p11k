@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.29](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.28...@fredrikkadolfsson/account@0.2.29) (2020-01-18)
+
+
+### Bug Fixes
+
+* update lots of packages ([a841b8a](https://github.com/fredrikkadolfsson/p11k/commit/a841b8a8148bbd4c6f35f9d071a9c85d32b39beb))
+
+
+
+
+
 ## [0.2.28](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/account@0.2.27...@fredrikkadolfsson/account@0.2.28) (2020-01-11)
 
 **Note:** Version bump only for package @fredrikkadolfsson/account

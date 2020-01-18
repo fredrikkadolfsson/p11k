@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.51](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.50...@fredrikkadolfsson/web@0.12.51) (2020-01-18)
+
+
+### Bug Fixes
+
+* update lots of packages ([a841b8a](https://github.com/fredrikkadolfsson/p11k/commit/a841b8a8148bbd4c6f35f9d071a9c85d32b39beb))
+
+
+
+
+
 ## [0.12.50](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.49...@fredrikkadolfsson/web@0.12.50) (2020-01-12)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web

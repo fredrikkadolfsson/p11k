@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.17](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/tsconfig-config-p11k@0.10.16...@fredrikkadolfsson/tsconfig-config-p11k@0.10.17) (2020-01-18)
+
+
+### Bug Fixes
+
+* update lots of packages ([a841b8a](https://github.com/fredrikkadolfsson/p11k/commit/a841b8a8148bbd4c6f35f9d071a9c85d32b39beb))
+
+
+
+
+
 ## [0.10.16](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/tsconfig-config-p11k@0.10.15...@fredrikkadolfsson/tsconfig-config-p11k@0.10.16) (2019-12-20)
 
 
