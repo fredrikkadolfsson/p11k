@@ -1,9 +1,9 @@
 import React, { PropsWithChildren } from 'react';
-import { AppBar, Toolbar } from '@material-ui/core';
+import { AppBar, AppBarProps, Toolbar } from '@material-ui/core';
 import Container from '../Container/Container';
 
-const Header = ({ children }: PropsWithChildren<{}>): JSX.Element => (
-  <AppBar position="static">
+const Header = ({ children, ...props }: PropsWithChildren<AppBarProps>): JSX.Element => (
+  <AppBar position="static" {...props}>
     <Container>
       <Toolbar disableGutters>{children}</Toolbar>
     </Container>
