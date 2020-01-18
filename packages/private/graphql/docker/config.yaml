@@ -3,6 +3,7 @@ version: '3.7'
 services:
   graphql:
     image: node:12-alpine
+    restart: always
     volumes:
       - p11k:/p11k:cached
     working_dir: /p11k/packages/private/graphql
