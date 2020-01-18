@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.53](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.52...@fredrikkadolfsson/web@0.12.53) (2020-01-18)
+
+
+### Bug Fixes
+
+* first draft of ugly hero ([1ed3d2e](https://github.com/fredrikkadolfsson/p11k/commit/1ed3d2e896e0e4dabc0eca69ca9a514edaa5f0b4))
+
+
+
+
+
 ## [0.12.52](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.51...@fredrikkadolfsson/web@0.12.52) (2020-01-18)
 
 

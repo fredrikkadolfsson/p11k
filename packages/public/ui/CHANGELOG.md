@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.35](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.34...@fredrikkadolfsson/ui@0.11.35) (2020-01-18)
+
+
+### Bug Fixes
+
+* add correct props to header ([56ae1b3](https://github.com/fredrikkadolfsson/p11k/commit/56ae1b3f8783f684a27b91a1867ef732ba7f374b))
+* add max-width to text ([35243f5](https://github.com/fredrikkadolfsson/p11k/commit/35243f5c140a46c4c83c7e3d47455caf576fa7dc))
+
+
+
+
+
 ## [0.11.34](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.33...@fredrikkadolfsson/ui@0.11.34) (2020-01-18)
 
 
