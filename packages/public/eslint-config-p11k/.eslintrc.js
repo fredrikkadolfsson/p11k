@@ -13,10 +13,11 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-type-alias': ['error', { allowAliases: 'in-unions-and-intersections' }],
+    '@typescript-eslint/no-unnecessary-condition': ['error', { ignoreRhs: true }],
     '@typescript-eslint/no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
-    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/strict-boolean-expressions': ['error', { ignoreRhs: true }],
     'arrow-body-style': 'error',
     'brace-style': 'error',
     'import/order': ['error', { 'newlines-between': 'never' }],
@@ -46,9 +47,6 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
-
-    // Try to turn on agail later!
-    '@typescript-eslint/no-unnecessary-condition': 'off',
   },
   globals: {
     React: 'writable',
