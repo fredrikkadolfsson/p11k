@@ -3,8 +3,6 @@ const config = require('./src/localeConfig');
 module.exports = {
   presets: ['next/babel'],
   plugins: [
-    '@babel/plugin-proposal-nullish-coalescing-operator',
-    '@babel/plugin-proposal-optional-chaining',
     [
       'i18next-extract',
       {
