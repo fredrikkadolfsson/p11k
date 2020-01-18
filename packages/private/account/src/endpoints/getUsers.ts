@@ -5,14 +5,14 @@ import Account, { AccountExternal } from '../utils/db/models/account';
 import { Error } from '../typings';
 
 const getUser = async (jwt: string): Promise<AccountExternal | Error> => {
-  if (!jwt) {
+  if (jwt === '') {
     return { code: HttpStatus.BAD_REQUEST, info: 'missing authorization header' };
   }
 
   try {
     const { uid } = verifyToken(jwt);
     const account = await Account.findOne({ _id: uid });
-    if (!account) {
+    if (account === null) {
       return { code: HttpStatus.BAD_REQUEST, info: 'no account associated with given header' };
     }
 

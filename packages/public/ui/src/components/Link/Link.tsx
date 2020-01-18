@@ -14,7 +14,7 @@ const Link = ({ href, children, ...restProps }: LinkProps<'a'>): JSX.Element => 
     </StyledLink>
   );
 
-  if (!href) {
+  if (href === undefined) {
     return LinkComponent;
   }
 

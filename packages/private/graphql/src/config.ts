@@ -14,7 +14,7 @@ const config: Config = {
   ENABLE_PLAYGROUND: Boolean(process.env.ENABLE_PLAYGROUND ?? true),
   ENABLE_TRACING: Boolean(process.env.ENABLE_TRACING ?? true),
   JWT_COOKIE_NAME: process.env.JWT_COOKIE_NAME ?? 'AUTHENTICATION_TOKEN',
-  NODE_ENV: (process.env.NODE_ENV as NodeEnv) ?? 'development',
+  NODE_ENV: (process.env.NODE_ENV as NodeEnv | undefined) ?? 'development',
   PORT: process.env.PORT ?? '4000',
 };
 

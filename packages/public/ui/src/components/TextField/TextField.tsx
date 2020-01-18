@@ -21,23 +21,29 @@ const TextField = ({
   id,
   formik,
   ...props
-}: MuiTextFieldProps & (TextFieldProps | TextFieldPropsEmpty)): JSX.Element => (
-  <TemproraryWrapper>
-    <MuiTextField
-      id={id}
-      fullWidth
-      variant={'outlined' as any} // eslint-disable-line @typescript-eslint/no-explicit-any
-      {...(formik &&
-        id && {
+}: MuiTextFieldProps & (TextFieldProps | TextFieldPropsEmpty)): JSX.Element | null => {
+  const formikProps =
+    formik === undefined || id === undefined
+      ? {}
+      : {
           value: formik.values[id],
           onChange: formik.handleChange,
           onBlur: formik.handleBlur,
-          helperText: formik.touched[id] ? formik.errors[id] : '',
-          error: formik.touched[id] && Boolean(formik.errors[id]),
-        })}
-      {...props}
-    />
-  </TemproraryWrapper>
-);
+          helperText: formik.touched[id] === true ? formik.errors[id] : '',
+          error: formik.touched[id] === true && Boolean(formik.errors[id]),
+        };
+
+  return (
+    <TemproraryWrapper>
+      <MuiTextField
+        id={id}
+        fullWidth
+        variant={'outlined' as any} // eslint-disable-line @typescript-eslint/no-explicit-any
+        {...formikProps}
+        {...props}
+      />
+    </TemproraryWrapper>
+  );
+};
 
 export default TextField;

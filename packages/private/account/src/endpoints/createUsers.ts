@@ -13,7 +13,7 @@ const createUser = async ({
   password: string;
   passwordConfirm: string;
 }): Promise<AccountExternal | Error> => {
-  if (!email || !password || !passwordConfirm) {
+  if (email === '' || password === '' || passwordConfirm === '') {
     return { code: HttpStatus.BAD_REQUEST, info: 'Missing parameter(s)' };
   }
 

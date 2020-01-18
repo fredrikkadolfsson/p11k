@@ -22,7 +22,7 @@ const StyledMain = styled.main`
 class MyApp extends App<AppProps> {
   public componentDidMount(): void {
     const jssStyles = document.querySelector('#jss-server-side');
-    if (jssStyles?.parentNode) {
+    if (jssStyles?.parentNode !== null && jssStyles?.parentNode !== undefined) {
       jssStyles.parentNode.removeChild(jssStyles);
     }
   }

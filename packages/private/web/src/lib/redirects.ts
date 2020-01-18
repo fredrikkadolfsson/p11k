@@ -7,7 +7,7 @@ import routes from '../routes';
 
 const redirect = async (res?: ServerResponse, path?: string): Promise<void> => {
   const pathWithFallback = path ?? routes.index;
-  if (res) {
+  if (res !== undefined) {
     res.writeHead(302, {
       Location: pathWithFallback,
     });

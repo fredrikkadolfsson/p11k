@@ -11,7 +11,7 @@ const StyledButton = styled(MuiButton)`
 const Button = ({ href, ...restProps }: ButtonProps): JSX.Element => {
   const ButtonComponent = <StyledButton color="primary" variant="contained" {...restProps} />;
 
-  if (href) {
+  if (href !== undefined) {
     return (
       <Link href={href} passHref>
         {ButtonComponent}

@@ -15,7 +15,7 @@ export const unsetAuthenticationCookie = ({ res }: Context): void => {
 };
 
 export const assertAuthentication = (jwt: string | undefined): void => {
-  if (!jwt) {
+  if (jwt === '' || jwt === undefined) {
     throw new AuthenticationError('You are not authenticated or have been unauthenticated');
   }
 };
