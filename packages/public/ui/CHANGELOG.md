@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.34](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.33...@fredrikkadolfsson/ui@0.11.34) (2020-01-18)
+
+
+### Bug Fixes
+
+* linting ([efd9783](https://github.com/fredrikkadolfsson/p11k/commit/efd978353ce930cd932dbbd3e730715dd5fd9ced))
+
+
+
+
+
 ## [0.11.33](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/ui@0.11.32...@fredrikkadolfsson/ui@0.11.33) (2020-01-18)
 
 

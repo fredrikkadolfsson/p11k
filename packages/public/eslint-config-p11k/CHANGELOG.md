@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.43](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.42...@fredrikkadolfsson/eslint-config-p11k@0.10.43) (2020-01-18)
+
+
+### Bug Fixes
+
+* update linting rules ([42010ea](https://github.com/fredrikkadolfsson/p11k/commit/42010ea3b041b339d7a822d38d779e053ffc0849))
+
+
+
+
+
 ## [0.10.42](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/eslint-config-p11k@0.10.41...@fredrikkadolfsson/eslint-config-p11k@0.10.42) (2020-01-18)
 
 **Note:** Version bump only for package @fredrikkadolfsson/eslint-config-p11k

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.52](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.51...@fredrikkadolfsson/web@0.12.52) (2020-01-18)
+
+
+### Bug Fixes
+
+* linting ([efd9783](https://github.com/fredrikkadolfsson/p11k/commit/efd978353ce930cd932dbbd3e730715dd5fd9ced))
+
+
+
+
+
 ## [0.12.51](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.50...@fredrikkadolfsson/web@0.12.51) (2020-01-18)
 
 
