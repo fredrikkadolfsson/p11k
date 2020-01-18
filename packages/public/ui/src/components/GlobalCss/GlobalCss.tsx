@@ -26,6 +26,16 @@ const GlobalCss = (): JSX.Element => {
         flex-direction: column;
       }
 
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        max-width: ${theme.widths.large};
+      }
+
       p {
         margin-top: ${theme.sizes.xxsmall};
         margin-bottom: ${theme.sizes.xxsmall};
