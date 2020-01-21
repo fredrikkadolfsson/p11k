@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/jsonwebtoken": "8.3.6",
-    "@types/mongoose": "5.5.41",
+    "@types/mongoose": "5.5.42",
     "@types/node": "13.1.8",
     "@types/vfile-message": "2.0.0",
     "nodemon": "2.0.2"
