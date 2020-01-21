@@ -25,7 +25,7 @@
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.13",
     "concurrently": "5.0.2",
     "dotenv": "8.2.0",
-    "husky": "4.0.10",
+    "husky": "4.1.0",
     "lerna": "3.20.2",
     "lint-staged": "9.5.0"
   }
