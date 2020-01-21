@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/web",
-  "version": "0.12.56",
+  "version": "0.12.57",
   "description": "p11k's frontend web application.",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.8.3",
-    "@fredrikkadolfsson/ui": "^0.11.36",
+    "@fredrikkadolfsson/ui": "^0.11.37",
     "@graphql-codegen/cli": "1.11.2",
     "@graphql-codegen/introspection": "1.11.2",
     "@graphql-codegen/typescript": "1.11.2",
