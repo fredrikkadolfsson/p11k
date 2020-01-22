@@ -19,7 +19,7 @@
     "ts-node": "8.6.2"
   },
   "devDependencies": {
-    "@types/jsonwebtoken": "8.3.6",
+    "@types/jsonwebtoken": "8.3.7",
     "@types/mongoose": "5.5.42",
     "@types/node": "13.1.8",
     "@types/vfile-message": "2.0.0",
