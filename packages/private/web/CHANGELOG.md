@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.64](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.63...@fredrikkadolfsson/web@0.12.64) (2020-01-24)
+
+
+### Bug Fixes
+
+* setup for new version of with apollo ([5684ee4](https://github.com/fredrikkadolfsson/p11k/commit/5684ee4dd947889aa6bfff36644e38f80af6c67f))
+
+
+
+
+
 ## [0.12.63](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.62...@fredrikkadolfsson/web@0.12.63) (2020-01-24)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
