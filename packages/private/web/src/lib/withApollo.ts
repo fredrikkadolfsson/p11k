@@ -12,7 +12,4 @@ export default withApollo(
       headers,
       uri: config.GRAPHQL_URL,
     }),
-  {
-    getDataFromTree: 'ssr',
-  },
 );

@@ -4,22 +4,18 @@ import App from 'next/app';
 import Head from 'next/head';
 import styled, { GlobalCss, NoScript, PageTransitionLoader, ThemeProvider } from '@fredrikkadolfsson/ui';
 import { ApolloProvider } from '@apollo/react-hooks';
-import { ApolloClient } from 'apollo-boost';
 import { Router } from 'next/router';
+import { WithApolloProps } from 'next-with-apollo';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import withApollo from '../lib/withApollo';
 import { appWithTranslation } from '../lib/i18n';
 
-interface AppProps {
-  apollo: ApolloClient<{}>;
-}
-
 const StyledMain = styled.main`
   flex-grow: 1;
 `;
 
-class MyApp extends App<AppProps> {
+class MyApp extends App<WithApolloProps<{}>> {
   public componentDidMount(): void {
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles?.parentNode !== null && jssStyles?.parentNode !== undefined) {

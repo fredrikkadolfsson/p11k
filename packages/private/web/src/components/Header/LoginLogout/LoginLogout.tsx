@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from '@fredrikkadolfsson/ui';
-import { useApolloClient } from '@apollo/react-hooks';
 import { useTranslation } from 'react-i18next';
 import gql from 'graphql-tag';
 import { useRouter } from 'next/router';
+import { useApolloClient } from '@apollo/react-hooks';
 import useIsUserAuthenticated from '../../../hooks/useIsUserAuthenticated';
 import { useUnauthenticateMutation } from '../../../generated/graphql';
 import routes from '../../../routes';
