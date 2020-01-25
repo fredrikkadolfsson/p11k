@@ -40,7 +40,7 @@
     "@types/cookie": "0.3.3",
     "@types/node": "13.5.0",
     "@types/react": "16.9.19",
-    "@types/yup": "0.26.27",
+    "@types/yup": "0.26.28",
     "babel-plugin-emotion": "10.0.27",
     "babel-plugin-i18next-extract": "0.6.1",
     "concurrently": "5.0.2",
