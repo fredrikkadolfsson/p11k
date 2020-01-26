@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.66](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.65...@fredrikkadolfsson/web@0.12.66) (2020-01-26)
+
+
+### Bug Fixes
+
+* move ui to deps ([ec0c9f2](https://github.com/fredrikkadolfsson/p11k/commit/ec0c9f251a4b85edc8e136c47d2f4fe085788837))
+
+
+
+
+
 ## [0.12.65](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.64...@fredrikkadolfsson/web@0.12.65) (2020-01-25)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
