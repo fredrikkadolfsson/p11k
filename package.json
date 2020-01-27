@@ -23,7 +23,7 @@
     "@fredrikkadolfsson/prettier-config-p11k": "^0.10.10",
     "@fredrikkadolfsson/stylelint-config-p11k": "^0.0.6",
     "@fredrikkadolfsson/tsconfig-config-p11k": "^0.10.13",
-    "concurrently": "5.0.2",
+    "concurrently": "5.1.0",
     "dotenv": "8.2.0",
     "husky": "4.2.1",
     "lerna": "3.20.2",
