@@ -38,7 +38,7 @@
     "@graphql-codegen/typescript-operations": "1.12.0",
     "@graphql-codegen/typescript-react-apollo": "1.12.0",
     "@types/cookie": "0.3.3",
-    "@types/node": "13.5.0",
+    "@types/node": "13.5.1",
     "@types/react": "16.9.19",
     "@types/yup": "0.26.28",
     "babel-plugin-emotion": "10.0.27",
