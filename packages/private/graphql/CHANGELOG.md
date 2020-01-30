@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.32](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.3.31...@fredrikkadolfsson/graphql@0.3.32) (2020-01-30)
+
+**Note:** Version bump only for package @fredrikkadolfsson/graphql
+
+
+
+
+
 ## [0.3.31](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/graphql@0.3.30...@fredrikkadolfsson/graphql@0.3.31) (2020-01-29)
 
 **Note:** Version bump only for package @fredrikkadolfsson/graphql
