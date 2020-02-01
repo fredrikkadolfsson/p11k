@@ -1,6 +1,6 @@
 {
   "name": "@fredrikkadolfsson/account",
-  "version": "0.2.40",
+  "version": "0.2.41",
   "description": "p11k's account micro service",
   "main": "server.ts",
   "license": "UNLICENSED",
