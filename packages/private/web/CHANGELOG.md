@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.85](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.84...@fredrikkadolfsson/web@0.12.85) (2020-02-06)
+
+**Note:** Version bump only for package @fredrikkadolfsson/web
+
+
+
+
+
 ## [0.12.84](https://github.com/fredrikkadolfsson/p11k/compare/@fredrikkadolfsson/web@0.12.83...@fredrikkadolfsson/web@0.12.84) (2020-02-05)
 
 **Note:** Version bump only for package @fredrikkadolfsson/web
