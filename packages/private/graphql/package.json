@@ -13,12 +13,12 @@
     "generate:graphql": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "apollo-server-express": "2.10.0",
+    "apollo-server-express": "2.10.1",
     "axios": "0.19.2",
     "cookie-parser": "1.4.4",
     "dataloader": "2.0.0",
     "graphql": "14.6.0",
-    "graphql-tools": "4.0.6",
+    "graphql-tools": "4.0.7",
     "ts-node": "8.6.2"
   },
   "devDependencies": {
